@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta name="description" content="Udaipur Tourism and Important Information">
+     <meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap">
+     <meta name="author" content="Chirag Jain">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+     <link rel="stylesheet" type="text/css" href="main1.css">
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	  <style>
+	* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+div.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 600px;
+}
+</style>
+  </head>
+  
+<body>
+<script src="restro.js"></script>
+<div class="hero-text">
+  <h2>roam udaipur</h2>
+  <ul id="headerul">
+  li><a href="index.html">Home</a></li>
+ <li><a href="aboutus.html">About Us</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
+  <li><a href="next.html">What's Next?</a></li>
+</ul></div>
+<div id="slideshow">
+<img class="mySlides" src="fs2.jpg" style="width:100% height:20%"  >
+<img class="mySlides" src="pic.jpg"style="width:100% height:20%" >
+<img class="mySlides" src="swr.jpg"  style="width:100% height:20%">
+</div>
+<script src="restro.js"></script>
+<script>var si = 0;
+slides();
+function slides() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    si++;
+    if (si > x.length) {si = 1} 
+    x[si-1].style.display = "block"; 
+    setTimeout(slides, 2000); 
+}
+</script>
+<div class="main">
+  
+  <div class="drop2">
+    <button class="btn2" onclick="myFunction2()">Hotels & Restaurants</button>
+    <div class="content2" id="myDropdown2">
+      <a href="4&5star.html">5 & 4 Star Hotels</a>
+      <a href="2&3star.html">3 & 2 Star Hotels</a>
+      <a href="restaurants.html">Restaurants</a>
+    </div>
+  </div> 
+  <div class="drop">
+    <button class="btn" onclick="myFunction()">Places To See</button>
+    <div class="content" id="myDropdown">
+      <a href="lakes.html">Lakes</a>
+      <a href="museums.html">Museums & Forts</a>
+      <a href="temples.html">Temples</a>
+    </div>
+  </div> 
+  <div class="drop1">
+    <button class="btn1" onclick="myFunction1()">How To Reach</button>
+    <div class="content1" id="myDropdown1">
+      <a href="airways.html">Airways</a>
+      <a href="railways.html">Railways</a>
+      <a href="#">Roadways</a>
+    </div>
+  </div> 
+</div>
+<div id="searched">
+<div id="jkk"><h2>Temples</h2></div>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'fs')" id="defaultOpen">Neemach Mata Temle</button>
+  <button class="tablinks" onclick="openCity(event, 'pl')">Karni Mata Temple</button>
+ <button class="tablinks" onclick="openCity(event, 'us')">Jagdish Temple</button> 
+ 
+ </div>
+
+<div id="fs" class="tabcontent">
+<h3>Neemach Mata Temple</h3>
+<img src="neem.jpg" style="width:80%; height:50%;">
+<p>Neemach Mata Temple is located on a hill on the banks of the Fateh Sagar Lake in the city of Udaipur, Rajasthan. This temple is located on a green hill 
+in the Dewali area of Udaipur. It has both stairs and uphill slope walk way to climb, which is around 900 metres long. It enshrines the stone idol of 
+Neemach Mata Devi. There is also an idol of Lord Ganesh and three west-facing lions of stone.One can have very beautiful view of whole city and its lakes 
+from the temple as well as while climbing. The walk is pollution-free as no vehicles can enter in the hill boundary.</p>
+</div>
+
+<div id="pl" class="tabcontent">
+<h3>Karni Mata Temple</h3>
+<img src="karnim.jpg" style="width:80%; height:50%;">
+<p>Another dedicated temple is Shri Manshapurna Karni Mata Temple or Karni Mata, Udaipur, located on the Machla Hills, near
+ Pandit Deendayal Upadhyay Park in Udaipur, Rajasthan. One can reach to the temple either by stairs starting from Manikyalal Verma Park or by ropeway.</p> 
+</div>
+<div id="us" class="tabcontent">
+<h3>Jagdish Temple</h3>
+<img src="jagd.jpg" style="width:80%; height:50%;">
+<p>Jagdish Temple is a large Hindu temple in the middle of Udaipur in Rajasthan.
+ A big tourist attraction, the temple was originally called the temple of Jagannath Rai but is now called Jagdish-ji. It is a major monument in Udaipur.
+ Located in the City Palace complex of Udaipur, this temple is made in the Indo-Aryan style of architecture.</p>
+</div>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</div>     
