@@ -8,46 +8,107 @@ body,html{
 		width:100%;
 		overflow-x:hidden;
 	}
-*{margin:0px;
-padding:0px;
-
-
-}
-*{
-	box-sizing:border-box;
-}
 .hero-text1{
-	
+	    position:relative;
+	    width:100%;
 		margin-top:0;
 		background-color:#F9FBE7;
-		height:70px;
-		
-	
+		height:11.5%;
 	}
-	.hero-text1 h2{
-		margin-top:0;
-	position:relative;
+.hero-text1 h2{
+	margin-top:0;
+	position:absolute;
 	top:10px;
-	font-size:35px;
+	font-size:30px;
 	color:#D84315;
 	padding-left:15px;
 	font-family:'Almendra SC';
 	}
-	#headerul{
+.hero-text1 #headerul{
 	position:absolute;
-	top:25px;
-	left:920px;
+	top:15%;
+	left:60%;
+	
 	border-top-left-radius:20px;
 	
 	border-bottom-left-radius:20px;
 }
-@media only screen and (max-width: 500px)
+#sidebar{
+	display:none;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F9FBE7;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.sidenav a {
+	
+    padding: 32px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+@media screen and (max-width:970px)
 {
-	#headerul{
+	.hero-text1 #headerul{
+	position:absolute;
+	top:7%;
+	left:45%;
+	
+	border-top-left-radius:20px;
+	
+	border-bottom-left-radius:20px;
+}
+.hero-text1 #headerul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 7px;
+    text-decoration: none;
+}
+}
+@media screen and (max-width:575px)
+{
+	
+	.hero-text1 #headerul{
+	display:none;
+	}
+	.hero-text1 #sidebar{
+		display:block;
 		position:absolute;
-		left:560px;
+		left:90%;
+		top:25%;
+		background-color:#F9FBE7;
 	}
 }
+
 
 #headerul li a:hover{
 	background-color:red;
@@ -66,9 +127,14 @@ padding:0px;
     padding: 14px 16px;
     text-decoration: none;
 }
+#mybar{
+	color:black;
+	width:100%;
+}
 .hero-image {
     background-image: url("itshea.jpg");
 	height: 60%;
+	max-width:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -257,7 +323,7 @@ padding:0px;
 	padding-bottom:190px;
 	background-color:#FCE4EC;
 	height:200px;
-	width:100%}
+	max-width:100%}
 #popular
 	{
 		background-color:#FFAB91;
@@ -266,6 +332,7 @@ padding:0px;
 		padding-bottom:-200px;
 		font-family:'Amarante';
 		height:800px;
+		max-width:100%
 	}
 #popular h2{
 	font-size:30px;
@@ -336,6 +403,7 @@ img {
 #services{
 	background-color:#FFEBEE;
 	height:500px;
+	max-width:100%
 }
 #services h2{
 	padding-top:15px;
@@ -377,6 +445,7 @@ top:150px;}
 #abt{
 	background-color:#81D4FA;
 	height:500px;
+	
 }
 #content{
 	border-radius:10px 10px 10px 10px;
@@ -435,18 +504,7 @@ body, html {
 	}
 
 
-button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
+
 
 
 #foot p{

@@ -3,33 +3,44 @@
   <head>
     <title>Roam Udaipur</title>    
 	<meta charset="utf-8"> 
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	 <meta name="description" content="Udaipur Tourism and Important Information">
      <meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap">
      <meta name="author" content="Chirag Jain">
-	
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-     <link rel="stylesheet" type="text/css" href="imp.css" media="screen">
-	  <link rel="stylesheet" type="text/css" href="imp1.css" media="handheld">
-	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-	  <style>
-	 
-	  </style>
-	  </head>
-	
-
-	  <body>
-	  <div class="hero-text1">
-  <h2>roam udaipur</h2>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	 <link rel="stylesheet" type="text/css" href="imp.css" >
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ </head>
+<body>
+<div class="hero-text1">
+  <h2>RoamUdaipur</h2>
   <ul id="headerul">
+  
   <li><a href="index.html">Home</a></li>
  <li><a href="aboutus.html">About Us</a></li>
   <li><a href="contactus.html">Contact Us</a></li>
   <li><a href="next.html">What's Next?</a></li>
-</ul></div>
+</ul>
+<span id="sidebar" style="font-size:30px;cursor:pointer" onclick="openNavb()">&#9776;</span>
+<div id="mySidenav1" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNavb()">&times;</a>
+   <h2>RoamUdaipur</h2>
+  <a href="index.html">Home</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="contactus.html">Contact Us</a>
+  <a href="next.html">What's Next?</a>
+</div>
+</div>
+<script>
+function openNavb() {
+console.log(1);
+    document.getElementById("mySidenav1").style.width = "100%";
+}
+
+function closeNavb() {
+    document.getElementById("mySidenav1").style.width = "0";
+}
+</script>
 <div class="hero-image">
  
   <div class="hero-text">
