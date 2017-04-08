@@ -116,6 +116,9 @@ body,html{
 	
 	font-family:'Almendra SC';
 	}
+	.hero-text1{
+		height:12%;
+	}
 }
 
 
@@ -471,7 +474,7 @@ top:150px;}
 {
 	#content{
 	top:20px;
-	height:77%;
+	height:80%;
 }
 } 
 #content p{
