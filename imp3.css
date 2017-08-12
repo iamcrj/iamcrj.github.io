@@ -28,7 +28,7 @@ padding:15px;
 	margin-bottom:20px;
 	text-align:center;
 	color:#f8f8f8;
-	background:url("itsea.jpg") no-repeat center;
+	background:url("lll.jpg") no-repeat center;
 	background-size:cover;
 }
 .inner-banner-image{
@@ -58,9 +58,4 @@ padding:15px;
 	text-align:center;
 	animation-name:example;
 	animation-duration:1s;
-}
-footer{
-	background-color:#000;
-	color:#fff;
-	font-size:14px;
 }

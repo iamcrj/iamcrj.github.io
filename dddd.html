@@ -1,38 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  <link rel="stylesheet" type="text/css" href="main1.css">
-  </head>
-
-<body>
-<script src="restro.js"></script>
-<div class="hero-text">
-  <h2>roam udaipur</h2>
-  <ul id="headerul">
-  <li><a href="index.html">Home</a></li>
- <li><a href="aboutus.html">About Us</a></li>
-  <li><a href="contactus.html">Contact Us</a></li>
-  <li><a href="next.html">What's Next?</a></li>
-</ul></div>
-<div id="slideshow">
-<img class="mySlides" src="fs2.jpg" style="width:100% height:20%"  >
-<img class="mySlides" src="pic.jpg"style="width:100% height:20%" >
-<img class="mySlides" src="swr.jpg"  style="width:100% height:20%">
-</div>
-<script>var si = 0;
-slides();
-function slides() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    si++;
-    if (si > x.length) {si = 1}
-    x[si-1].style.display = "block";
-    setTimeout(slides, 2000);
-}
-</script>
 <div class="main">
 
   <div class="drop2">
@@ -164,8 +129,3 @@ function openCity(evt, cityName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-<footer>
-<div class="container" >
-<p style="text-align:center; padding-top:10px;">Copyright &copy;Roam Udaipur.All Rights Reserved | Contact Us:+91 8290755844</p>
-</div>
-</footer>

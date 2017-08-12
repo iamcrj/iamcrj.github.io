@@ -1,57 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-     <meta charset="utf-8"> 
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <meta name="description" content="Udaipur Tourism and Important Information">
-     <meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap">
-     <meta name="author" content="Chirag Jain">
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-     <link rel="stylesheet" type="text/css" href="main1.css">
-	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-	  </head>
-	 
-	  <body>
-	  <div class="hero-text">
-  <h2>roam udaipur</h2>
-  <ul id="headerul">
-  <li><a href="index.html">Home</a></li>
- <li><a href="aboutus.html">About Us</a></li>
-  <li><a href="contactus.html">Contact Us</a></li>
-  <li><a href="next.html">What's Next?</a></li>
-</ul></div>
-<div id="slideshow">
-     <img class="mySlides" src="railways.jpg" style="width:100% height:20%"  >
-     <img class="mySlides" src="railway1.jpg"style="width:100% height:20%" >
-     <img class="mySlides" src="railway2.jpg"  style="width:100% height:20%">
-</div> <!-- closed-->
+    <link rel="stylesheet" type="text/css" href="main1.css">
+  </head>
+<body>
+  <?php
+  session_start();
+  ?>
+  <div class="header">
+    <div class="inner-header">
+    <div class="logo"><a href="roamudaipur.php">RoamUdaipur.com</a></div>
+    <div class="header-link"><a id="login" href="logoutscript.php">Log Out</a></div>
+    <div class="header-link"><Button id="login" onclick="openProfile()">Profile</Button></div>
+    <div class="header-link"><a id="login" href="home.php">Home</a></div>
+    </div>
+    </div>
+  <div>
+    <img src="fs1.jpg" alt="" class="slideshow">
+    <img src="pic.jpg" alt="" class="slideshow" >
+    <img src="swr.jpg" alt="" class="slideshow" >
+  </div>
 <script>
 var si = 0;
 slides();
 
 function slides() {
     var i;
-    var x = document.getElementsByClassName("mySlides");
+    var x = document.getElementsByClassName("slideshow");
     for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
+      x[i].style.display = "none";
     }
     si++;
-    if (si > x.length) {si = 1} 
+    if (si > x.length) {si = 1}
     x[si-1].style.display = "block"; 
-    setTimeout(slides, 2000); 
+    setTimeout(slides, 2000);
 }
 function search() {
-  
+
     var input, filter, ul, li, a, i;
     input = document.getElementById('myInput');
     filter = input.value.toUpperCase();
     ul = document.getElementById("myUL");
     li = ul.getElementsByTagName('li');
 
-   
+
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("h4")[0];
         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
@@ -62,7 +54,7 @@ function search() {
     }
 }
 function searchair1() {
-  // Declare variables 
+  // Declare variables
   var input, filter, table, tr, td, i;
   input = document.getElementById("myInput1");
   filter = input.value.toUpperCase();
@@ -78,11 +70,11 @@ function searchair1() {
       } else {
         tr[i].style.display = "none";
       }
-    } 
+    }
   }
 }
 function searchair2() {
-  // Declare variables 
+  // Declare variables
   var input, filter, table, tr, td, i;
   input = document.getElementById("myInput2");
   filter = input.value.toUpperCase();
@@ -98,11 +90,11 @@ function searchair2() {
       } else {
         tr[i].style.display = "none";
       }
-    } 
+    }
   }
 }
 function searchair3() {
-  // Declare variables 
+  // Declare variables
   var input, filter, table, tr, td, i;
   input = document.getElementById("myInput3");
   filter = input.value.toUpperCase();
@@ -118,12 +110,12 @@ function searchair3() {
       } else {
         tr[i].style.display = "none";
       }
-    } 
+    }
   }
 }
 
 function searchrail() {
-  // Declare variables 
+  // Declare variables
   var input, filter, table, tr, td, i;
   input = document.getElementById("myInput4");
   filter = input.value.toUpperCase();
@@ -139,7 +131,7 @@ function searchrail() {
       } else {
         tr[i].style.display = "none";
       }
-    } 
+    }
   }
 }
 
@@ -149,7 +141,7 @@ function myFunctio(event)
 	 var targo=event.target;
 	 if(targo.id=="fgh")
 	 {var x = document.getElementById('myDIV');
-	 }		  
+	 }
 		  else if(targo.id=="rpp")
 		     {
 			var x=document.getElementById('myDIV1');
@@ -198,11 +190,11 @@ function myFunctio(event)
 		     {
 			var x=document.getElementById('myDIV12');
 		     }
-			 
-          if (x.style.display === 'none') 
+
+          if (x.style.display === 'none')
 		  {
             x.style.display = 'block';
-          } 
+          }
 		  else {
             x.style.display = 'none';
               }
@@ -223,7 +215,7 @@ function closeNav() {
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-  
+
 function myFunction1() {
     document.getElementById("myDropdown1").classList.toggle("show1");
 }
@@ -234,21 +226,21 @@ window.onclick = function(e) {
   if (!e.target.matches('.btn1')) {
     var myDropdown = document.getElementById("myDropdown1");
       if (myDropdown.classList.contains('show1')) {
-       
+
         myDropdown.classList.remove('show1');
       }
   }
   if (!e.target.matches('.btn')) {
     var myDropdown = document.getElementById("myDropdown");
       if (myDropdown.classList.contains('show')) {
-        
+
         myDropdown.classList.remove('show');
       }
   }
   if (!e.target.matches('.btn2')) {
     var myDropdown = document.getElementById("myDropdown2");
       if (myDropdown.classList.contains('show2')) {
-        
+
         myDropdown.classList.remove('show2');
       }
   }
@@ -256,7 +248,7 @@ window.onclick = function(e) {
 </script>
 
 <div class="main">
-  
+
   <div class="drop2">
     <button class="btn2" onclick="myFunction2()">Hotels & Restaurants</button>
     <div class="content2" id="myDropdown2">
@@ -264,7 +256,7 @@ window.onclick = function(e) {
       <a href="2&3star.html">3 & 2 Star Hotels</a>
       <a href="restaurants.html">Restaurants</a>
     </div>
-  </div> 
+  </div>
   <div class="drop">
     <button class="btn" onclick="myFunction()">Places To See</button>
     <div class="content" id="myDropdown">
@@ -272,7 +264,7 @@ window.onclick = function(e) {
       <a href="museums.html">Museums</a>
       <a href="temples.html">Forts</a>
     </div>
-  </div> 
+  </div>
   <div class="drop1">
     <button class="btn1" onclick="myFunction1()">How To Reach</button>
     <div class="content1" id="myDropdown1">
@@ -280,7 +272,7 @@ window.onclick = function(e) {
       <a href="#">Railways</a>
       <a href="#">Roadways</a>
     </div>
-  </div> 
+  </div>
 </div>
 <div id="searched">
 <div id="jkk"><h2>Railways</h2></div>
@@ -298,7 +290,7 @@ window.onclick = function(e) {
 	<th>Travel Time</th>
 	<th>Days of Runs</th>
 	<th>Remarks</th>
-	
+
   </tr>
   <tr>
     <td>12315</td>
@@ -306,146 +298,146 @@ window.onclick = function(e) {
 	<td>Sealdah</td>
 	<td>Udaipur</td>
 	<td>13:10</td>
-<td>3:00</td> 
-<td>2140</td> 
-<td>3 Days</td> 
-<td>Thursday</td> 
-<td>Udaipur on Saturday</td> 	
+<td>3:00</td>
+<td>2140</td>
+<td>3 Days</td>
+<td>Thursday</td>
+<td>Udaipur on Saturday</td>
   </tr>
   <tr>
     <td>19665 </td>
     <td>Khajuraho-Udaipur Express</td>
-	<td>Khajuraho</td> 
+	<td>Khajuraho</td>
 	<td>Udaipur</td>
-	<td>9:10</td> 
-	<td>6:10</td> 
-	<td>1092</td> 
-	<td>2 Days</td> 
+	<td>9:10</td>
+	<td>6:10</td>
+	<td>1092</td>
+	<td>2 Days</td>
 	<td>Everyday</td>
-<td>Via Jaipur</td> 	
+<td>Via Jaipur</td>
   </tr>
   <tr>
     <td>12963</td>
     <td>Mewar Express</td>
-    <td>Delhi(HN)</td> 
+    <td>Delhi(HN)</td>
 	<td>Udaipur</td>
-	<td>19:05</td> 
-	<td>7:20</td> 
-	<td>743</td> 
-	<td>2 Days</td> 
+	<td>19:05</td>
+	<td>7:20</td>
+	<td>743</td>
+	<td>2 Days</td>
 	<td>Everyday</td>
-<td>Via-Kota</td> 	
+<td>Via-Kota</td>
   </tr>
   <tr>
     <td>12981</td>
     <td>Chetak Express</td>
-	<td>Delhi(SR)</td> 
+	<td>Delhi(SR)</td>
 	<td>Udaipur</td>
-  <td>19:40</td> 
-  <td>7:50</td> 
-  <td>673</td> 
-  <td>2 Days</td> 
+  <td>19:40</td>
+  <td>7:50</td>
+  <td>673</td>
+  <td>2 Days</td>
   <td>Everyday</td>
-<td>Via-Ajmer</td>   
-  
+<td>Via-Ajmer</td>
+
   </tr>
    <tr>
     <td>12995</td>
     <td>Bandra-Udaipur Express</td>
-	<td>Bandra</td> 
+	<td>Bandra</td>
 	<td>Udaipur</td>
-	<td>15:45</td> 
-	<td>8:55</td> 
-	<td>945</td> 
-	<td>2 Days</td> 
-	<td>Wed,Fri,Sun</td> 
-	<td>-</td> 
+	<td>15:45</td>
+	<td>8:55</td>
+	<td>945</td>
+	<td>2 Days</td>
+	<td>Wed,Fri,Sun</td>
+	<td>-</td>
   </tr>
    <tr>
     <td>19659</td>
     <td>Shalimar-Udaipur Express</td>
-	<td>Shalimar</td> 
+	<td>Shalimar</td>
 	<td>Udaipur</td>
-	<td>20:25</td> 
-	<td>8:55</td> 
-	<td>1885</td> 
-	<td>3 Days</td> 
-	<td>Sunday</td> 
-	<td>Reach Udaipur on Tues</td> 
+	<td>20:25</td>
+	<td>8:55</td>
+	<td>1885</td>
+	<td>3 Days</td>
+	<td>Sunday</td>
+	<td>Reach Udaipur on Tues</td>
   </tr>
    <tr>
     <td>9721</td>
     <td>Jaipur-Udaipur Express Holiday Special</td>
-	<td>Jaipur</td> 
+	<td>Jaipur</td>
 	<td>Udaipur</td>
-	<td>6:45</td> 
-	<td>13:45</td> 
-	<td>430</td> 
-	<td>1 Day</td> 
-	<td>Everyday</td> 
-	<td>-</td> 
+	<td>6:45</td>
+	<td>13:45</td>
+	<td>430</td>
+	<td>1 Day</td>
+	<td>Everyday</td>
+	<td>-</td>
   </tr>
    <tr>
     <td>22901</td>
     <td>Udaipur-Bandra Superfast</td>
-	<td>Bandra</td> 
+	<td>Bandra</td>
 	<td>Udaipur</td>
-	<td>23:45</td> 
-	<td>16:30</td> 
-	<td>945</td> 
-	<td>2 Days</td> 
-	<td>Tue,Thu,Sat</td> 
-	<td>-</td> 
-	 
+	<td>23:45</td>
+	<td>16:30</td>
+	<td>945</td>
+	<td>2 Days</td>
+	<td>Tue,Thu,Sat</td>
+	<td>-</td>
+
   </tr>
    <tr>
     <td>19329</td>
     <td>Udaipur-Indore Express</td>
-	<td>Indore</td> 
+	<td>Indore</td>
 	<td>Udaipur</td>
-	<td>8:05</td> 
-	<td>19:00</td> 
-	<td>479</td> 
-	<td>1 Day</td> 
-	<td>Everyday</td> 
-	<td>-</td> 
-	
+	<td>8:05</td>
+	<td>19:00</td>
+	<td>479</td>
+	<td>1 Day</td>
+	<td>Everyday</td>
+	<td>-</td>
+
   </tr>
    <tr>
     <td>12992</td>
     <td>Jaipur-Udaipur Express</td>
-  <td>Jaipur</td> 
+  <td>Jaipur</td>
   <td>Udaipur</td>
-  <td>14:00</td> 
-  <td>21:30</td> 
-  <td>435</td> 
-  <td>1 Day</td> 
-  <td>Everyday</td> 
-  <td>-</td> 
+  <td>14:00</td>
+  <td>21:30</td>
+  <td>435</td>
+  <td>1 Day</td>
+  <td>Everyday</td>
+  <td>-</td>
   </tr>
    <tr>
     <td>52928</td>
     <td>Mewar Fast Passengers</td>
-<td>Ahmedabad</td> 
+<td>Ahmedabad</td>
 	<td>Udaipur</td>
-	<td>7:10</td> 
-	<td>19:00</td> 
-	<td>298</td> 
-	<td>1 Day</td> 
-	<td>Everyday</td> 
-	<td>-</td> 
+	<td>7:10</td>
+	<td>19:00</td>
+	<td>298</td>
+	<td>1 Day</td>
+	<td>Everyday</td>
+	<td>-</td>
 	</tr>
    <tr>
     <td>19944</td>
     <td>Ahmedabad-Udaipur Express</td>
- <td>Ahmedabad</td> 
+ <td>Ahmedabad</td>
   <td>Udaipur</td>
-  <td>23:00</td> 
-  <td>9:20</td> 
-  <td>298</td> 
-  <td>2 Days</td> 
-  <td>Everyday</td> 
-  <td>-</td> 
+  <td>23:00</td>
+  <td>9:20</td>
+  <td>298</td>
+  <td>2 Days</td>
+  <td>Everyday</td>
+  <td>-</td>
  </tr>
 </table>
 </div>

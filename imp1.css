@@ -1,0 +1,528 @@
+*{
+margin:0px;
+padding:0px;
+}
+body{
+width:100%;
+height:100%;
+margin:0;
+}
+.header{
+	background-color:#000;
+	color:#fff;
+	border-color:#080808;
+	min-height:50px;
+	border:1px solid transparent;
+}
+.inner-header
+{
+	width:80%;
+	margin:auto;
+}
+.logo{
+	float:left;
+	height:50px;
+padding:15px;
+	font-size:20px;
+	font-weight:bold;
+	animation-name: animationdem;
+	animation-duration: 2s;
+}
+.header-link
+{
+	float:right;
+	font-size:14px;
+	height:50px;
+	padding:15px 15px;
+	font-size:16px;
+	font-weight:bold;
+}
+@keyframes animationdem
+{
+	from{padding-left:0;
+	font-size: 0px;}
+	to{padding-left:20px;
+	font-size: 20px;}
+}
+a{
+	text-decoration:none;
+	background-color:transparent;
+	color:#ededed;
+}
+#login{
+	background-color:black;
+	color:white;
+	border:0.5px solid transparent;
+}
+
+.main {
+   overflow: hidden;
+    background-color: rgba(0,0,0,0.6);
+    font-family: Arial;
+	border-bottom-left-radius:20px;
+	border-top-right-radius:20px;
+}
+.main a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.drop {
+    float: left;
+    overflow: hidden;
+}
+.drop .btn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+.main a:hover, .drop:hover .btn {
+    background-color: red;
+}
+.content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.content a:hover {
+    background-color: #ddd;
+}
+.show {
+    display: block;
+}
+.drop2 {
+    float: left;
+    overflow: hidden;
+}
+.drop2 .btn2 {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.main a:hover, .drop2:hover .btn2 {
+    background-color: red;
+}
+.content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.content2 a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.content2 a:hover {
+    background-color: #ddd;
+}
+.show2 {
+    display: block;
+}
+.drop1 {
+    float: left;
+    overflow: hidden;
+}
+.drop1 .btn1 {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+.main a:hover, .drop1:hover .btn1 {
+    background-color: red;
+}
+.content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+.content1 a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.content1 a:hover {
+    background-color: #ddd;
+}
+.show1 {
+    display: block;
+}
+#describe{
+	text-align:center;
+	padding-top:190px;
+	padding-bottom:190px;
+	background-color:#FCE4EC;
+	height:200px;
+	max-width:100%}
+#popular
+	{
+		background-color:#FFAB91;
+		padding-top:20px;
+		padding-left:5px;
+		padding-bottom:-200px;
+		font-family:'Amarante';
+		height:800px;
+		max-width:100%
+	}
+#popular h2{
+	font-size:30px;
+	color:#795548;
+
+	text-align:center;}
+.card {
+	position:relative;
+	top:60px;
+	left:70px;
+	width:20%;
+   box-shadow: 5px 5px 3px #888888;
+    transition: 0.3;
+    border-radius: 5px;
+}
+.card1 {
+
+	position:relative;
+	bottom:185px;
+	left:530px;
+	width:20%;
+   box-shadow: 5px 5px 3px #888888;
+    transition: 0.3;
+    border-radius: 5px;
+}
+.card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card2 {
+
+	position:relative;
+	bottom:430px;
+	left:1000px;
+	width:20%;
+   box-shadow: 5px 5px 3px #888888;
+    transition: 0.3;
+    border-radius: 5px;
+}
+.card2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card3 {
+
+	position:relative;
+	bottom:330px;
+	left:40%;
+	width:20%;
+   box-shadow: 5px 5px 3px #888888;
+    transition: 0.3;
+    border-radius: 5px;
+}
+.card3:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+img {
+    border-radius: 5px 5px 0 0;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container1 {
+    padding: 2px 16px;
+	background-color:white;
+}
+.container1 a{
+	text-decoration:none;
+}
+#services{
+	background-color:#FFEBEE;
+	height:500px;
+	max-width:100%
+}
+#services h2{
+	padding-top:15px;
+	text-align:center;
+	font-family:'Amarante';
+	font-size:30px;
+
+color:#BCAAA4;
+}
+#edu{
+padding-left:40px;
+position:relative;
+top:150px;}
+#ed h4{
+	padding-left:30px;
+	position:relative;
+	top:165px;
+}
+#ico{
+	position:relative;
+	left:620px;
+	top:50px;
+}
+#vote h4{
+	padding-left:520px;
+	position:relative;
+	top:70px;
+}
+#rest{
+	position:relative;
+	bottom:35px;
+	padding-left:1150px;
+}
+#rest h4{
+	position:relative;
+	right:20px;
+	padding-top:15px;
+}
+#abt{
+	background-color:#81D4FA;
+	height:500px;
+
+}
+#content{
+	border-radius:10px 10px 10px 10px;
+	background-color:#E0F2F1;
+	position:relative;
+	top:40px;
+	left:16%;
+	width:70%;
+	box-shadow:7px 7px 5px #888888;
+	height:50%;
+}
+@media screen and (max-width:655px)
+{
+	#content{
+	top:20px;
+	height:80%;
+}
+}
+#content p{
+	text-align:center;
+	padding-top:25px;
+	padding-left:5px;
+	padding-right:5px;
+}
+#abt h2{
+	text-align:center;
+	font-family:'Amarante';
+padding-top:15px;
+color:#BCAAA4;
+font-size:30px;
+	}
+
+
+
+
+
+
+
+#demo{
+	position:relative;
+	right:200px;
+	top:100px;
+}
+
+
+
+
+
+#blog
+	{
+		background-color:#F0F4C3;
+		padding-top:200px;
+		padding-bottom:200px;
+		text-align:center;
+	}
+	#about{
+		background-color:white;
+		padding-top:100px;
+		padding-bottom:100px;
+		text-align:center;
+	}
+
+
+
+
+
+#foot p{
+text-align:center;
+background-color:#616161;
+}
+#sdf{
+text-align:center;
+
+}
+
+}
+.fa {
+    padding: 5px;
+	height:50px;
+    font-size: 70px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-youtube {
+    background: red;
+    color: white;
+}
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myUL {
+/* Remove default list styling */
+  list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+ margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a.header {
+    background-color: #e2e2e2; /* Add a darker background color for headers */
+  cursor: default; /* Change cursor style */
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+ Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3e8e41;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;
+z-index:20;}
+
+
+
+
+
+.slideanim {visibility:hidden;}
+.slide {
+
+    animation-name: slide;
+    -webkit-animation-name: slide;
+
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+
+    visibility: visible;
+}
+
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}

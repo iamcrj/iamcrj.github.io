@@ -58,12 +58,12 @@ padding-top:20px;}
 
 </style>
 	  </head>
-	
-	  <body>
+<body>
 	  <?php
-	  if(isset($_COOKIE['username']))
+	  session_start();
+	  if(isset($_SESSION['username']))
 	  {
-	  echo 'You are logged in as'.$_COOKIE['username'];
+	  echo 'You are logged in as'.$_SESSION['username'];
 	  }
 	  ?>
 	  <div class="hero-text">

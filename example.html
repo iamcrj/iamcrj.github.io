@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>example</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function hellobaba()
+      {
+        var xhr=new XMLHttpRequest();
+  xhr.onreadystatechange=function()
+  {
+  if(xhr.readyState==4 && xhr.status==200)
+  {
+    console.log(xhr.responseXML);
+    document.getElementById('text').innerHTML=xhr.responseXML;
+  }
+  }
+        xhr.open("GET","myinfo.xml",true);
+        xhr.send();
+      }
+    </script>
+    <p id="text">Hello,Dell</p>
+    <button type="button" name="button" onclick="hellobaba()">Click</button>
+
+  </body>
+</html>
