@@ -298,13 +298,7 @@ border:1px solid black;
 	margin-bottom:20px;
 
 }
-#adunit
-{
-width:100%;}
-#ad
-{
-    width:10%;
-}
+
 #myTable1 {
     border-collapse: collapse; /* Collapse borders */
     width: 100%; /* Full-width */
