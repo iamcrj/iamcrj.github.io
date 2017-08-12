@@ -294,9 +294,16 @@ footer{
 	left:5%;
 	margin-top:2px;
 border:1px solid black;
-  width:70%;
+  width:85%;
 	margin-bottom:20px;
 
+}
+#adunit
+{
+width:100%;}
+#ad
+{
+    width:10%;
 }
 #myTable1 {
     border-collapse: collapse; /* Collapse borders */
