@@ -4,21 +4,20 @@
     <link rel="stylesheet" type="text/css" href="main1.css">
   </head>
 <body>
-  <?php
-  session_start();
-  ?>
+  
   <div class="header">
     <div class="inner-header">
-    <div class="logo"><a href="roamudaipur.php">RoamUdaipur.com</a></div>
-    <div class="header-link"><a id="login" href="logoutscript.php">Log Out</a></div>
-    <div class="header-link"><Button id="login" onclick="openProfile()">Profile</Button></div>
-    <div class="header-link"><a id="login" href="home.php">Home</a></div>
+    <div class="logo"><a href="index.html">RoamUdaipur.com</a></div>
+    <!--<div class="header-link"><a id="login" href="logoutscript.php">Log Out</a></div>-->
+       <div class="header-link"><Button id="login" onclick="openCont()">Contents</Button></div>
+    <!--<div class="header-link"><Button id="login" onclick="openProfile()">Profile</Button></div>-->
+    <div class="header-link"><a id="login" href="home.html">Home</a></div>
     </div>
     </div>
   <div>
-    <img src="fs1.jpg" alt="" class="slideshow">
-    <img src="pic.jpg" alt="" class="slideshow" >
-    <img src="swr.jpg" alt="" class="slideshow" >
+    <img src="railways.jpg" alt="" class="slideshow">
+    <img src="railway1.jpg" alt="" class="slideshow" >
+    <img src="railway2.jpg" alt="" class="slideshow" >
   </div>
 <script>
 var si = 0;
@@ -32,254 +31,55 @@ function slides() {
     }
     si++;
     if (si > x.length) {si = 1}
-    x[si-1].style.display = "block"; 
+    x[si-1].style.display = "block";
     setTimeout(slides, 2000);
 }
-function search() {
-
-    var input, filter, ul, li, a, i;
-    input = document.getElementById('myInput');
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName('li');
-
-
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("h4")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-function searchair1() {
-  // Declare variables
-  var input, filter, table, tr, td, i;
-  input = document.getElementById("myInput1");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable1");
-  tr = table.getElementsByTagName("tr");
-
-  // Loop through all table rows, and hide those who don't match the search query
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }
-  }
-}
-function searchair2() {
-  // Declare variables
-  var input, filter, table, tr, td, i;
-  input = document.getElementById("myInput2");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable2");
-  tr = table.getElementsByTagName("tr");
-
-  // Loop through all table rows, and hide those who don't match the search query
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }
-  }
-}
-function searchair3() {
-  // Declare variables
-  var input, filter, table, tr, td, i;
-  input = document.getElementById("myInput3");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable3");
-  tr = table.getElementsByTagName("tr");
-
-  // Loop through all table rows, and hide those who don't match the search query
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }
-  }
+function openProfile() {
+    document.getElementById("profile_show").style.width = "50%";
 }
 
-function searchrail() {
-  // Declare variables
-  var input, filter, table, tr, td, i;
-  input = document.getElementById("myInput4");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable4");
-  tr = table.getElementsByTagName("tr");
-
-  // Loop through all table rows, and hide those who don't match the search query
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }
-  }
+function closeProfile() {
+    document.getElementById("profile_show").style.width = "0";
+}
+function openCont() {
+    document.getElementById("contents_show").style.width = "50%";
 }
 
-
-function myFunctio(event)
- {
-	 var targo=event.target;
-	 if(targo.id=="fgh")
-	 {var x = document.getElementById('myDIV');
-	 }
-		  else if(targo.id=="rpp")
-		     {
-			var x=document.getElementById('myDIV1');
-		     }
-			  else if(targo.id=="lp")
-		     {
-			var x=document.getElementById('myDIV2');
-		     }
-			   else if(targo.id=="rbu")
-		     {
-			var x=document.getElementById('myDIV3');
-		     }
-			   else if(targo.id=="llv")
-		     {
-			var x=document.getElementById('myDIV4');
-		     }
-			   else if(targo.id=="lpu")
-		     {
-			var x=document.getElementById('myDIV5');
-		     }
-			   else if(targo.id=="ou")
-		     {
-			var x=document.getElementById('myDIV6');
-		     }
-			   else if(targo.id=="th")
-		     {
-			var x=document.getElementById('myDIV7');
-		     }
-			   else if(targo.id=="ah")
-		     {
-			var x=document.getElementById('myDIV8');
-		     }
-			   else if(targo.id=="hhl")
-		     {
-			var x=document.getElementById('myDIV9');
-		     }
-			   else if(targo.id=="hs")
-		     {
-			var x=document.getElementById('myDIV10');
-		     }
-			   else if(targo.id=="hrp")
-		     {
-			var x=document.getElementById('myDIV11');
-		     }
-			   else if(targo.id=="fj")
-		     {
-			var x=document.getElementById('myDIV12');
-		     }
-
-          if (x.style.display === 'none')
-		  {
-            x.style.display = 'block';
-          }
-		  else {
-            x.style.display = 'none';
-              }
-
-	}
-
-/* Set the width of the side navigation to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
-
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-}
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function myFunction1() {
-    document.getElementById("myDropdown1").classList.toggle("show1");
-}
-function myFunction2() {
-    document.getElementById("myDropdown2").classList.toggle("show2");
-}
-window.onclick = function(e) {
-  if (!e.target.matches('.btn1')) {
-    var myDropdown = document.getElementById("myDropdown1");
-      if (myDropdown.classList.contains('show1')) {
-
-        myDropdown.classList.remove('show1');
-      }
-  }
-  if (!e.target.matches('.btn')) {
-    var myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains('show')) {
-
-        myDropdown.classList.remove('show');
-      }
-  }
-  if (!e.target.matches('.btn2')) {
-    var myDropdown = document.getElementById("myDropdown2");
-      if (myDropdown.classList.contains('show2')) {
-
-        myDropdown.classList.remove('show2');
-      }
-  }
+function closeCont() {
+    document.getElementById("contents_show").style.width = "0";
 }
 </script>
-
-<div class="main">
-
-  <div class="drop2">
-    <button class="btn2" onclick="myFunction2()">Hotels & Restaurants</button>
-    <div class="content2" id="myDropdown2">
-      <a href="4&5star.html">5 & 4 Star Hotels</a>
-      <a href="2&3star.html">3 & 2 Star Hotels</a>
-      <a href="restaurants.html">Restaurants</a>
-    </div>
-  </div>
-  <div class="drop">
-    <button class="btn" onclick="myFunction()">Places To See</button>
-    <div class="content" id="myDropdown">
-      <a href="lakes.html">Lakes</a>
-      <a href="museums.html">Museums</a>
-      <a href="temples.html">Forts</a>
-    </div>
-  </div>
-  <div class="drop1">
-    <button class="btn1" onclick="myFunction1()">How To Reach</button>
-    <div class="content1" id="myDropdown1">
-      <a href="airways.html">Airways</a>
-      <a href="#">Railways</a>
-      <a href="#">Roadways</a>
-    </div>
-  </div>
+<div id="profile_show" class="profile">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeProfile()">&times;</a>
+  <div id="pro_head"><h1>Profile</h1></div>
+  <br/><br/>
+  <div id="pro_element"><h2>Username:&nbsp; &nbsp;<?php echo $_SESSION['username'];?></h2></div>
+  <div id="pro_element1"><h2>E-Mail:&nbsp; &nbsp;<?php
+$con=mysqli_connect('localhost','root','','users');
+$query="SELECT * FROM users.users_data WHERE username='$name'";
+$data=mysqli_query($con,$query);
+$row=mysqli_fetch_array($data);
+echo $row['email'];?></h2></div>
+  <a style="margin-top:295px; font-size:16px; text-align:center; color:black;" href="roamudaipur.php">&copy;RoamUdaipur.com</a>
 </div>
-<div id="searched">
+<div class="profile" id="contents_show">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeCont()">&times;</a>
+    <h2 style="text-align:center;"><u>Contents</u></h2>
+    <br/>
+    <br/>
+  <i><a href="lakes.php">Lakes</a></i>
+  <i><a href="temples.php">Temples</a></i>
+    <i><a href="museums.php">Museums</a></i>
+      <i><a href="2&3star.php">2&3 Star Hotels</a></i>
+        <i><a href="restaurants.php">Restaurants</a></i>
+          <i><a href="4&5star.php">4&5 Star Hotels</a></i>
+            <i><a href="airways.php">Airways</a></i>
+<a style="margin-top:95px; text-align:center; font-size:16px; color:black;" href="roamudaipur.php">&copy;RoamUdaipur.com</a>
+</div>
 <div id="jkk"><h2>Railways</h2></div>
-<input type="text" id="myInput4" onkeyup="searchrail()" placeholder="Search for names..">
-
+<div id="searched">
 <table id="myTable4">
-  <tr class="header">
+  <tr class="tr-header">
     <th>Train No.</th>
     <th>Train Name</th>
 	<th>Origin</th>
@@ -441,3 +241,8 @@ window.onclick = function(e) {
  </tr>
 </table>
 </div>
+<footer>
+<div class="container" >
+<p style="text-align:center; padding:15px;">Copyright &copy;Roam Udaipur.All Rights Reserved | Contact Us:+91 8290755844</p>
+</div>
+</footer>

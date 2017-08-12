@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <link rel="stylesheet" type="text/css" href="main1.css">
-  </head>
-
+     <link rel="stylesheet" type="text/css" href="main1.css">
+	 </head>
 <body>
-<script src="restro.js"></script>
-<div class="hero-text">
-  <h2>roam udaipur</h2>
-  <ul id="headerul">
-  <li><a href="index.html">Home</a></li>
- <li><a href="aboutus.html">About Us</a></li>
-  <li><a href="contactus.html">Contact Us</a></li>
-  <li><a href="next.html">What's Next?</a></li>
-</ul></div>
-<div id="slideshow">
-<img class="mySlides" src="fs2.jpg" style="width:100% height:20%"  >
-<img class="mySlides" src="pic.jpg"style="width:100% height:20%" >
-<img class="mySlides" src="swr.jpg"  style="width:100% height:20%">
-</div>
+ 
+  <div class="header">
+  <div class="inner-header">
+  <div class="logo"><a href="index.html">RoamUdaipur.com</a></div>
+ <!-- <div class="header-link"><a id="login" href="logoutscript.php">Log Out</a></div>-->
+  <div class="header-link"><Button id="login" onclick="openCont()">Contents</Button></div>
+  <!--<div class="header-link"><Button id="login" onclick="openProfile()">Profile</Button></div>-->
+  <div class="header-link"><a id="login" href="home.html">Home</a></div>
+  </div>
+  </div>
+  <div>
+  <img src="fs1.jpg" alt="" class="slideshow">
+  <img src="pic.jpg" alt="" class="slideshow" >
+  <img src="swr.jpg" alt="" class="slideshow" >
+  </div>
 <script>var si = 0;
 slides();
 function slides() {
     var i;
-    var x = document.getElementsByClassName("mySlides");
+    var x = document.getElementsByClassName("slideshow");
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
     }
@@ -32,37 +32,50 @@ function slides() {
     x[si-1].style.display = "block";
     setTimeout(slides, 2000);
 }
+function openProfile() {
+    document.getElementById("profile_show").style.width = "50%";
+}
+
+function closeProfile() {
+    document.getElementById("profile_show").style.width = "0";
+}
+function openCont() {
+    document.getElementById("contents_show").style.width = "50%";
+}
+
+function closeCont() {
+    document.getElementById("contents_show").style.width = "0";
+}
 </script>
-<div class="main">
-
-  <div class="drop2">
-    <button class="btn2" onclick="myFunction2()">Hotels & Restaurants</button>
-    <div class="content2" id="myDropdown2">
-      <a href="4&5star.html">5 & 4 Star Hotels</a>
-      <a href="2&3star.html">3 & 2 Star Hotels</a>
-      <a href="restaurants.html">Restaurants</a>
-    </div>
-  </div>
-  <div class="drop">
-    <button class="btn" onclick="myFunction()">Places To See</button>
-    <div class="content" id="myDropdown">
-      <a href="#">Lakes</a>
-      <a href="museums.html">Museums</a>
-      <a href="temples.html">Temples</a>
-    </div>
-  </div>
-  <div class="drop1">
-    <button class="btn1" onclick="myFunction1()">How To Reach</button>
-    <div class="content1" id="myDropdown1">
-      <a href="airways.html">Airways</a>
-      <a href="railways.html">Railways</a>
-      <a href="#">Roadways</a>
-    </div>
-  </div>
+<div id="profile_show" class="profile">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeProfile()">&times;</a>
+  <div id="pro_head"><h1>Profile</h1></div>
+  <br/><br/>
+  <div id="pro_element"><h2>Username:&nbsp; &nbsp;<?php echo $_SESSION['username'];?></h2></div>
+  <div id="pro_element1"><h2>E-Mail:&nbsp; &nbsp;<?php
+$con=mysqli_connect('localhost','root','','users');
+$query="SELECT * FROM users.users_data WHERE username='$name'";
+$data=mysqli_query($con,$query);
+$row=mysqli_fetch_array($data);
+echo $row['email'];?></h2></div>
+  <a style="margin-top:295px; font-size:16px; text-align:center; color:black;" href="roamudaipur.php">&copy;RoamUdaipur.com</a>
 </div>
-<div id="searched">
-
+<div class="profile" id="contents_show">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeCont()">&times;</a>
+    <h2 style="text-align:center;"><u>Contents</u></h2>
+    <br/>
+    <br/>
+  <i><a href="museums.php">Museums</a></i>
+  <i><a href="temples.php">Temples</a></i>
+    <i><a href="4&5star.php">4&5 Star Hotels</a></i>
+      <i><a href="2&3star.php">2&3 Star Hotels</a></i>
+        <i><a href="restaurants.php">Restaurants</a></i>
+          <i><a href="airways.php">Airways</a></i>
+            <i><a href="railways.php">Railways</a></i>
+<a style="margin-top:95px; text-align:center; font-size:16px; color:black;" href="roamudaipur.php">&copy;RoamUdaipur.com</a>
+</div>
 <div id="jkk"><h2>Lakes</h2></div>
+<div id="searched" style="border:none; height:600px;">
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'fs')" id="defaultOpen">Fateh Sagar Lake</button>
   <button class="tablinks" onclick="openCity(event, 'pl')">Pichola Lake</button>
@@ -77,7 +90,7 @@ function slides() {
 
 <div id="fs" class="tabcontent">
   <h3>Fateh Sagar Lake</h3>
-  <img src="fs3.jpg" style="width:80%; height:50%;">
+  <img src="fateh.jpg" style="width:80%; height:50%;">
   <p>It is an artificial lake named after Maharana Fateh Singh of Udaipur and Mewar, constructed north-west of Udaipur.Within the confines of the Fatah Sagar Lake,
   there are three small islands; the largest of these is the Nehru Park, which is a popular tourist attraction, the second island houses a public park with an
   impressive water-jet fountain, and the third island is the address for the Udaipur Solar Observatory (USO). The Nehru park is accessible by inboard motor
@@ -96,7 +109,7 @@ incomplete with a boat ride. At the time sun-set, a boat ride in this lake is su
 
 <div id="us" class="tabcontent">
   <h3>Udai Sagar Lake</h3>
-  <img src="fs3.jpg" style="width:80%; height:50%;">
+  <img src="udai.jpg" style="width:80%; height:50%;">
   <p>Udaisagar Lake, one of the five prominent lakes of Udaipur,[1] is situated around 13 km in the east of Udaipur. This lake was built
   by Maharana Udai Singh in 1565. Udai Sagar Lake is around 4 km in length, 2.5 km in width and 9 meters deep at the maximum.
   The Udai Sagar Lake is approachable by road from the Udaipur City. Visitors can take Local buses, Tongas, auto-rickshaws and taxis to reach Udai Sagar. There is no entry
@@ -125,7 +138,7 @@ At sunset, the waters of the lake glitter with the startling light of the sun.</
 </div>
 <div id="dt" class="tabcontent">
   <h3>Dudh Talai Lake</h3>
-  <img src="dt.jpg" style="width:80%; height:50%;">
+  <img src="dudh.jpg" style="width:80%; height:50%;">
 <p>Doodh Talai is a small lake that adores the south-east direction of Pichola Lake. Located in the southern side of Shiv Niwas Palace, Dudh Talai contributes
 to the waters of Lake Pichola. This stream adds to the picturesque triangle in the company of Pichola on one side, Doodh Talai on the second
 and M.L. Verma Garden on the third. The Doodh Talai Lake is located very much near the center of the Udaipur City.[citation needed] It is around 24 km away from
@@ -134,7 +147,7 @@ to reach Doodh Talai.</p>
 </div>
 <div id="bt" class="tabcontent">
   <h3>Jiyan Sagar (Badi Ka Talab)</h3>
-  <img src="badi.jpg" style="width:80%; height:50%;">
+  <img src="jiyan.jpg" style="width:80%; height:50%;">
 <p>Jiyan Sagar is another striking lake, located in the village of Badi. Built by Maharana Raj Singh, Jiyan Sagar was built to deal with the problem of famine in the area.
 The lake was named after Jana Devi, mother of Raj Singh. Jiyan Sagar is also known as Badi Ka Talab. It sprawls in an area of 155 sq. km. and the embankment
 of the lake extends to the length of 180 meters and width of 18 meters. Jiyan Sagar also adores three artistic kiosks (chattris). </p>
@@ -145,6 +158,7 @@ of the lake extends to the length of 180 meters and width of 18 meters. Jiyan Sa
 <p>Swaroop Sagar is a small artificial lake that was created by Maharana Swaroop Singh. The lake was subsequently named after him. It is also known as
 Kumharia Talab. Located behind the famous Jagdish Temple, Kumharia Talab is near Chand Pol adjoining Rangsagar. The lake was actually built to provide water to the people of Udaipur.
 Kumharia Talab is connected with Lake Pichola and Fateh Sagar Lake. </p>
+</div>
 </div>
 <script>
 function openCity(evt, cityName) {
@@ -160,12 +174,12 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-
-// Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
 <footer>
 <div class="container" >
-<p style="text-align:center; padding-top:10px;">Copyright &copy;Roam Udaipur.All Rights Reserved | Contact Us:+91 8290755844</p>
+<p style="text-align:center; padding:20px;">Copyright &copy;Roam Udaipur.All Rights Reserved | Contact Us:+91 8290755844</p>
 </div>
 </footer>
+</body>
+</html>
