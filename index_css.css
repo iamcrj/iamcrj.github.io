@@ -8,7 +8,9 @@ a{
 	background-color:transparent;
 	color:#ededed;
 }
-.header{
+@media screen and (min-width:501px)
+    {
+        .header{
 	background-color:#000;
 	color:#fff;
 	border-color:#080808;
@@ -71,6 +73,7 @@ animation-name: animatedivs;
 animation-duration: 2s;
 height:200px;
 }
+      
 .banner-content2{
 	position: absolute;
 	top:30%;
@@ -212,9 +215,375 @@ footer{
 	width:30%;
 	height:30%;
 }
+         .otherclass
+    {
+        width:50%;
+    }
+    .otherclassc
+    {
+        width:0;
+    }
 #developer
 {
 	position: absolute;
 	left:50%;
 	top:60%;
+}
+        .sidenav
+        {
+            display:none;
+        }
+        #openel
+        {
+            display:none;
+        }
+          .profile1 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+		z-index: 1;
+		 top: 0;
+    left: 0;
+    background-color: #B2DFDB;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+    .profile1 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+.profile1 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+}
+@media screen and (max-width:500px)
+{
+     .header{
+	background-color:#000;
+	color:#fff;
+	border-color:#080808;
+	min-height:50px;
+	border:1px solid transparent;
+}
+.header-link
+{
+	float:right;
+	font-size:14px;
+	height:50px;
+	padding:15px 5px;
+	font-size:16px;
+	font-weight:bold;
+}
+#login{
+    display: none;
+	background-color:black;
+	color:white;
+	border:0.5px solid transparent;
+}
+.inner-header
+{
+	width:80%;
+	margin:auto;
+}
+.logo{
+	text-align: center;
+	height:30px;
+padding:15px;
+	font-size:20px;
+	font-weight:bold;
+}
+.content{
+	min-height:600px;
+}
+.banner-image{
+	padding-bottom:0px;
+	margin-bottom:0px;
+	text-align:center;
+	color:#f8f8f8;
+	background:url("itsea.jpg") no-repeat center;
+	height:600px;
+	background-size:cover;
+}
+.inner-banner-image{
+	padding-top:12%;
+	width:80%;
+	margin:auto;
+}
+.banner-content{
+	position: absolute;
+	top:20%;
+   left:10%;
+background-color:rgba(0,0,0,0.6);
+width:60%;
+padding:10px;
+margin: 10px;
+
+animation-name: animatedivs;
+animation-duration: 2s;
+height:150px;
+}
+.banner-content2{
+	position: absolute;
+	top:60%;
+	 left:10%;
+background-color:rgba(0,0,0,0.6);
+width:60%;
+height:150px;
+padding:10px;
+    margin:10px;
+animation-name: animatedivs1;
+animation-duration: 2s;
+}
+@keyframes animatedivs
+{
+	from{top:0}
+		to{top:30%}
+}
+    @keyframes animatedivs1
+{
+	from{top:0}
+		to{top:70%}
+}
+.container{
+	width:90%;
+	margin:auto;
+	overflow:hidden;
+}
+footer{
+	background-color:#1B5E20;
+	color:#fff;
+	font-size:14px;
+}
+#clicks{
+
+		color:#fff;
+		background-color:#c9302c;
+		border-color:#ac2925;
+		box-shadow:inset 0 3px 5px rgba(0,0,0,0.125);
+		padding:6px 8px;
+		font-size:12px;
+		border-radius:6px;
+
+}
+.elements
+{
+	margin-top:5px;
+}
+.profiles
+{
+	display:block;
+	width:50%;
+	height:100%;
+	z-index:1;
+	animation-name: animPro;
+	animation-duration: 1s;
+}
+@keyframes animPro
+{
+	from{width:0%}
+		to{width:50%}
+}
+.profile {
+    height: 100%;
+    width: 0;
+    position: fixed;
+		z-index: 1;
+		 top: 0;
+    left: 0;
+    background-color: #B2DFDB;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+    .profile1 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+		z-index: 1;
+		 top: 0;
+    left: 0;
+    background-color: #B2DFDB;
+    overflow-x: hidden;
+    padding-top: 30px;
+    transition: 0.5s;
+}
+    .profile1 a {
+    padding: 2px 5px 5px 5px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+.profile1 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.profile a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+    .otherclass
+    {
+        width:100%;
+    }
+    .otherclassc
+    {
+        width:0;
+    }
+.profile .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+    .banner-content h2
+    {
+        font-size:18px;
+    }
+    .banner-content2 h2
+    {
+        font-size:18px;
+    }
+     .banner-content p
+    {
+        font-size:12px;
+    }
+    .banner-content2 p
+    {
+        font-size:12px;
+    }
+#pro_element1
+{
+	position:absolute;
+	left:20%;
+	top:40%;
+	text-align:center;
+	width:50%;
+	background-color:#F44336;
+	padding:5px;
+	color:white;
+	font-size: 13px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+
+}
+    #about_show p
+    {
+        font-size:13px;
+    }
+#pro_element
+{font-size: 13px;
+	position:absolute;
+	left:20%;
+	top:30%;
+	text-align:center;
+	width:50%;
+	background-color:#F44336;
+	padding:5px;
+	color:white;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+
+}
+#pro_head
+{
+	position: absolute;
+	left:35%;
+	text-align: center;
+	background-color: blue;
+	width:25%;
+	color:red;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+#mission h2,p
+{
+	text-align: center;
+}
+#cnto
+{   
+	text-align: center;
+    
+}
+#cnto a
+{
+	font-size: 30px;
+    color:red;
+}
+    
+#imagetag
+{ position: absolute;
+	left:5%;
+	width:30%;
+	height:20%;
+}
+#developer
+{
+	position: absolute;
+	left:45%;
+	top:60%;
+}
+    .sidenav {
+    height: 30%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    bottom:0;
+    background-color: #FCE4EC;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#navb
+    {
+        background-color:#FCE4EC;
+        border:none;
+        position:absolute;
+        left:30%;
+    }
+
+    }
+
+    
 }
