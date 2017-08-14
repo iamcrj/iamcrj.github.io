@@ -196,14 +196,20 @@ left:15%;
 		border-bottom-right-radius: 10px;
 
 	}
+    #copyv
+    {
+        padding:0px;
+    }
 
 	footer{
-		background-color:#1B5E20;
+		background-color:#1A237E;
 		color:#fff;
-		font-size:14px;
+		font-size:18px;
+        height:20%;
 	}.container{
 		width:90%;
-		margin:auto;
+		height:20%;
+        margin:auto;
 		overflow:hidden;
 	}
 	.profile {
@@ -306,7 +312,8 @@ left:15%;
 		position: absolute;
 		top:15%;
 	   left:20%;
-	background-color:rgba(80,28,156,0.4);
+	background-color:#FFCCBC;
+        opacity: 0.85;
 	width:200px;
 	padding:10px;
 	margin-bottom: 20px;
@@ -318,38 +325,49 @@ left:15%;
 	.banner-content h2{
         font-size:16px;
 		margin:10px;
-		color:#B0BEC5;
+		color:#3F51B5;
 	}
 	.banner-content3 h2{
         font-size:16px;
 		margin:10px;
-        color:#B0BEC5;
+        color:#3F51B5;
 	}
 	.banner-content2 h2{
         font-size: 16px;
 		margin:10px;
-        color:#B0BEC5;
+        color:#FFEB3B;
 	}
     .banner-content p{
-        font-size:13px;
+        font-size:15px;
 		margin:10px;
-		color:#DCEDC8;
+		color:#795548;
 	}
 	.banner-content3 p{
-        font-size:13px;
+        font-size:15px;
 		margin:10px;
-        color:#DCEDC8;
+        color:#795548;
 	}
 	.banner-content2 p{
-        font-size: 13px;
+        font-size: 15px;
 		margin:10px;
-        color:#DCEDC8;
+        color:#795548;
 	}
+    #fafa
+    {
+        display: inline-block;
+        color:black;
+        font-size: 20px;
+    }
+    #h2hu
+    {
+        display: none;
+    }
 	.banner-content2{
         position: absolute;
 		top:40%;
 		 left:20%;
-	background-color:rgba(80,28,156,0.6);
+	background-color:#FFCCBC;
+        opacity: 0.85;
 	width:200px;
 	height:100px;
         margin-bottom:20px;
@@ -363,7 +381,8 @@ left:15%;
 		 left:20%;
         margin-bottom:20px;
         padding:10px;
-	background-color:rgba(80,28,156,0.6);
+	background-color:#FFCCBC;
+        opacity: 0.85;
 	width:200px;
 	height:100px;
 	
@@ -458,7 +477,7 @@ left:10%;
 	}
 
 	footer{
-		background-color:#1B5E20;
+		background-color:#1A237E;
 		color:#fff;
 		font-size:14px;
 	}.container{
