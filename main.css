@@ -91,6 +91,10 @@ a{
 	font-weight:bold;
 	text-align:center;
 	}
+    .caption p
+    {
+        font-size: 14px;
+    }
 .container{
 	width:70%;
 	margin:auto;
