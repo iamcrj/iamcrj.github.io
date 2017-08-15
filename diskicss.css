@@ -28,7 +28,7 @@ margin:0;
 		font-weight:bold;
 		animation-name: animationdem;
 		animation-duration: 2s;
-         font-family: 'Josefin Sans';
+        font-family: 'Josefin Sans';
 	}
 	.header-link
 	{
@@ -54,8 +54,22 @@ margin:0;
 	#login{
 		background-color:black;
 		color:white;
+        margin-left: 20px;
 		border:0.5px solid transparent;
 	}
+     #copyv
+    {
+        padding:15px;
+    }
+    #disdiv
+    {
+        background-color: #F5F5F5;
+       position: absolute;
+        left:10%;
+        width:80%;
+        margin-top: 20px;
+        text-align: justify;
+    }
 	.content{
 		min-height:600px;
 	}
@@ -64,8 +78,8 @@ margin:0;
 		margin-bottom:20px;
 		text-align:center;
 		color:#f8f8f8;
-		height:500px;
-		background:url("itshea.jpg") no-repeat center;
+		height:350px;
+		background:url("fateh.jpg") no-repeat center;
 		background-size:cover;
 	}
 	.inner-banner-image{
@@ -76,8 +90,8 @@ margin:0;
 	.banner-content{
 		position: absolute;
 		top:30%;
-	   left:10%;
-	background-color:rgba(0,0,0,0.6);
+	   left:40%;
+	background-color:rgba(0,0,0,0);
 	width:200px;
 	padding:10px;
 	margin: 10px;
@@ -86,38 +100,14 @@ margin:0;
 	animation-duration: 2s;
 	height:200px;
 	}
-	.banner-content h2,p,a{
+	.banner-content h2{
+        font-size: 45px;
 		margin:20px;
-		color:#B0BEC5;
+		color:#FFFFFF;
+         font-family: 'ABeeZee';
 	}
-	.banner-content3 h2,p,a{
-		margin:20px;
-	}
-	.banner-content2 h2,p,a{
-		margin:20px;
-	}
-	.banner-content2{
-		position: absolute;
-		top:30%;
-		 left:45%;
-	background-color:rgba(0,0,0,0.6);
-	width:200px;
-	height:200px;
-	padding:10px;
-	animation-name: animatedivs;
-	animation-duration: 2s;
-	}
-	.banner-content3{
-		position: absolute;
-		top:30%;
-		 left:80%;
-	background-color:rgba(0,0,0,0.4);
-	width:200px;
-	height:200px;
-	padding:10px;
-	animation-name: animatedivs;
-	animation-duration: 2s;
-	}
+	
+	
 	@keyframes animatedivs
 	{
 		from{top:0}
@@ -157,6 +147,11 @@ left:15%;
 		margin-bottom: 20px;
 
 	}
+     #disdiv p
+    {
+        font-family: 'Junge';
+        
+    }
 	#pro_head
 	{
 		position: absolute;
@@ -241,7 +236,7 @@ left:15%;
 }
 @media screen and (max-width:500px)
 {
-    .header{
+.header{
 		background-color:#000;
 		color:#fff;
 		border-color:#080808;
@@ -255,13 +250,13 @@ left:15%;
 	}
 	.logo{
 		text-align: center;
-		height:30px;
+		height:20px;
 	padding:15px;
-		font-size:22px;
+		font-size:20px;
 		font-weight:bold;
 		animation-name: animationdem;
 		animation-duration: 2s;
-         font-family: 'Josefin Sans';
+        font-family: 'Josefin Sans';
 	}
 	.header-link
 	{
@@ -288,8 +283,24 @@ left:15%;
         display: none;
 		background-color:black;
 		color:white;
+        margin-left: 20px;
 		border:0.5px solid transparent;
 	}
+     #copyv
+    {
+        padding:15px;
+    }
+    #disdiv
+    {
+       height:50%;
+       width:90%;
+       margin-left:15px;
+        margin-bottom: 20px;
+        margin-right:15px;
+        text-align: justify;
+      
+    }
+   
 	.content{
 		min-height:600px;
 	}
@@ -298,8 +309,8 @@ left:15%;
 		margin-bottom:20px;
 		text-align:center;
 		color:#f8f8f8;
-		height:500px;
-		background:url("itshea.jpg") no-repeat center;
+		height:350px;
+		background:url("fateh.jpg") no-repeat center;
 		background-size:cover;
 	}
 	.inner-banner-image{
@@ -307,95 +318,30 @@ left:15%;
 		width:80%;
 		margin:auto;
 	}
-     #copyv
-    {
-        padding:15px;
-    }
 	.banner-content{
 		position: absolute;
-		top:15%;
-	   left:20%;
-	background-color:#FFCCBC;
-        opacity: 0.85;
-	width:200px;
-	padding:10px;
-	margin-bottom: 40px;
+	top:30%;
+	 left:15%;
+width:200px;
+padding:10px;
+margin: 10px;
 
-	animation-name: animatedivs;
-	animation-duration: 2s;
-	height:100px;
+animation-name: animatedivs;
+animation-duration: 2s;
+height:200px;
 	}
 	.banner-content h2{
-        font-size:16px;
-		margin:10px;
-		color:#3F51B5;
+        font-size: 45px;
+		margin:20px;
+		color:#FFFFFF;
+         font-family: 'ABeeZee';
 	}
-	.banner-content3 h2{
-        font-size:16px;
-		margin:10px;
-        color:#3F51B5;
-	}
-	.banner-content2 h2{
-        font-size: 16px;
-		margin:10px;
-        color:#FFEB3B;
-	}
-    .banner-content p{
-        font-size:15px;
-		margin:10px;
-		color:#795548;
-	}
-	.banner-content3 p{
-        font-size:15px;
-		margin:10px;
-        color:#795548;
-	}
-	.banner-content2 p{
-        font-size: 15px;
-		margin:10px;
-        color:#795548;
-	}
-    #fafa
-    {
-        display: inline-block;
-        color:black;
-        font-size: 20px;
-    }
-    #h2hu
-    {
-        display: none;
-    }
-	.banner-content2{
-        position: absolute;
-		top:45%;
-		 left:20%;
-	background-color:#FFCCBC;
-        opacity: 0.85;
-	width:200px;
-	height:100px;
-        margin-bottom:35px;
-        padding:10px;
-	animation-name: animatedivs;
-	animation-duration: 2s;
-	}
-	.banner-content3{
-		position: absolute;
-		top:75%;
-		 left:20%;
-        margin-bottom:10px;
-        padding:10px;
-	background-color:#FFCCBC;
-        opacity: 0.85;
-	width:200px;
-	height:100px;
 	
-	animation-name: animatedivs;
-	animation-duration: 2s;
-	}
+	
 	@keyframes animatedivs
 	{
-		from{left:0}
-			to{left:20%}
+		from{top:0}
+			to{top:30%}
 	}
 	#clicks{
 
@@ -403,37 +349,30 @@ left:15%;
 			background-color:#c9302c;
 			border-color:#ac2925;
 			box-shadow:inset 0 3px 5px rgba(0,0,0,0.125);
-			padding:5px 7px;
-			margin-top:10px;
-			font-size:12px;
-			border-radius:4px;
+			padding:10px 12px;
+			margin-top:20px;
+			font-size:14px;
+			border-radius:6px;
 
 	}
-	#mission h2
+	#mission h2,a
 	{
-        margin-top: 20px;
-        font-size: 16px;
 		text-align: center;
 	}
-    #mission a
-    {
-        text-align: center;
-        font-size: 14px;
-    }
 	.elements
 	{
-		margin-top:2px;
+		margin-top:5px;
 	}
 	#abt
 	{
-		
+		background-color: #FFCCBC;
 		text-align: center;
-		width:80%;
+		width:70%;
 position: relative;
-left:10%;
+left:15%;
 		color:black;
-		border:none;
-		height:60%;
+		border:1px solid black;
+		height:200px;
 		border-radius:12px;
 		margin-bottom: 20px;
 
@@ -449,6 +388,11 @@ left:10%;
 		border-top-left-radius: 10px;
 		border-bottom-right-radius: 10px;
 	}
+    #disdiv p
+    {
+        font-family: 'Junge';
+        
+    }
 	#pro_element1
 	{
 		position:absolute;
@@ -478,14 +422,17 @@ left:10%;
 		border-bottom-right-radius: 10px;
 
 	}
+   
 
 	footer{
 		background-color:#1A237E;
 		color:#fff;
-		font-size:14px;
+		font-size:18px;
+        height:20%;
 	}.container{
 		width:90%;
-		margin:auto;
+		height:20%;
+        margin:auto;
 		overflow:hidden;
 	}
 	.profile {
@@ -495,7 +442,7 @@ left:10%;
 			z-index: 1;
 			 top: 0;
 	    left: 0;
-	    background-color:#F1F8E9;
+	    background-color: #B2DFDB;
 	    overflow-x: hidden;
 	    padding-top: 60px;
 	    transition: 0.5s;
@@ -516,5 +463,4 @@ left:10%;
 	    font-size: 36px;
 	    margin-left: 50px;
 	}
-
 }
