@@ -11,7 +11,9 @@ a{
 	background-color:transparent;
 	color:#ededed;
 }
-.inner-header
+@media screen and (min-width:501px)
+{
+    .inner-header
 {
 	width:80%;
 	margin:auto;
@@ -24,6 +26,7 @@ padding-top:15px;
 	font-weight:bold;
 	animation-name: animationdem;
 	animation-duration: 2s;
+     font-family: 'Josefin Sans';
 }
 @keyframes animationdem
 {
@@ -101,7 +104,8 @@ div.tab Button {
 		text-align: left;
 		cursor: pointer;
 		transition: 0.3s;
-		font-size: 17px;
+		font-size: 19px;
+     font-family: 'Aladin';
 }
 div.tab button:hover {
 		background-color: #ddd;
@@ -112,25 +116,29 @@ div.tab button.active {
 .tabcontent {
 		position:absolute;
 		left:25%;
+    margin-bottom: 20px;
 		margin-top:15px;
 		padding: 0px 12px;
 		border: 1px solid #ccc;
 		width: 70%;
 		border-left: none;
-		height: 550px;
+		height: 600px;
 		background-color: white;
 }
 .tabcontent h3
 {
 	text-align: center;
 	margin:10px;
+     font-family: 'Aclonica';
 
 }
 .tabcontent p
 {
-	text-align: center;
+	text-align: justify;
 	margin:20px;
-	margin-top:50px;
+	margin-top:30px;
+     font-family: 'Sanchez';
+    line-height: 120%;
 
 }
 .tabcontent img
@@ -158,10 +166,11 @@ div.tab button.active {
 		padding: 8px 8px 8px 32px;
 		text-decoration: none;
 		font-size: 25px;
-		color: #818181;
+		color: blueviolet;
 		display: block;
 		transition: 0.3s;
 		text-align: center;
+     font-family: 'Share Tech';
 }
 .profile .closebtn {
 		position: absolute;
@@ -210,15 +219,25 @@ div.tab button.active {
 	border-bottom-right-radius: 10px;
 
 }
+    #openel
+    {
+        display: none;
+    }
+    #copyv
+    {
+        padding:20px;
+    }
 footer{
-	background-color:#1B5E20;
-	color:#fff;
-	font-size:14px;
-}.container{
-	width:90%;
-	margin:auto;
-	overflow:hidden;
-}
+		background-color:#1A237E;
+		color:#fff;
+		font-size:18px;
+        height:20%;
+	}.container{
+		width:90%;
+		height:20%;
+        margin:auto;
+		overflow:hidden;
+	}
 #myTable4 {
     border-collapse: collapse; /* Collapse borders */
     width: 100%; /* Full-width */
@@ -256,6 +275,7 @@ footer{
 	color:white;
 	text-align:center;
 	padding:15px;
+          font-family: 'Finger Paint';
 	}
 	@keyframes animh2
 	{
@@ -292,6 +312,518 @@ footer{
 #searched
 { position: relative;
 	left:5%;
+	margin-top:20px;
+border:1px solid black;
+  width:90%;
+	margin-bottom:20px;
+
+}
+
+#myTable1 {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+}
+
+#myTable1 th, #myTable1 td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+}
+
+#myTable1 tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+}
+
+#myTable1 tr.header, #myTable1 tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+}
+	#myInput2 {
+    background-image: url('http://i47.tinypic.com/r02vbq.png'); /* Add a search icon to input */
+    background-position: -12px -10px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 30%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable2 {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+}
+
+#myTable2 th, #myTable2 td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+}
+
+#myTable2 tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+}
+
+#myTable2 tr.header, #myTable2 tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+}
+	#myInput3 {
+    background-image: url('http://i47.tinypic.com/r02vbq.png'); /* Add a search icon to input */
+    background-position: -12px -10px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 30%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable3 {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+}
+
+#myTable3 th, #myTable3 td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+}
+
+#myTable3 tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+}
+
+#myTable3 tr.header, #myTable3 tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+}
+
+#myUL {
+text-align: center;
+    padding: 0;
+    margin-top: 40px;
+margin-bottom:40px;
+	 }
+
+#myUL li h4{
+	width:40%;
+	margin-left:40px;
+    border: 1px solid #ddd;
+margin-bottom:10px;
+    background-color: #B2EBF2;
+    padding: 12px;
+   text-decoration:none;
+    font-size: 18px;
+    color: black;
+    display: block;
+	cursor:pointer;
+	position:relative;
+	margin-top:-1px;
+}
+
+
+
+
+#myUL li h4.header {
+    background-color: #e2e2e2;
+    cursor: default;
+}
+
+
+#myUL li h4:hover:not(.header) {
+    background-color: #eee;
+}
+#myDIV3 {
+    width: 40%;
+    padding: 30px 0;
+    text-align: center;
+    background-color: #B2DFDB;
+ margin-bottom:8px;
+	box-shadow:3px 3px 1px #888888;
+margin-left:40px;}
+#myDIV4 {
+    width: 40%;
+    padding: 30px 0;
+    text-align: center;
+    background-color: lightblue;
+ margin-bottom:8px;
+	box-shadow:3px 3px 1px #888888;
+margin-left:40px;}
+#myDIV5 {
+    width: 40%;
+    padding: 30px 0;
+    text-align: center;
+    background-color: lightblue;
+ margin-bottom:8px;
+	box-shadow:3px 3px 1px #888888;
+margin-left:40px;}
+#myDIV6 {
+    width: 40%;
+    padding: 30px 0;
+    text-align: center;
+    background-color: lightblue;
+ margin-bottom:8px;
+margin-left:40px;	box-shadow:3px 3px 1px #888888;
+}
+#myDIV7 {
+    width: 40%;
+    padding: 30px 0;
+    text-align: center;
+    background-color: lightblue;
+ margin-bottom:8px;
+	box-shadow:3px 3px 1px #888888;
+margin-left:40px;}
+#myDIV8 {
+    width: 40%;
+    padding: 30px 0;
+    text-align: center;
+    background-color: lightblue;
+ margin-bottom:8px;
+	box-shadow:3px 3px 1px #888888;
+margin-left:40px;}
+#myDIV9 {
+    width: 40%;
+    padding: 30px 0;
+    text-align: center;
+    background-color: lightblue;
+ margin-bottom:8px;
+	margin-left:40px;box-shadow:3px 3px 1px #888888;
+}
+#myDIV10 {
+    width: 40%;
+    padding: 30px 0;
+    text-align: center;
+    background-color: lightblue;
+ margin-bottom:8px;
+	box-shadow:3px 3px 1px #888888;
+margin-left:40px;}
+#myDIV11{
+    width: 40%;
+    padding: 30px 0;
+    text-align: center;
+    background-color: lightblue;
+ margin-bottom:8px;
+	box-shadow:3px 3px 1px #888888;
+margin-left:40px;}
+#myDIV12 {
+    width: 40%;
+    padding: 30px 0;
+    text-align: center;
+    background-color: lightblue;
+ margin-bottom:8px;
+	box-shadow:3px 3px 1px #888888;
+margin-left:40px;}
+}
+
+
+@media screen and (max-width:500px)
+{
+    .inner-header
+{
+	width:80%;
+	margin:auto;
+}
+.logo{
+	text-align: center;
+	height:20px;
+padding-top:15px;
+	font-size:18px;
+	font-weight:bold;
+	animation-name: animationdem;
+	animation-duration: 2s;
+     font-family: 'Josefin Sans';
+}
+@keyframes animationdem
+{
+	from{padding-left:0;
+	font-size: 0px;}
+	to{padding-left:20px;
+	font-size: 20px;}
+}
+.header{
+	background-color:#000;
+	color:#fff;
+	border-color:#080808;
+	min-height:50px;
+	border:1px solid transparent;
+}
+.header-link
+{
+	float:right;
+	font-size:14px;
+	height:20px;
+	padding:15px 15px;
+	font-size:16px;
+	font-weight:bold;
+}
+#login{
+    display:none;
+	background-color:black;
+	color:white;
+	border:0.5px solid transparent;
+}
+.slideshow
+{
+	display:none;
+height:350px;
+		width:100%;
+}
+img{
+		padding:0;
+		margin:0;
+}
+#content
+{
+	width:20%;
+	border:1px solid black;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	margin-top:40px;
+	position: absolute;
+	left:40%;
+	background-color: #00838F;
+}
+#content h2
+{ color:white;
+	text-align: center;
+	padding:10px;
+}
+
+* {box-sizing: border-box}
+div.tab{
+	margin-top:15px;
+		position: absolute;
+		left:2%;
+		border: 1px solid #ccc;
+		background-color: #f1f1f1;
+		width: 25%;
+		height: 550px;
+}
+div.tab Button {
+		display: block;
+		background-color: inherit;
+		color: black;
+		padding: 16px 10px;
+		width: 100%;
+		border: none;
+		outline: none;
+		text-align: left;
+		cursor: pointer;
+		transition: 0.3s;
+		font-size: 15px;
+     font-family: 'Aladin';
+}
+div.tab button:hover {
+		background-color: #ddd;
+}
+div.tab button.active {
+		background-color: #ccc;
+}
+.tabcontent {
+		position:absolute;
+		left:25%;
+		margin-top:15px;
+    margin-bottom: 20px;
+		padding: 15px 12px;
+		border: 1px solid #ccc;
+		width: 80%;
+		border-left: none;
+		height:auto;
+		background-color: white;
+}
+.tabcontent h3
+{
+	text-align: center;
+	margin:10px;
+    font-size: 16px;
+  
+ font-family: 'Aclonica';
+}
+.tabcontent p
+{
+	text-align: justify;
+	margin:10px;
+    font-size: 14px;
+	margin-top:20px;
+      font-family: 'Sanchez';
+
+}
+    #copyv
+    {
+        padding:15px;
+    }
+.tabcontent img
+{
+	text-align: center;
+	margin-right:15px;
+	margin-top:20px;
+	margin-left:10px;
+    width:90%; height:40%;
+
+}
+.profile {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		 top: 0;
+		left: 0;
+		background-color: #B2DFDB;
+		overflow-x: hidden;
+		padding-top: 60px;
+		transition: 0.5s;
+}
+
+.profile a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 18px;
+		color: blueviolet;
+		display: block;
+		transition: 0.3s;
+		text-align: center;
+     font-family: 'Share Tech';
+}
+.profile .closebtn {
+		position: absolute;
+		top: 0;
+		right: 15px;
+		font-size: 36px;
+		margin-left: 50px;
+}
+#pro_head
+{
+	position: absolute;
+	left:35%;
+	text-align: center;
+	background-color: blue;
+	width:25%;
+	color:red;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+#pro_element1
+{
+	position:absolute;
+	left:20%;
+	top:40%;
+	text-align:center;
+	width:50%;
+	background-color:#F44336;
+	padding:5px;
+	color:white;
+	font-size: 13px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+
+}
+#pro_element
+{font-size: 13px;
+	position:absolute;
+	left:20%;
+	top:30%;
+	text-align:center;
+	width:50%;
+	background-color:#F44336;
+	padding:5px;
+	color:white;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+
+}
+ footer{
+		background-color:#1A237E;
+		color:#fff;
+		font-size:14px;
+        height:20%;
+	}.container{
+		width:90%;
+		height:20%;
+        margin:auto;
+		overflow:hidden;
+	}
+#myTable4 {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+}
+
+#myTable4 th, #myTable4 td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+}
+
+#myTable4 tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+}
+
+#myTable4 tr.tr-header, #myTable4 tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+}
+
+#jkk{
+	margin-top:20px;
+	margin-bottom:5px;
+	width:30%;
+	background-color:#C2185B;
+	position:relative;
+	left:35%;
+	border-radius:15px 50px;
+	animation-name: animh2;
+	animation-duration: 2s;
+	}
+	#jkk h2{
+        font-size: 14px;
+	color:white;
+	text-align:center;
+	padding:15px;
+         font-family: 'Finger Paint';
+	}
+	@keyframes animh2
+	{
+		from{left:0}
+			to{left:35%}
+	}
+	#myDIV {
+	    width: 40%;
+	    padding: 30px 0;
+	    text-align: center;
+	    background-color: #F8BBD0;
+	margin-bottom:8px;
+		box-shadow:3px 3px 1px #888888;
+		margin-left:40px;
+	}
+	#myDIV1 {
+	    width: 40%;
+	    padding: 30px 0;
+	    text-align: center;
+	    background-color: #B2DFDB;
+	 margin-bottom:8px;
+		box-shadow:3px 3px 1px #888888;
+	margin-left:40px;
+		}
+	#myDIV2 {
+	    width: 40%;
+	    padding: 30px 0;
+	    text-align: center;
+	    background-color: #B2DFDB;
+	 margin-bottom:8px;
+		box-shadow:3px 3px 1px #888888;
+	margin-left:40px;
+		}
+#searched
+{ position: relative;
+	left:2%;
 	margin-top:2px;
 border:1px solid black;
   width:90%;
@@ -500,3 +1032,4 @@ margin-left:40px;}
  margin-bottom:8px;
 	box-shadow:3px 3px 1px #888888;
 margin-left:40px;}
+}

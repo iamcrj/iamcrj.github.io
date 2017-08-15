@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+       <meta name = "viewport" content = "width=device-width, initial-scale = 1, maximum-scale=1 ,user-scalable = no" />
      <link rel="stylesheet" type="text/css" href="main1.css">
-	 </head>
+         <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+       <link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Share Tech' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Sedgwick Ave Display' rel='stylesheet'>
+       <script src="https://use.fontawesome.com/5b626b8830.js"></script>
+</head>
 <body>
  
   <div class="header">
   <div class="inner-header">
   <div class="logo"><a href="index.html">RoamUdaipur.com</a></div>
  <!-- <div class="header-link"><a id="login" href="logoutscript.php">Log Out</a></div>-->
+<span id="openel" style="font-size:25px;cursor:pointer; position:absolute; right:3%; top:1%" onclick="openCont()">&#9776;</span>
   <div class="header-link"><Button id="login" onclick="openCont()">Contents</Button></div>
   <!--<div class="header-link"><Button id="login" onclick="openProfile()">Profile</Button></div>-->
   <div class="header-link"><a id="login" href="home.html">Home</a></div>
@@ -62,7 +72,7 @@ echo $row['email'];?></h2></div>
 </div>
 <div class="profile" id="contents_show">
   <a href="javascript:void(0)" class="closebtn" onclick="closeCont()">&times;</a>
-    <h2 style="text-align:center;"><u>Contents</u></h2>
+    <h2 style="text-align:center;  font-family: 'Sedgwick Ave Display';">Contents</h2>
     <br/>
     <br/>
   <i><a href="museums.html">Museums</a></i>
@@ -90,7 +100,7 @@ echo $row['email'];?></h2></div>
 
 <div id="fs" class="tabcontent">
   <h3>Fateh Sagar Lake</h3>
-  <img src="fateh.jpg" style="width:80%; height:50%;">
+  <img src="fateh.jpg"  style="width:80%; height:50%;">
   <p>It is an artificial lake named after Maharana Fateh Singh of Udaipur and Mewar, constructed north-west of Udaipur.Within the confines of the Fatah Sagar Lake,
   there are three small islands; the largest of these is the Nehru Park, which is a popular tourist attraction, the second island houses a public park with an
   impressive water-jet fountain, and the third island is the address for the Udaipur Solar Observatory (USO). The Nehru park is accessible by inboard motor
@@ -100,8 +110,7 @@ echo $row['email'];?></h2></div>
 <div id="pl" class="tabcontent">
 <h3>Pichola Lake</h3>
 <img src="pichola.jpg" style="width:80%; height:50%;">
-<p>Pichola Lake is one of the most beautiful and picturesque lakes of Udaipur.Located in the heart of the city, Pichola Lake is the oldest and one of the
-largest lakes of Udaipur.Talking about the dimensions of Pichhola Lake, it is extended to 3 miles in length, 2 miles in width and has depth of 30 feet.
+<p>Pichola Lake is one of the most beautiful and picturesque lakes of Udaipur.Located in the heart of the city.It is extended to 3 miles in length, 2 miles in width and has depth of 30 feet.
 Lake Pichola comprises several islands. The world-famous Lake Palace is perfectly located on the Jag Island of this beautiful lake. Even the Jag Mandir,
 another popular and most famous Wedding destination, is located on an island of Pichola lake.A trip to Pichola Lake would be
 incomplete with a boat ride. At the time sun-set, a boat ride in this lake is sufficient to mesmerize anyone. </p>
@@ -122,18 +131,16 @@ incomplete with a boat ride. At the time sun-set, a boat ride in this lake is su
 <p>Dhebar Lake (also known as Jaisamand Lake) is India's second-largest artificial lake. It is 45 km from District headquarters of Udaipur. The lake has a
 total number of 3 islands measuring from 10 to 40 acres (160,000 m2) each. The Dhebar Lake Marble Dam is 300 Meters long and is a part of the "Heritage Monuments
 of India". The dam also has the Hawa Mahal Palace, winter Capital of the erstwhile Maharanas of Mewar. It covers area of 36 square miles.Dhebar Lake has elegant
-steps leading to the water and marble Chhatri on its bank with a small Shiv temple that marks the grace of the lake. On either side are the palaces built
-for the past kings favourite queens.</p>
+steps leading to the water and marble Chhatri on its bank with a small Shiv temple that marks the grace of the lake. </p>
 </div>
 <div id="rl" class="tabcontent">
   <h3>Rajsamand Lake</h3>
   <img src="raj.jpeg" style="width:80%; height:50%;">
 <p>Rajsamand Lake is one of the five popular lakes of Mewar. Located 66 km in the north of Udaipur, Rajsamand Lake lies between the cities of Rajnagar and
-Kankroli. It is also known by the name of Rajsamudra Lake in Rajasthan. Rajsamand Lake was built by Maharana Raj Singh in 1660.
+Kankroli.
 On the southern end of the lake, the huge embankment is composed of white marble. It has marble terraces and stone steps that touch the waters of the lake.
 Also on the embankment of the lake are nine pavilions or 'nauchowki' (nine ghats),which were constructed by Maharana Raj Singh. These beautifully carved pavilions
-are festooned with pictures of the sun, chariots, gods, birds and detailed carvings. The history of Mewar is inscribed in 1017 stanzas,
-on 27 marble slabs, that are called the Raj Prasasti. It has been acclaimed as one of the longest etchings in India.
+are festooned with pictures of the sun, chariots, gods, birds and detailed carvings. 
 At sunset, the waters of the lake glitter with the startling light of the sun.</p>
 </div>
 <div id="dt" class="tabcontent">
@@ -141,9 +148,8 @@ At sunset, the waters of the lake glitter with the startling light of the sun.</
   <img src="dudh.jpg" style="width:80%; height:50%;">
 <p>Doodh Talai is a small lake that adores the south-east direction of Pichola Lake. Located in the southern side of Shiv Niwas Palace, Dudh Talai contributes
 to the waters of Lake Pichola. This stream adds to the picturesque triangle in the company of Pichola on one side, Doodh Talai on the second
-and M.L. Verma Garden on the third. The Doodh Talai Lake is located very much near the center of the Udaipur City.[citation needed] It is around 24 km away from
-Udaipur Airport, and just 4 km from Udaipur City railway station and Udaipur City Bus Depot.Visitors can also take local Tongas, auto-rickshaws and taxis
-to reach Doodh Talai.</p>
+and M.L. Verma Garden on the third. It is around 24 km away from
+Udaipur Airport, and just 4 km from Udaipur City railway station and Udaipur City Bus Depot.</p>
 </div>
 <div id="bt" class="tabcontent">
   <h3>Jiyan Sagar (Badi Ka Talab)</h3>
@@ -160,17 +166,6 @@ Kumharia Talab. Located behind the famous Jagdish Temple, Kumharia Talab is near
 Kumharia Talab is connected with Lake Pichola and Fateh Sagar Lake. </p>
 </div>
 </div>
-<
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- first -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6385494986725811"
-     data-ad-slot="8877030862"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 <script>
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
@@ -189,7 +184,10 @@ document.getElementById("defaultOpen").click();
 </script>
 <footer>
 <div class="container" >
-<p style="text-align:center; padding:20px;">Copyright &copy;Roam Udaipur.All Rights Reserved | Contact Us:+91 8290755844</p>
+    <p style="float: left;" id="copyv">&copy;Roam Udaipur</p>
+    <a style="float:right; text-decoration: underline;" id="copyv" href="disclaimer.html">Disclaimer</a>
+   
+    <p id="copyv" style="text-align: center;">Made with <i class="fa fa-heart" aria-hidden="true"></i></p>
 </div>
 </footer>
 </body>
