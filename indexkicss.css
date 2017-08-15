@@ -30,6 +30,10 @@ margin:0;
 		animation-duration: 2s;
          font-family: 'Josefin Sans';
 	}
+    .logo a
+    {
+        color:white;
+    }
 	.header-link
 	{
 		float:right;
@@ -145,13 +149,13 @@ margin:0;
 	}
 	#abt
 	{
-		background-color: #FFCCBC;
+		
 		text-align: center;
 		width:70%;
 position: relative;
 left:15%;
 		color:black;
-		border:1px solid black;
+		border:none;
 		height:200px;
 		border-radius:12px;
 		margin-bottom: 20px;
@@ -202,7 +206,7 @@ left:15%;
 	footer{
 		background-color:#1A237E;
 		color:#fff;
-		font-size:18px;
+		font-size:16px;
         height:20%;
 	}.container{
 		width:90%;
@@ -479,15 +483,7 @@ left:10%;
 
 	}
 
-	footer{
-		background-color:#1A237E;
-		color:#fff;
-		font-size:14px;
-	}.container{
-		width:90%;
-		margin:auto;
-		overflow:hidden;
-	}
+	 
 	.profile {
 	    height: 100%;
 	    width: 0;
@@ -515,6 +511,17 @@ left:10%;
 	    right: 25px;
 	    font-size: 36px;
 	    margin-left: 50px;
+	}
+    footer{
+		background-color:#1A237E;
+		color:#fff;
+		font-size:14px;
+        height:20%;
+	}.container{
+		width:90%;
+		height:20%;
+        margin:auto;
+		overflow:hidden;
 	}
 
 }

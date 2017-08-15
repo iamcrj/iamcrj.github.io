@@ -321,7 +321,7 @@ left:15%;
 	.banner-content{
 		position: absolute;
 	top:30%;
-	 left:15%;
+	 left:10%;
 width:200px;
 padding:10px;
 margin: 10px;
@@ -427,7 +427,7 @@ left:15%;
 	footer{
 		background-color:#1A237E;
 		color:#fff;
-		font-size:18px;
+		font-size:14px;
         height:20%;
 	}.container{
 		width:90%;

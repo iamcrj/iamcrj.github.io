@@ -14,8 +14,6 @@ a{
 	margin:auto;
 }
 
-
-
 @keyframes animationdem
 {
 	from{padding-left:0;
@@ -44,12 +42,24 @@ a{
     .banner-content h1
     {
         font-size: 20px;
+        font-family: 'Architects Daughter';
     }
     .banner-content p
     {
         font-size:12px;
         padding-bottom: 10px;
+         font-family: 'Aref Ruqaa';
     }
+    footer{
+		background-color:#1A237E;
+		color:#fff;
+		font-size:14px;
+	}
+    .container1{
+		width:90%;
+		margin:auto;
+		overflow:hidden;
+	}
     .button{
     color:#fff;
 	background-color:#c9302c;
@@ -97,6 +107,7 @@ a{
     }
     .caption h2
     {
+         font-family: 'Finger Paint';
         font-size:16px;
     }
 .container{
@@ -119,6 +130,7 @@ padding:15px;
 	font-weight:bold;
 	animation-name: animationdem;
 	animation-duration: 2s;
+         font-family: 'Josefin Sans';
 }
 
 }
@@ -137,11 +149,30 @@ padding:15px;
 	max-width:660px;
 
 }
+        .banner-content h1
+        {
+             font-family: 'Architects Daughter';
+        }
+        .banner-content p
+    {
+       
+         font-family: 'Aref Ruqaa';
+    }
         .inner-banner-image{
 	padding-top:12%;
 	width:80%;
 	margin:auto;
 }
+          footer{
+		background-color:#1A237E;
+		color:#fff;
+		font-size:16px;
+	}
+    .container1{
+		width:90%;
+		margin:auto;
+		overflow:hidden;
+	}
         .logo{
 	float:left;
 	height:50px;
@@ -150,6 +181,7 @@ padding:15px;
 	font-weight:bold;
 	animation-name: animationdem;
 	animation-duration: 2s;
+             font-family: 'Josefin Sans';
 }
         .banner-image{
 	padding-bottom:30px;
@@ -198,6 +230,11 @@ padding:15px;
 	font-weight:bold;
 	text-align:center;
 	}
+        .caption h2
+        {
+             font-family: 'Finger Paint';
+        }
+        
 }
 .animate {
     -webkit-animation: animatezoom 0.6s;
@@ -258,11 +295,7 @@ form{
 	min-height:50px;
 	border:1px solid transparent;
 }
-footer{
-	background-color:#1B5E20;
-	color:#fff;
-	font-size:14px;
-}
+
 #username,#dob,#email{
 	width:30%;
 	border:1px solid transparent;

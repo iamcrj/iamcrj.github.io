@@ -42,6 +42,7 @@ a{
 padding:15px;
 	font-size:20px;
 	font-weight:bold;
+     font-family: 'Josefin Sans'
 }
 .content{
 	min-height:600px;
@@ -90,16 +91,15 @@ animation-duration: 2s;
 	from{top:0}
 		to{top:30%}
 }
-.container{
-	width:90%;
-	margin:auto;
-	overflow:hidden;
-}
 footer{
-	background-color:#1B5E20;
-	color:#fff;
-	font-size:14px;
-}
+		background-color:#1A237E;
+		color:#fff;
+		font-size:16px;
+	}.container{
+		width:90%;
+		margin:auto;
+		overflow:hidden;
+	}
 #clicks{
 
 		color:#fff;
@@ -197,38 +197,71 @@ footer{
 	border-top-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
-#mission h2,p
-{
+#mission h2
+{   
+      font-family: 'Allan';
 	text-align: center;
+        color:red;
+	
 }
-#cnto
-{
+         #mission p
+    { margin:15px;
+        text-align: center;
+         font-family: 'Amaranth';
+    }
+#cnto h2
+{   
+     font-family: 'Allan';
 	text-align: center;
+    color:red;
 }
+    #cnto
+    {
+        text-align: center;
+    }
 #cnto a
 {
-	color:red;
+	font-size: 30px;
+    color:red;
 }
 #imagetag
 { position: absolute;
 	left:5%;
-	width:30%;
-	height:30%;
+	width:15%;
+	height:25%;
+    
 }
-         .otherclass
-    {
-        width:50%;
-    }
-    .otherclassc
-    {
-        width:0;
-    }
+    
 #developer
 {
 	position: absolute;
 	left:50%;
 	top:60%;
 }
+         #developer h4,h3
+    {
+         font-family: 'Amita';
+    }
+        .banner-content h2
+        {
+             font-size:22px;
+         font-family: 'Merienda';
+}
+         .banner-content2 h2
+    {
+        font-size:22px;
+         font-family: 'Merienda';
+    }
+     .banner-content p
+    {
+        font-size:16px;
+        font-family: 'MedievalSharp';
+    }
+    .banner-content2 p
+    {
+        font-size:16px;
+        font-family: 'MedievalSharp';
+    }
         .sidenav
         {
             display:none;
@@ -300,6 +333,7 @@ footer{
 padding:15px;
 	font-size:20px;
 	font-weight:bold;
+     font-family: 'Josefin Sans'
 }
 .content{
 	min-height:600px;
@@ -353,16 +387,18 @@ animation-duration: 2s;
 	from{top:0}
 		to{top:70%}
 }
-.container{
-	width:90%;
-	margin:auto;
-	overflow:hidden;
-}
-footer{
-	background-color:#1B5E20;
-	color:#fff;
-	font-size:14px;
-}
+
+
+    footer{
+		background-color:#1A237E;
+		color:#fff;
+		font-size:15px;
+        
+	}.container{
+		width:90%;
+		margin:auto;
+		overflow:hidden;
+	}
 #clicks{
 
 		color:#fff;
@@ -440,14 +476,7 @@ footer{
     display: block;
     transition: 0.3s
 }
-    .otherclass
-    {
-        width:100%;
-    }
-    .otherclassc
-    {
-        width:0;
-    }
+   
 .profile .closebtn {
     position: absolute;
     top: 0;
@@ -458,18 +487,22 @@ footer{
     .banner-content h2
     {
         font-size:18px;
+         font-family: 'Merienda';
     }
     .banner-content2 h2
     {
         font-size:18px;
+         font-family: 'Merienda';
     }
      .banner-content p
     {
         font-size:12px;
+        font-family: 'MedievalSharp';
     }
     .banner-content2 p
     {
         font-size:12px;
+        font-family: 'MedievalSharp';
     }
 #pro_element1
 {
@@ -515,15 +548,28 @@ footer{
 	border-top-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
-#mission h2,p
-{
+#mission h2
+    {
+         font-family: 'Allan';
 	text-align: center;
+        color:red;
 }
-#cnto
+    #mission p
+    { margin:15px;
+        text-align: justify;
+         font-family: 'Amaranth';
+    }
+   
+#cnto h2
 {   
+     font-family: 'Allan';
 	text-align: center;
-    
+    color:red;
 }
+    #cnto
+    {
+        text-align: center;
+    }
 #cnto a
 {
 	font-size: 30px;
@@ -532,6 +578,7 @@ footer{
     
 #imagetag
 { position: absolute;
+    top:60%;
 	left:5%;
 	width:30%;
 	height:20%;
@@ -542,6 +589,10 @@ footer{
 	left:45%;
 	top:60%;
 }
+    #developer h4,h3
+    {
+         font-family: 'Amita';
+    }
     .sidenav {
     height: 30%;
     width: 0;
