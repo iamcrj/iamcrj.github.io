@@ -90,7 +90,7 @@ div.tab{
 		left:5%;
 		border: 1px solid #ccc;
 		background-color: #f1f1f1;
-		width: 25%;
+		width: 30%;
 		height: 550px;
 }
 div.tab Button {
@@ -628,7 +628,7 @@ div.tab button.active {
 }
 .tabcontent {
 		position:absolute;
-		left:25%;
+		left:28%;
 		margin-top:15px;
     margin-bottom: 20px;
 		padding: 15px 12px;
