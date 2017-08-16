@@ -605,6 +605,7 @@ div.tab{
 		background-color: #f1f1f1;
 		width: 25%;
 		height: 550px;
+    z-index:1;
 }
 div.tab Button {
 		display: block;
