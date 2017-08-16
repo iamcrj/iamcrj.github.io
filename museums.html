@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+       <meta name = "viewport" content = "width=device-width, initial-scale = 1, maximum-scale=1 ,user-scalable = no" />
     <link rel="stylesheet" type="text/css" href="main1.css">
+      <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+       <link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Share Tech' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Sedgwick Ave Display' rel='stylesheet'>
+      <script src="https://use.fontawesome.com/5b626b8830.js"></script>
 	 </head>
 <body>
-  <?php
-  session_start();
-  $name=$_SESSION['username']; ?>
-<div class="header">
+ <div class="header">
   <div class="inner-header">
   <div class="logo"><a href="index.html">RoamUdaipur.com</a></div>
   <!--<div class="header-link"><a id="login" href="logoutscript.php">Log Out</a></div>-->
+      <span id="openel" style="font-size:25px;cursor:pointer; position:absolute; right:3%; top:1%" onclick="openCont()">&#9776;</span>
   <div class="header-link"><Button id="login" onclick="openCont()">Contents</Button></div>
   <!--<div class="header-link"><Button id="login" onclick="openProfile()">Profile</Button></div>-->
   <div class="header-link"><a id="login" href="home.html">Home</a></div>
@@ -65,7 +72,7 @@ echo $row['email'];?></h2></div>
 </div>
 <div class="profile" id="contents_show">
   <a href="javascript:void(0)" class="closebtn" onclick="closeCont()">&times;</a>
-    <h2 style="text-align:center;"><u>Contents</u></h2>
+    <h2 style="text-align:center;  font-family: 'Sedgwick Ave Display';">Contents</h2>
     <br/>
     <br/>
     <i><a href="lakes.html">Lakes</a></i>
@@ -81,7 +88,7 @@ echo $row['email'];?></h2></div>
 <a style="margin-top:95px; text-align:center; font-size:16px; color:black;" href="roamudaipur.php">&copy;RoamUdaipur.com</a>
 </div>
 <div id="jkk"><h2>Museums</h2></div>
-<div id="searched" style="border:none; height:600px;">
+<div id="searched">
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'fs')" id="defaultOpen">Ahar Cenotaphs</button>
   <button class="tablinks" onclick="openCity(event, 'pl')">Shilpgram Museum</button>
@@ -105,7 +112,7 @@ Timing of Ahar Museum is 10:00 am and to 4:30 pm. The museum is open all days ex
 
 <div id="pl" class="tabcontent">
 <h3>Shilpgram Museum</h3>
-<img src="shilp.jpg" style="width:80%; height:50%;">
+<img src="shilp.jpg" >
 <p>The ultimate rural arts and crafts complex, Shilpgram is located in Havala Village near Udaipur. The Shilpgram Village of Udaipur is spread over 70 acres
 of lands and is a living ethnographic exhibition that depicts the culture and art of the local people in Western India.Inside the village are two museums that
 exhibit simple objects of day-to-day life, but play important role in painting a beautiful picture of rural and tribal life. These objects have been carved
@@ -115,7 +122,7 @@ their hands on arts, theater and music.</p>
 </div>
 <div id="us" class="tabcontent">
 <h3>Bhartiya Lok Kala Museum</h3>
-<img src="bhar.jpg" style="width:80%; height:50%;">
+<img src="bhar.jpg">
 <p>Bhartiya Lok Kala Museum is one of the most famous museums of Udaipur, exhibiting the brilliant collection of folk articles of Rajasthan. This rare
 compilation varies from typical rural-dresses, ornaments, puppets, masks, dolls, folk musical instruments, folk deities and paintings. The museum is
 comfortably located in the building of Bhartiya Lok Kala Mandal near Chetak Circle in Udaipur city.The museum portrays the remarkable collection of over past
@@ -125,7 +132,7 @@ culturally rich region of Rajasthan.</p>
 </div>
 <div id="js" class="tabcontent">
 <h3>City Palace Museum</h3>
-<img src="city.jpg" style="width:80%; height:50%;">
+<img src="city.jpg">
 <p>A jewel in the crown of Udaipur, the City Palace is one of the most beautiful edifices on the banks of Lake Pichola. Surely lined amongst the greatest
 architectural marvels ever constructed in history, the City Palace is a major tourist attraction in Udaipur.In order to preserve the heritage of Mewar and the
 royal family, a museum was built in the complex. Highly complimenting the architecture of the City Palace, the museum is segmented into a series of Palaces,
@@ -137,7 +144,7 @@ sections of the Museum.</p>
 </div>
 <div id="rl" class="tabcontent">
 <h3>Sajjan Garh Palace</h3>
-<img src="sajjan.jpg" style="width:80%; height:50%;">
+<img src="sajjan.jpg" >
 <p>The Monsoon Palace, also known as the Sajjan Garh Palace, is a hilltop palatial residence in the city of Udaipur, Rajasthan in India.It is named Sajjangarh after Maharana Sajjan Singh (1874–1884) of the Mewar Dynasty, who built it in 1884. The palace offers a panoramic
 view of the city's lakes, palaces and surrounding countryside. It was built chiefly to watch the monsoon clouds; hence, appropriately, it is popularly
 known as Monsoon Palace.The palace provides a beautiful view of the sunset.The Monsoon Palace is 5 kilometres (3.1 mi) west of Udaipur and overlooks Lake
@@ -147,7 +154,7 @@ Singh Sanctuary are major attractions and are open to visitors until sunset.
 </div>
 <div id="dt" class="tabcontent">
 <h3>Kumbhalgarh Fort</h3>
-<img src="kumbhal.jpeg" style="width:80%; height:50%;">
+<img src="kumbhal.jpeg">
 <p>Kumbhalgarh is a Mewar fortress on the westerly range of Aravalli Hills, in the Rajsamand district near Udaipur of Rajasthan state in
 western India. It is a World Heritage Site included in Hill Forts of Rajasthan.With a wall over 38 km long, the fort is the second largest wall in the world
 after the Great Wall of China and the second largest fort in Rajasthan after Chittorgarh Fort.Kumbalgarh is situated 82 km northwest of Udaipur by road.
@@ -155,14 +162,14 @@ after the Great Wall of China and the second largest fort in Rajasthan after Chi
 </div>
 <div id="bt" class="tabcontent">
 <h3>Chittorgarh Fort</h3>
-<img src="chittor.jpg" style="width:80%; height:50%;">
+<img src="chittor.jpg" >
 <p>Chittorgarh Fort has received the credit of being the largest fort of India. The massive fort is located on a high hill near the Gambheri River in
  Chittorgarh. Chittorgarh Fort lies at a distance of 112 kms from the city of Udaipur in Rajasthan. This fort was built by various Maurya rulers in the 7th
  century. This huge fort covers an area of 700 acres, extending to 3 kms in length and 13 kms in peripheral length/
 </p>
 </div>
 </div>
-
+    
 <script>
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
@@ -178,19 +185,14 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
-</script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- first -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6385494986725811"
-     data-ad-slot="8877030862"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+    </script>
 <footer>
 <div class="container" >
-<p style="text-align:center; padding:20px;">Copyright &copy;Roam Udaipur.All Rights Reserved | Contact Us:+91 8290755844</p>
+    <p style="float: left;" id="copyv">&copy;Roam Udaipur</p>
+    <a style="float:right; text-decoration: underline;" id="copyv" href="disclaimer.html">Disclaimer</a>
+   
+    <p id="copyv" style="text-align: center;">Made with <i class="fa fa-heart" aria-hidden="true"></i></p>
 </div>
 </footer>
+    </body>
+</html>
