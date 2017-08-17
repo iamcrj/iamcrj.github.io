@@ -126,7 +126,8 @@ div.tab button.active {
 		background-color: white;
 }
 .tabcontent h3
-{
+{  text-decoration: underline;
+    text-decoration-color: aqua;
 	text-align: center;
 	margin:10px;
      font-family: 'Aclonica';
@@ -192,6 +193,11 @@ div.tab button.active {
 	border-top-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
+     #searched1
+    {
+        display: none;
+    }
+    
 #pro_element1
 {
 	position:absolute;
@@ -229,7 +235,7 @@ div.tab button.active {
     {
         padding:20px;
     }
-footer{
+footer{ 
 		background-color:#1A237E;
 		color:#fff;
 		font-size:18px;
@@ -284,6 +290,24 @@ footer{
 		from{left:0}
 			to{left:35%}
 	}
+    #divcont
+    {
+        margin:10px;
+        padding:20px;
+    }
+    #divcont h3
+    { 
+        text-align:left;
+        display:inline;
+           font-family: 'Aclonica';
+        font-size: 18px;
+    }
+    #divcont p
+    {   font-family: 'Sanchez';
+        text-align: left;
+        display: inline;
+        font-size: 15px;
+    }
 	#myDIV {
 	    width: 40%;
 	    padding: 30px 0;
@@ -577,11 +601,12 @@ padding-top:15px;
 	display:none;
 height:350px;
 		width:100%;
-}
+   }
 img{
 		padding:0;
 		margin:0;
 }
+ 
 #content
 {
 	width:20%;
@@ -593,6 +618,7 @@ img{
 	left:40%;
 	background-color: #00838F;
 }
+   
 #content h2
 { color:white;
 	text-align: center;
@@ -629,7 +655,7 @@ div.tab button:hover {
 div.tab button.active {
 		background-color: #ccc;
 }
-.tabcontent {
+    .tabcontent {
 		position:absolute;
 		left:28%;
 		margin-top:15px;
@@ -679,7 +705,7 @@ div.tab button.active {
 		z-index: 1;
 		 top: 0;
 		left: 0;
-		background-color:#C6FF00;
+		background-color:#FFA726;
 		overflow-x: hidden;
 		padding-top: 60px;
 		transition: 0.5s;
@@ -798,33 +824,8 @@ div.tab button.active {
 		from{left:0}
 			to{left:35%}
 	}
-	#myDIV {
-	    width: 40%;
-	    padding: 30px 0;
-	    text-align: center;
-	    background-color: #F8BBD0;
-	margin-bottom:8px;
-		box-shadow:3px 3px 1px #888888;
-		margin-left:40px;
-	}
-	#myDIV1 {
-	    width: 40%;
-	    padding: 30px 0;
-	    text-align: center;
-	    background-color: #B2DFDB;
-	 margin-bottom:8px;
-		box-shadow:3px 3px 1px #888888;
-	margin-left:40px;
-		}
-	#myDIV2 {
-	    width: 40%;
-	    padding: 30px 0;
-	    text-align: center;
-	    background-color: #B2DFDB;
-	 margin-bottom:8px;
-		box-shadow:3px 3px 1px #888888;
-	margin-left:40px;
-		}
+	
+	
 #searched
 { position: relative;
 	left:2%;
@@ -834,6 +835,28 @@ div.tab button.active {
       border:none;  height:650px;
 
 }
+    #searched2
+    {
+display:none;}
+#divcont
+    {
+        margin:7px;
+        padding:10px;
+    }
+    #divcont h3
+    {
+        text-align:left;
+        display:inline;
+           font-family: 'Aclonica';
+        font-size: 16px;
+    }
+    #divcont p
+    {   font-family: 'Sanchez';
+        text-align: left;
+        display: inline;
+    }
+ 
+
 
 #myTable1 {
     border-collapse: collapse; /* Collapse borders */
@@ -922,15 +945,16 @@ div.tab button.active {
 }
 
 #myUL {
-text-align: center;
+
     padding: 0;
     margin-top: 40px;
 margin-bottom:40px;
+    text-align: center;
 	 }
 
 #myUL li h4{
-	width:40%;
-	margin-left:40px;
+	width:90%;
+	margin-left:20px;
     border: 1px solid #ddd;
 margin-bottom:10px;
     background-color: #B2EBF2;
@@ -942,7 +966,29 @@ margin-bottom:10px;
 	cursor:pointer;
 	position:relative;
 	margin-top:-1px;
+    text-align: center;
 }
+    .kink
+    {
+        
+      width:90%;
+          padding:12px;
+	    text-align: center;
+	    background-color:#FFCC80;
+	margin-bottom:8px;
+		box-shadow:3px 3px 1px #888888;
+		margin-left:20px;
+    }
+    .kink img
+    {   margin-top:10px;
+        width:80%;
+        height:60%;
+        
+    }
+    .kink b
+    {
+        float:left;
+    }
 
 
 
@@ -955,85 +1001,4 @@ margin-bottom:10px;
 
 #myUL li h4:hover:not(.header) {
     background-color: #eee;
-}
-#myDIV3 {
-    width: 40%;
-    padding: 30px 0;
-    text-align: center;
-    background-color: #B2DFDB;
- margin-bottom:8px;
-	box-shadow:3px 3px 1px #888888;
-margin-left:40px;}
-#myDIV4 {
-    width: 40%;
-    padding: 30px 0;
-    text-align: center;
-    background-color: lightblue;
- margin-bottom:8px;
-	box-shadow:3px 3px 1px #888888;
-margin-left:40px;}
-#myDIV5 {
-    width: 40%;
-    padding: 30px 0;
-    text-align: center;
-    background-color: lightblue;
- margin-bottom:8px;
-	box-shadow:3px 3px 1px #888888;
-margin-left:40px;}
-#myDIV6 {
-    width: 40%;
-    padding: 30px 0;
-    text-align: center;
-    background-color: lightblue;
- margin-bottom:8px;
-margin-left:40px;	box-shadow:3px 3px 1px #888888;
-}
-#myDIV7 {
-    width: 40%;
-    padding: 30px 0;
-    text-align: center;
-    background-color: lightblue;
- margin-bottom:8px;
-	box-shadow:3px 3px 1px #888888;
-margin-left:40px;}
-#myDIV8 {
-    width: 40%;
-    padding: 30px 0;
-    text-align: center;
-    background-color: lightblue;
- margin-bottom:8px;
-	box-shadow:3px 3px 1px #888888;
-margin-left:40px;}
-#myDIV9 {
-    width: 40%;
-    padding: 30px 0;
-    text-align: center;
-    background-color: lightblue;
- margin-bottom:8px;
-	margin-left:40px;box-shadow:3px 3px 1px #888888;
-}
-#myDIV10 {
-    width: 40%;
-    padding: 30px 0;
-    text-align: center;
-    background-color: lightblue;
- margin-bottom:8px;
-	box-shadow:3px 3px 1px #888888;
-margin-left:40px;}
-#myDIV11{
-    width: 40%;
-    padding: 30px 0;
-    text-align: center;
-    background-color: lightblue;
- margin-bottom:8px;
-	box-shadow:3px 3px 1px #888888;
-margin-left:40px;}
-#myDIV12 {
-    width: 40%;
-    padding: 30px 0;
-    text-align: center;
-    background-color: lightblue;
- margin-bottom:8px;
-	box-shadow:3px 3px 1px #888888;
-margin-left:40px;}
 }
