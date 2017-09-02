@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
+<meta name = "viewport" content = "width=device-width, initial-scale = 1, maximum-scale=1 ,user-scalable = no" />
      <link rel="stylesheet" type="text/css" href="main1.css">
-
-	  </head>
+         <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+       <link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Share Tech' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Sedgwick Ave Display' rel='stylesheet'>
+       <script src="https://use.fontawesome.com/5b626b8830.js"></script>
+</head>
 
 	  <body>
      
     <div class="header">
       <div class="inner-header">
+          <span id="openel" style="font-size:25px;cursor:pointer; position:absolute; right:3%; top:1%" onclick="openCont()">&#9776;</span>
       <div class="logo"><a href="index.html">RoamUdaipur.com</a></div>
      <!-- <div class="header-link"><a id="login" href="logoutscript.php">Log Out</a></div>-->
       <div class="header-link"><Button id="login" onclick="openCont()">Contents</Button></div>
@@ -71,19 +79,19 @@ function myFunctio(event)
 		     {
 			var x=document.getElementById('myDIV7');
 		     }
-			   else if(targo.id=="ah")
+			   else if(targo.id=="kr")
 		     {
 			var x=document.getElementById('myDIV8');
 		     }
-			   else if(targo.id=="hhl")
+			   else if(targo.id=="7d")
 		     {
 			var x=document.getElementById('myDIV9');
 		     }
-			   else if(targo.id=="hs")
+			   else if(targo.id=="tk")
 		     {
 			var x=document.getElementById('myDIV10');
 		     }
-			   else if(targo.id=="hrp")
+			   else if(targo.id=="zr")
 		     {
 			var x=document.getElementById('myDIV11');
 		     }
@@ -131,7 +139,7 @@ echo $row['email'];?></h2></div>
 </div>
 <div class="profile" id="contents_show">
   <a href="javascript:void(0)" class="closebtn" onclick="closeCont()">&times;</a>
-    <h2 style="text-align:center;"><u>Contents</u></h2>
+    <h2  style="text-align:center; font-family: 'Sedgwick Ave Display';">Contents</h2>
     <br/>
     <br/>
     <i><a href="lakes.html">Lakes</a></i>
@@ -146,89 +154,272 @@ echo $row['email'];?></h2></div>
 <a style="margin-top:95px; text-align:center; font-size:16px; color:black;" href="roamudaipur.php">&copy;RoamUdaipur.com</a>
 </div>
 <div id="jkk"><h2>Restaurants</h2></div>
-<div id="searched">
+<div id="searched2" style="border:none; height:950px;">
+
+<div class="tab" style="height: 700px; margin-top:50px;">
+  <button class="tablinks" onclick="openCity(event, 'fs')" id="defaultOpen">Barbeque Nation</button>
+  <button class="tablinks" onclick="openCity(event, 'pl')">Tehkhana Restaurant & Bar</button>
+  <button class="tablinks" onclick="openCity(event, 'us')">Mathara</button>
+  <button class="tablinks" onclick="openCity(event, 'rl')">Delhi Darbar</button>
+  <button class="tablinks" onclick="openCity(event, 'dt')">Sankalp</button>
+  <button class="tablinks" onclick="openCity(event, 'bt')">Bawarchi Restaurant</button>
+  <button class="tablinks" onclick="openCity(event, 'ss')">Domino's</button>
+  <button class="tablinks" onclick="openCity(event, 'kr')">Kadai Restaurant</button>
+  <button class="tablinks" onclick="openCity(event, '7d')">7 Days Restaurant</button>
+  <button class="tablinks" onclick="openCity(event, 'tk')">Traditional Khana</button>
+  <button class="tablinks" onclick="openCity(event, 'zr')">Zucchini Restaurant</button>
+  <button class="tablinks" onclick="openCity(event, 'fj')">foodiez Junction</button>
+   
+ </div>
+
+<div id="fs" class="tabcontent" style="height:800px; margin-top:50px;">
+    <h3>Barbeque Nation</h3>
+   <img src="barbe.jpg" style="margin-left:160px;" alt="Amantra">
+   <div id="divcont">
+       <h3>Website :</h3><a href="amantrahotel.com" style="color: blue;">Visit Site</a></div>
+     <div id="divcont"><h3>Address :</h3><p> 3rd Floor,NH-8,The Celebration Mall Opposite Devendra Dham Bhuwana, Bhuwana,Udaipur,313004</p></div>
+     <div id="divcont">
+         <h3>Phone :</h3><p> 0294 694 4544</p></div>
+</div>
+
+<div id="pl" class="tabcontent" style="height:800px;  margin-top:50px;">
+<h3>Tehkhana Restaurant & Bar</h3>
+ <img src="teh.jpg"style="margin-left:160px;" alt="Amar Kothi">
+   <div id="divcont">
+       <h3>Website :</h3><a href="" style="color: blue;"> Visit Site</a></div>
+    <div id="divcont"><h3>Address :</h3><p> Hitawala Complex - IInd,1/A,Saheli Marg,Opposite Soni Hospital,Panchwati,Udaipur,313001</p></div>
+     <div id="divcont"><h3>Phone :</h3><p> 096609 01448</p></div>
+</div>
+
+<div id="us" class="tabcontent " style="height:800px;  margin-top:50px;">
+  <h3>Mathara</h3>
+  <img src="mathara.jpg" style="margin-left:160px;" alt="Heritage">
+  <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+    <div id="divcont">
+ <h3>Address :</h3><p> 8th Floor, Lake City Mall, Durga Nursery Road, Udaipur, Rajasthan 313002
+      </p></div>
+<div id="divcont"><h3>Phone :</h3><p> 099824 30071</p></div>
+</div>
+
+<div id="rl" class="tabcontent " style="height:800px;  margin-top:50px;">
+  <h3>Delhi Darbar</h3>
+  <img src="delhi.jpg" style="margin-left:160px;" alt="Ram Pratap">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p>Multi Functional Complex, City Railway Station, City Centre, Udaipur</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> 0294 2485558</p>
+    </div>
+</div>
+<div id="dt" class="tabcontent" style="height:800px;  margin-top:50px;">
+  <h3>Sankalp</h3>
+  <img src="sank.jpg" style="margin-left:160px;" alt="Rangniwas">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p>Mewar Motor Building, 48, Toran Bawadi, City Station Road, City Centre, Udaipur</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> NA</p>
+    </div>
+</div>
+<div id="bt" class="tabcontent" style="height:800px;  margin-top:50px;">
+  <h3>Bawarchi Restaurant</h3>
+ <img src="bawa.jpg" style="margin-left:160px;" alt="Ambavgarh Retreat">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+ <h3>Address :</h3><p> 6 - Delhi Gate, City Centre, Udaipur</p></div>
+    <div id="divcont"><h3>Phone:</h3><p> 0294 2414985</p>
+    </div>
+</div>
+<div id="ss" class="tabcontent" style="height:800px;  margin-top:50px;">
+  <h3>Domino's</h3>
+   <img src="domino.jpg" style="margin-left:160px;" alt="Krishna">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p>G-2, Upper Ground Floor, Celebration Mall, Bhuwana, Udaipur</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> NA</p>
+    </div>
+</div>
+<div id="kr" class="tabcontent" style="height:800px;  margin-top:50px;">
+  <h3>Kadai Restaurant</h3>
+   <img src="kadai.jpg" style="margin-left:160px;" alt="Krishna">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p> 126 ABC, Main Road, Near Shahi Bagh, Udaipur</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> 9166801860</p>
+    </div>
+</div>
+<div id="7d" class="tabcontent" style="height:800px;  margin-top:50px;">
+  <h3>7 Dayz Restaurant</h3>
+   <img src="7d.jpg" style="margin-left:160px;" alt="Krishna">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p> Hotel Varju Villa, 100 Feet Road, Near Nand Bhawan, Shobhagpura, Udaipur</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> 0294 2980923</p>
+    </div>
+</div>
+<div id="tk" class="tabcontent" style="height:800px;  margin-top:50px;">
+  <h3>Traditional Khana</h3>
+   <img src="trad.jpg" style="margin-left:160px;" alt="Krishna">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p> 48-D Panchwati Circle, Adjoining RK Mall, Panchwati, Udaipur</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> 7665366999</p>
+    </div>
+</div>
+<div id="zr" class="tabcontent" style="height:800px;  margin-top:50px;">
+  <h3>Zucchini Restaurant</h3>
+   <img src="zucc.jpg" style="margin-left:160px;" alt="Krishna">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p> Near D P Jewellers, Hanuman Temple, Bhopalpura, Udaipur</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> 099822 82167</p>
+    </div>
+</div>
+<div id="fj" class="tabcontent" style="height:800px;  margin-top:50px;">
+  <h3>foodiez Junction</h3>
+   <img src="foodi.jpg" style="margin-left:160px;" alt="Krishna">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p> Shop No.18, Opposite Kalyan Jewellers, Delhi Gate, Udaipur</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> 8875307860</p>
+    </div>
+</div>
+</div>
+
+<div id="searched1" style="height:auto;">
 <ul id="myUL" type="none">
- <li><h4 id="fgh" onclick="myFunctio(event)">Barbeque Nation</h4>
-<div id="myDIV" style="display:none">
-<b>Address:</b><p>3rd Floor,NH-8,The Celebration Mall Opposite Devendra Dham Bhuwana, Bhuwana,Udaipur,313004</p>
-<b>Cuisines:</b><p>0294 694 4544</p>
-</div></li>
-<li><h4 id="rpp" onclick="myFunctio(event)">Tehkhana Restaurant & Bar</h4>
-<div id="myDIV1" style="display:none">
- <b>Address:</b><p>Hitawala Complex - IInd,1/A,Saheli Marg,Opposite Soni Hospital,Panchwati,<br/>Udaipur,313001</p>
- <b>Phone:</b><p>096609 01448</p>
-</div></li>
-<li><h4 id="lp" onclick="myFunctio(event)">Mathara</h4>
-<div id="myDIV2" style="display:none">
-<b>Address:</b><p>8th Floor, Lake City Mall, Durga Nursery Road, Udaipur, Rajasthan 313002</p>
-<b>Phone:</b><p>099824 30071</p>
-</div></li>
-<li><h4 id="rbu" onclick="myFunctio(event)">Garden Restaurant</h4>
-<div id="myDIV3" style="display:none">
-<b>Address:</b><p>Opposite Sajjan Niwas Garden, Gulabh Bagh Road, City Centre, Udaipur</p>
-<b>Phone:</b><p>0294 2418881</p>
-</div></li>
-<li><h4  id="llv" onclick="myFunctio(event)">Delhi Darbar</h4>
-<div id="myDIV4" style="display:none">
-<b>Address:</b><p>Multi Functional Complex, City Railway Station, City Centre, Udaipur</p>
-<b>Phone:</b><p>0294 2485558</p>
-</div></li>
-<li><h4 id="lpu" onclick="myFunctio(event)">Sankalp</h4>
-<div id="myDIV5" style="display:none">
-<b>Address:</b><p>Mewar Motor Building, 48, Toran Bawadi, City Station Road, City Centre, Udaipur</p>
-<b>Phone:</b><p>5100456</p>
-</div></li>
+ 
+<li>
+ <h4 id="fgh" onclick="myFunctio(event)">Barbeque Nation </h4>
+ <div id="myDIV" class="kink" style="display:none">
+   <img src="barbe.jpg" alt="Amantra">
+   <div id="divcont">
+       <h3>Website :</h3><a href="amantrahotel.com" style="color: blue;"> Visit Site</a></div>
+     <div id="divcont"><h3>Address :</h3><p> 3rd Floor,NH-8,The Celebration Mall Opposite Devendra Dham Bhuwana, Bhuwana,Udaipur,313004</p></div>
+     <div id="divcont">
+         <h3>Phone :</h3><p> 0294 694 4544</p></div>
+   </div>
+</li>
+
+<li>
+ <h4  id="rpp" onclick="myFunctio(event)">Tehkhana Restaurant & Bar</h4>
+ <div id="myDIV1" class="kink"  style="display:none">
+   <img src="teh.jpg" alt="Amar Kothi">
+   <div id="divcont">
+       <h3>Website :</h3><a href="" style="color: blue;"> Visit Site</a></div>
+    <div id="divcont"><h3>Address :</h3><p> Hitawala Complex - IInd,1/A,Saheli Marg,Opposite Soni Hospital,Panchwati,<br/>Udaipur,313001</p></div>
+     <div id="divcont"><h3>Phone :</h3><p> 096609 01448</p></div>
+    </div>
+    </li>
+
+<li>
+<h4 id="lp" onclick="myFunctio(event)">Mathara</h4>
+<div id="myDIV2" class="kink"  style="display:none">
+    <img src="mathara.jpg" alt="Heritage">
+  <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+    <div id="divcont">
+ <h3>Address :</h3><p> 8th Floor, Lake City Mall, Durga Nursery Road, Udaipur, Rajasthan 313002
+      </p></div>
+<div id="divcont"><h3>Phone :</h3><p> 099824 30071</p></div>
+    </div></li>
+
+<li><h4 id="llv" onclick="myFunctio(event)">Delhi Darbar</h4>
+<div id="myDIV4"  class="kink"  style="display:none">
+    <img src="delhi.jpg" alt="Ram Pratap">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p> Multi Functional Complex, City Railway Station, City Centre, Udaipur</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> 0294 2485558</p>
+    </div></div></li>
+
+<li>
+    <h4 id="lpu" onclick="myFunctio(event)">Sankalp</h4>
+<div id="myDIV5"   class="kink" style="display:none">
+    <img src="sank.jpg" alt="Rangniwas">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p> Mewar Motor Building, 48, Toran Bawadi, City Station Road, City Centre, Udaipur</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> NA</p>
+    </div></div></li>
 <li><h4 id="ou" onclick="myFunctio(event)">Bawarchi Restaurant</h4>
-<div id="myDIV6" style="display:none">
-<b>Address:</b><p>6 - Delhi Gate, City Centre, Udaipur</p>
-<b>Phone:</b><p>0294 2414985</p>
-</div></li>
+<div id="myDIV6"  class="kink"  style="display:none">
+    <img src="bawa.jpg" alt="Ambavgarh Retreat">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+ <h3>Address :</h3><p> 6 - Delhi Gate, City Centre, Udaipur</p></div>
+    <div id="divcont"><h3>Phone:</h3><p> 0294 2414985</p>
+    </div></div></li>
 <li><h4 id="th" onclick="myFunctio(event)">Domino's</h4>
-<div id="myDIV7" style="display:none">
-<b>Address:</b><p>G-2, Upper Ground Floor, Celebration Mall, Bhuwana, Udaipur</p>
-<b>Phone:</b><p>5151300</p>
-</div></li>
-<li><h4 id="ah" onclick="myFunctio(event)">Kadai Restaurant</h4>
-<div id="myDIV8" style="display:none">
-<b>Address:</b><p>126 ABC, Main Road, Near Shahi Bagh, Udaipur</p>
-<b>Phone:</b><p>9166801860</p>
-</div></li>
-<li><h4 id="hhl" onclick="myFunctio(event)">7 Days Restaurant</h4>
-<div id="myDIV9" style="display:none">
-<b>Address:</b><p>Hotel Varju Villa, 100 Feet Road, Near Nand Bhawan, Shobhagpura, Udaipur</p>
-<b>Phone:</b><p>0294 2980923</p>
-</div></li>
-<li><h4 id="hs" onclick="myFunctio(event)">Traditional Khana</h4>
-<div id="myDIV10" style="display:none">
-<b>Address:</b><p>48-D Panchwati Circle, Adjoining RK Mall, Panchwati, Udaipur</p>
-<b>Phone:</b><p>7665366999</p>
-</div></li>
-<li><h4 id="hrp" onclick="myFunctio(event)">Zucchini Restaurant</h4>
-<div id="myDIV11" style="display:none">
-<b>Address:</b><p>Near D P Jewellers, Hanuman Temple, Bhopalpura, Udaipur</p>
-<b>Phone:</b><p>099822 82167</p>
-</div></li>
+<div id="myDIV7"  class="kink"  style="display:none">
+    <img src="domino.jpg" alt="Krishna">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p> G-2, Upper Ground Floor, Celebration Mall, Bhuwana, Udaipur</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> NA</p>
+    </div></div></li>
+<li><h4 id="kr" onclick="myFunctio(event)">Kadai Restaurant</h4>
+<div id="myDIV8"  class="kink"  style="display:none">
+    <img src="kadai.jpg" alt="Krishna">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p> 126 ABC, Main Road, Near Shahi Bagh, Udaipur</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> 9166801860</p>
+    </div></div></li>
+<li><h4 id="7d" onclick="myFunctio(event)">7 Dayz Restaurant</h4>
+<div id="myDIV9"  class="kink"  style="display:none">
+    <img src="7d.jpg" alt="Krishna">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p>Hotel Varju Villa, 100 Feet Road, Near Nand Bhawan, Shobhagpura, Udaipur</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> 0294 2980923</p>
+    </div></div></li>
+<li><h4 id="tk" onclick="myFunctio(event)">Traditional Khana</h4>
+<div id="myDIV10"  class="kink"  style="display:none">
+    <img src="trad.jpg" alt="Krishna">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p>48-D Panchwati Circle, Adjoining RK Mall, Panchwati, Udaipur</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> 7665366999</p>
+    </div></div></li>
+<li><h4 id="zr" onclick="myFunctio(event)">Zucchini Restaurant</h4>
+<div id="myDIV11"  class="kink"  style="display:none">
+    <img src="zucc.jpg" alt="Krishna">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p> Near D P Jewellers, Hanuman Temple, Bhopalpura, Udaipur</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> 099822 82167</p>
+    </div></div></li>
 <li><h4 id="fj" onclick="myFunctio(event)">foodiez Junction</h4>
-<div id="myDIV12" style="display:none">
-<b>Address:</b><p>Shop No.18, Opposite Kalyan Jewellers, Delhi Gate, Udaipur</p>
-<b>Phone:</b><p>8875307860</p>
-</div></li>
+<div id="myDIV12"  class="kink"  style="display:none">
+    <img src="foodi.jpg" alt="Krishna">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p> Shop No.18, Opposite Kalyan Jewellers, Delhi Gate, Udaipur</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> 8875307860</p>
+    </div></div></li>
 
 </ul>
 </div>
-          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- first -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6385494986725811"
-     data-ad-slot="8877030862"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+ <script>
+         function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+     </script> 
 <footer>
 <div class="container" >
-<p style="text-align:center; padding:20px;">Copyright &copy;Roam Udaipur.All Rights Reserved | Contact Us:+91 8290755844</p>
+    <p style="float: left;" id="copyv">&copy;Roam Udaipur</p>
+    <a style="float:right; text-decoration: underline;" id="copyv" href="disclaimer.html">Disclaimer</a>
+   
+    <p id="copyv" style="text-align: center;">Made with <i class="fa fa-heart" aria-hidden="true"></i></p>
 </div>
 </footer>
 </body>

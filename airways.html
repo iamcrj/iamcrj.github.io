@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
- <link rel="stylesheet" type="text/css" href="main1.css">
+<meta name = "viewport" content = "width=device-width, initial-scale = 1, maximum-scale=1 ,user-scalable = no" />
+     <link rel="stylesheet" type="text/css" href="main1.css">
+         <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+       <link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Share Tech' rel='stylesheet'>
+       <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Sedgwick Ave Display' rel='stylesheet'>
+       <script src="https://use.fontawesome.com/5b626b8830.js"></script>
 	</head>
 	 <body>
     
      <div class="header">
        <div class="inner-header">
        <div class="logo"><a href="index.html">RoamUdaipur.com</a></div>
+           <span id="openel" style="font-size:25px;cursor:pointer; position:absolute; right:3%; top:1%" onclick="openCont()">&#9776;</span>
 <!--       <div class="header-link"><a id="login" href="logoutscript.php">Log Out</a></div>-->
        <div class="header-link"><Button id="login" onclick="openCont()">Contents</Button></div>
     <!--   <div class="header-link"><Button id="login" onclick="openProfile()">Profile</Button></div>-->
@@ -15,9 +26,9 @@
        </div>
        </div>
      <div>
-       <img src="indigo.jpg" alt="" class="slideshow">
-       <img src="jet.jpg" alt="" class="slideshow" >
-       <img src="airindia.jpg" alt="" class="slideshow" >
+       <img src="air2.jpg" alt="" class="slideshow">
+       <img src="air1.jpg" alt="" class="slideshow" >
+       <img src="air3.jpg" alt="" class="slideshow" >
      </div>
 <script>
 var si = 0;
@@ -38,7 +49,9 @@ function myFunctio(event)
  {
 	 var targo=event.target;
 	 if(targo.id=="fgh")
-	 {var x = document.getElementById('myDIV');
+        
+	 {   
+         var x = document.getElementById('myDIV');
 	 }
 		  else if(targo.id=="rpp")
 		     {
@@ -70,6 +83,7 @@ function myFunctio(event)
        function closeCont() {
            document.getElementById("contents_show").style.width = "0";
        }
+    
 </script>
 <div id="profile_show" class="profile">
   <a href="javascript:void(0)" class="closebtn" onclick="closeProfile()">&times;</a>
@@ -97,128 +111,86 @@ echo $row['email'];?></h2></div>
 
             <i><a href="railways.html">Railways</a></i>
  <i><a href="4&5star.html">4&5 Star Hotels</a></i>
-           
+      
 <a style="margin-top:95px; text-align:center; font-size:16px; color:black;" href="roamudaipur.php">&copy;RoamUdaipur.com</a>
 </div>
 <div id="jkk"><h2>Airways</h2></div>
-<div id="searched">
-<ul id="myUL" type="none">
-<li><h4 id="fgh" onclick="myFunctio(event)">Mumbai-Udaipur</h4>
-<div id="myDIV" style="display:none">
-<table id="myTable1">
-  <tr class="tr-header">
-    <th style="width:60%;">Flight</th>
-    <th style="width:40%;">Flight No.</th>
-	<th style="width:40%;">Departure</th>
-	<th style="width:40%;">Arrival</th>
-  </tr>
-  <tr>
-    <td>Jet Airways</td>
-    <td>9W2093</td>
-	<td>05:10</td>
-	<td>06:30</td>
-  </tr>
-  <tr>
-    <td>Indigo</td>
-    <td>6E-749</td>
-	<td>12:15</td>
-	<td>13:40</td>
-  </tr>
-  <tr>
-    <td>Air India</td>
-    <td>AI-643</td>
-	<td>14:10</td>
-	<td>15:45</td>
-  </tr>
-  <tr>
-    <td>Jet Airways</td>
-    <td>9W-2073</td>
-	<td>18:40</td>
-	<td>20:00</td>
-  </tr>
-  <tr>
-    <td>Indigo</td>
-    <td>6E-764</td>
-	<td>17:20</td>
-	<td>18:50</td>
-  </tr>
-</table>
-</div></li>
-<li><h4 id="rpp" onclick="myFunctio(event)">Delhi-Udaipur</h4>
-  <div id="myDIV1" style="display:none">
+<div id="searched2">
+<div id="ap_content">
 
-<table id="myTable2">
-  <tr class="tr-header">
-    <th style="width:60%;">Flight</th>
-    <th style="width:40%;">Flight No.</th>
-	<th style="width:40%;">Departure</th>
-	<th style="width:40%;">Arrival</th>
-  </tr>
-  <tr>
-    <td>Jet Airways</td>
-    <td>9W 824</td>
-	<td>11:20</td>
-	<td>12:30</td>
-  </tr>
-  <tr>
-    <td>Indigo</td>
-    <td>6E-746</td>
-	<td>07:40</td>
-	<td>09:10</td>
-  </tr>
-  <tr>
-    <td>Indigo</td>
-    <td>6E-751</td>
-	<td>13:25</td>
-	<td>14:35</td>
-  </tr>
-  <tr>
-    <td>Air India</td>
-    <td>AI-471</td>
-	<td>13:25</td>
-	<td>14:35</td>
-  </tr>
-  <tr>
-    <td>Spice Jet(via Jaipur) </td>
-    <td>SG 2623</td>
-	<td>07:20</td>
-	<td>09:25</td>
-  </tr>
-</table>
-</div></li>
-<li><h4 id="lp" onclick="myFunctio(event)">Jaipur-Udaipur</h4>
-   <div id="myDIV2" style="display:none">
-
-<table id="myTable3">
-  <tr class="tr-header">
-    <th style="width:60%;">Flight</th>
-    <th style="width:40%;">Flight No.</th>
-	<th style="width:40%;">Departure</th>
-	<th style="width:40%;">Arrival</th>
-  </tr>
-  <tr>
-    <td>Spice Jet</td>
-    <td>SG 2623</td>
-	<td>08:35</td>
-	<td>09:30</td>
-  </tr>
- </table>
-</div></li>
-</ul>
+    <div id="ap_title"><i style="color:red; font-size:35px; padding:10px;" class="fa fa-info-circle" aria-hidden="true"></i></div>
+  <div id="ap_desc" >
+<h3 style="display:inline-block;">Maharana Pratap Airport</h3><p style="display:inline;"> or known as Dabok Airport or Udaipur Airport is a commercial domestic airport situated 22 km east of Udaipur. Udaipur Airport is spread over 504 acres. The airport has one asphalt runway, oriented 08/26, 9000 feet/2743 metres long and 45 metres wide. Its 250 by 150 metre apron provides parking space for 3 Boeing 737s or Airbus A320 aircraft at a time. There are 4 check-in counters which can handle 600 passengers during peak time.</p>
 </div>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- first -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6385494986725811"
-     data-ad-slot="8877030862"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-         <footer>
+    </div>
+<div id="map_content" style=" margin-top:8%; opacity:0;">
+    <div id="map_title"><i style="color:red; font-size:35px; padding:10px;" class="fa fa-map" aria-hidden="true"></i></div>
+    <div id="map_desc">
+       <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat:24.6190,lng:73.8908};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: {lat: 24.6190, lng: 73.8908}
+        });
+        var marker = new google.maps.Marker({
+          position:{lat: 24.6190, lng: 73.8908},
+          map: map
+        });
+        
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxiAHEz1tcr1OLaVLA1T50mvO2B27kHFM&callback=initMap">
+    </script>
+    </div>
+    </div>
+<div id="ap_table">
+    <div id="table_title"><i style="color:red; font-size:35px; padding:10px;" class="fa fa-plane" aria-hidden="true"></i></div>
+ <div id="table_desc"><table id="myTable1">
+  <tr class="tr-header">
+    <th style="width:30%; text-align: center;">Airlines</th>
+    <th style="width:70%; text-align: center;">Destinations</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Air India</td>
+    <td style="text-align: center;">Delhi,Mumbai</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Indigo</td>
+    <td style="text-align: center;">Delhi,Mumbai and Hyderabad(via Delhi)</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Jet Airways</td>
+    <td style="text-align: center;">Bangalore(1 Stop),Delhi, Jaipur,Mumbai and Thiruvananthapuram(2 Stops)</td>
+</tr>
+</table>
+    </div>
+</div>
+</div>         
+<footer>
 <div class="container" >
-<p style="text-align:center; padding:15px;">Copyright &copy;Roam Udaipur.All Rights Reserved | Contact Us:+91 8290755844</p>
+    <p style="float: left;" id="copyv">&copy;Roam Udaipur</p>
+    <a style="float:right; text-decoration: underline;" id="copyv" href="disclaimer.html">Disclaimer</a>
+   
+    <p id="copyv" style="text-align: center;">Made with <i class="fa fa-heart" aria-hidden="true"></i></p>
 </div>
 </footer>
+        <script>
+         function jabscroll()
+            {
+                var ap=document.getElementById("map_content");
+                var y=window.pageYOffset;
+                if(y>390)
+                    {
+                        ap.style.opacity="1";
+                        ap.style.transition="all 1s";
+                    }
+                else
+                    ap.style.opacity="0";
+            }
+            window.addEventListener("scroll",jabscroll);
+         </script>
 </body>
+</html>

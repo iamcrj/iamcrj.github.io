@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
+ <meta name = "viewport" content = "width=device-width, initial-scale = 1, maximum-scale=1 ,user-scalable = no" />
      <link rel="stylesheet" type="text/css" href="main1.css">
-
+         <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+       <link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Share Tech' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Sedgwick Ave Display' rel='stylesheet'>
+       <script src="https://use.fontawesome.com/5b626b8830.js"></script>
   </head>
 <body>
  
 <div class="header">
   <div class="inner-header">
+       <span id="openel" style="font-size:25px;cursor:pointer; position:absolute; right:3%; top:1%" onclick="openCont()">&#9776;</span>
   <div class="logo"><a href="index.html">RoamUdaipur.com</a></div>
  <!-- <div class="header-link"><a id="login" href="logoutscript.php">Log Out</a></div>-->
   <div class="header-link"><Button id="login" onclick="openCont()">Contents</Button></div>
@@ -108,7 +116,7 @@ echo $row['email'];?></h2></div>
 </div>
 <div class="profile" id="contents_show">
   <a href="javascript:void(0)" class="closebtn" onclick="closeCont()">&times;</a>
-    <h2 style="text-align:center;"><u>Contents</u></h2>
+    <h2 style="text-align:center; font-family: 'Sedgwick Ave Display';">Contents</h2>
     <br/>
     <br/>
   <i><a href="lakes.html">Lakes</a></i>
@@ -121,63 +129,205 @@ echo $row['email'];?></h2></div>
 <a style="margin-top:95px; text-align:center; font-size:16px; color:black;" href="roamudaipur.php">&copy;RoamUdaipur.com</a>
 </div>
 <div id="jkk"><h2>Hotels</h2></div>
-<div id="searched">
+
+<div id="searched2" style="border:none; height:800px;">
+
+<div class="tab" style="height: 700px; margin-top:50px;">
+  <button class="tablinks" onclick="openCity(event, 'fs')" id="defaultOpen">Hotel Fateh Garh</button>
+  <button class="tablinks" onclick="openCity(event, 'pl')">Hotel Ram Pratap Palace</button>
+  <button class="tablinks" onclick="openCity(event, 'us')">Lake Palace</button>
+  <button class="tablinks" onclick="openCity(event, 'js')">Radisson Blu Palace Resort & Spa</button>
+  <button class="tablinks" onclick="openCity(event, 'rl')">The Lalit Laxmi Vilas Palace</button>
+  <button class="tablinks" onclick="openCity(event, 'dt')">The Leela Palace</button>
+  <button class="tablinks" onclick="openCity(event, 'bt')">The Oberoi Udaivilas</button>
+  <button class="tablinks" onclick="openCity(event, 'ss')">Trident Hotel</button>
+ </div>
+
+<div id="fs" class="tabcontent" style="height:700px; margin-top:50px;">
+    <h3>Hotel Fateh Garh</h3>
+   <img src="fatehg.jpg" style="margin-left:160px;" alt="Amantra">
+   <div id="divcont">
+       <h3>Website :</h3><a href="amantrahotel.com" style="color: blue;">Visit Site</a></div>
+     <div id="divcont"><h3>Address :</h3><p> Sisarma, Udaipur, Rajasthan 313001</p></div>
+     <div id="divcont">
+         <h3>Phone :</h3><p> 086969 45109</p></div>
+</div>
+
+<div id="pl" class="tabcontent" style="height:700px;  margin-top:50px;">
+<h3>Hotel Ram Pratap Palace</h3>
+ <img src="rampra.jpg"style="margin-left:160px;" alt="Amar Kothi">
+   <div id="divcont">
+       <h3>Website :</h3><a href="" style="color: blue;"> Visit Site</a></div>
+    <div id="divcont"><h3>Address :</h3><p> No.5-B, Alkapuri , Fateh Sagar Lake, Udaipur, Rajasthan 313001</p></div>
+     <div id="divcont"><h3>Phone :</h3><p> 0294 243 1701</p></div>
+</div>
+
+<div id="us" class="tabcontent " style="height:700px;  margin-top:50px;">
+  <h3>Lake Palace</h3>
+  <img src="lakep.jpg" style="margin-left:160px;" alt="Heritage">
+  <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+    <div id="divcont">
+ <h3>Address :</h3><p> Lake Pichola, Udaipur, Rajasthan 313001
+      </p></div>
+<div id="divcont"><h3>Phone :</h3><p> 0294 242 8800</p></div>
+</div>
+
+<div id="js" class="tabcontent" style="height:700px;  margin-top:50px;">
+  <h3>Radisson Blu Palace Resort & Spa</h3>
+  <img src="radi.jpg" style="margin-left:160px;" alt="Rajdarshan">
+<div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+    <div id="divcont">
+        <h3>Address :</h3><p> B-1, Near Fateh Sagar Lake, Ambamata, Udaipur, Rajasthan 313001</p></div><div id="divcont">
+ <h3>Phone :</h3><p> 0294 305 0000</p>
+    </div>
+</div>
+<div id="rl" class="tabcontent " style="height:700px;  margin-top:50px;">
+  <h3>The Lalit Laxmi Vilas Palace</h3>
+  <img src="laxmi.jpg" style="margin-left:160px;" alt="Ram Pratap">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p> Opposite Fateh Sagar Lake, Udaipur, Rajasthan 313004</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> 0294 301 7777</p>
+    </div>
+</div>
+<div id="dt" class="tabcontent" style="height:700px;  margin-top:50px;">
+  <h3>The Leela Palace</h3>
+  <img src="leela.jpg" style="margin-left:160px;" alt="Rangniwas">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p> Lake Pichola, Udaipur, Rajasthan 313001</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> 0294 670 1234</p>
+    </div>
+</div>
+<div id="bt" class="tabcontent" style="height:700px;  margin-top:50px;">
+  <h3>The Oberoi Udaivilas</h3>
+ <img src="udaivil.jpg" style="margin-left:160px;" alt="Ambavgarh Retreat">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+ <h3>Address :</h3><p> Haridasji Ki Magri, Pichola, Udaipur, Rajasthan 313001</p></div>
+    <div id="divcont"><h3>Phone:</h3><p> 0294 243 3300</p>
+    </div>
+</div>
+<div id="ss" class="tabcontent" style="height:700px;  margin-top:50px;">
+  <h3>Trident Hotel</h3>
+   <img src="tride.jpg" style="margin-left:160px;" alt="Krishna">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p> Near Lake Pichola, Pichola, Udaipur, Rajasthan 313001</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> 0294 243 2200</p>
+    </div>
+</div>
+ 
+
+
+</div>
+
+<div id="searched1" style="height:auto;">
 <ul id="myUL" type="none">
- <li><h4 id="fgh" onclick="myFunctio(event)">Hotel Fateh Garh Udaipur - A Heritage Renaissance Resort</h4>
-<div id="myDIV" style="display:none">
-<b>Address:</b><p>Sisarma, Udaipur, Rajasthan 313001</p>
-<b>Phone:</b><p> 086969 45109</p>
-</div></li>
-<li><h4 id="rpp" onclick="myFunctio(event)">Hotel Ram Pratap Palace</h4>
-<div id="myDIV1" style="display:none">
-<b>Address:</b><p> No.5-B, Alkapuri , Fateh Sagar Lake, Udaipur, Rajasthan 313001</p>
-<b>Phone:</b><p> 0294 243 1701</p>
-</div></li>
-<li><h4 id="lp" onclick="myFunctio(event)">Lake Palace</h4>
-<div id="myDIV2" style="display:none">
-<b>Address:</b><p> Pichola, Udaipur, Rajasthan 313001</p>
-<b>Phone:</b><p> 0294 242 8800<p>
-</div></li>
-<li><h4 id="rbu" onclick="myFunctio(event)">Radisson Blu Udaipur Palace Resort & Spa</h4>
-<div id="myDIV3" style="display:none">
-<b>Address:</b><p> B-1, Near Fateh Sagar Lake, Ambamata, Udaipur, Rajasthan 313001</p>
-<b>Phone:</b> <p>0294 305 0000</p>
-</div></li>
-<li><h4 id="llv" onclick="myFunctio(event)">The Lalit Laxmi Vilas Palace Udaipur</h4>
-<div id="myDIV4" style="display:none">
-<b>Address:</b><p> Opposite Fateh Sagar Lake, Udaipur, Rajasthan 313004</p>
-<b>Phone:</b><p> 0294 301 7777</p>
-</div></li>
-<li><h4  id="lpu" onclick="myFunctio(event)">The Leela Palace Udaipur</h4>
-<div id="myDIV5" style="display:none">
- <b>Address:</b><p> Lake Pichola, Udaipur, Rajasthan 313001</p>
-<b>Phone:</b><p> 0294 670 1234</p>
-</div></li>
+ 
+<li>
+ <h4 id="fgh" onclick="myFunctio(event)">Hotel Fateh Garh </h4>
+ <div id="myDIV" class="kink" style="display:none">
+   <img src="fatehg.jpg" alt="Amantra">
+   <div id="divcont">
+       <h3>Website :</h3><a href="amantrahotel.com" style="color: blue;"> Visit Site</a></div>
+     <div id="divcont"><h3>Address :</h3><p> Sisarma, Udaipur, Rajasthan 313001</p></div>
+     <div id="divcont">
+         <h3>Phone :</h3><p> 086969 45109</p></div>
+   </div>
+</li>
+
+<li>
+ <h4  id="rpp" onclick="myFunctio(event)">Hotel Ram Pratap Palace</h4>
+ <div id="myDIV1" class="kink"  style="display:none">
+   <img src="rampra.jpg" alt="Amar Kothi">
+   <div id="divcont">
+       <h3>Website :</h3><a href="" style="color: blue;"> Visit Site</a></div>
+    <div id="divcont"><h3>Address :</h3><p> No.5-B, Alkapuri , Fateh Sagar Lake, Udaipur, Rajasthan 313001</p></div>
+     <div id="divcont"><h3>Phone :</h3><p> 0294 243 1701</p></div>
+    </div>
+    </li>
+
+<li>
+<h4 id="lp" onclick="myFunctio(event)">Lake Palace</h4>
+<div id="myDIV2" class="kink"  style="display:none">
+    <img src="lakep.jpg" alt="Heritage">
+  <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+    <div id="divcont">
+ <h3>Address :</h3><p> Lake Pichola, Udaipur, Rajasthan 313001
+      </p></div>
+<div id="divcont"><h3>Phone :</h3><p> 0294 242 8800</p></div>
+    </div></li>
+
+<li>
+<h4 id="rbu" onclick="myFunctio(event)">Radisson Blu Palace Resort & Spa</h4>
+<div id="myDIV3"  class="kink"  style="display:none">
+    <img src="radi.jpg" alt="Rajdarshan">
+<div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+    <div id="divcont">
+        <h3>Address :</h3><p> B-1, Near Fateh Sagar Lake, Ambamata, Udaipur, Rajasthan 313001</p></div><div id="divcont">
+ <h3>Phone :</h3><p> 0294 305 0000</p>
+    </div></div></li>
+
+    <li><h4 id="llv" onclick="myFunctio(event)">The Lalit Laxmi Vilas Palace</h4>
+<div id="myDIV4"  class="kink"  style="display:none">
+    <img src="laxmi.jpg" alt="Ram Pratap">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p> Opposite Fateh Sagar Lake, Udaipur, Rajasthan 313004</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> 0294 301 7777</p>
+    </div></div></li>
+
+<li>
+    <h4 id="lpu" onclick="myFunctio(event)">The Leela Palace</h4>
+<div id="myDIV5"   class="kink" style="display:none">
+    <img src="leela.jpg" alt="Rangniwas">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p> Lake Pichola, Udaipur, Rajasthan 313001</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> 0294 670 1234</p>
+    </div></div></li>
 <li><h4 id="ou" onclick="myFunctio(event)">The Oberoi Udaivilas</h4>
-<div id="myDIV6" style="display:none">
-<b>Address:</b><p> Haridasji Ki Magri, Pichola, Udaipur, Rajasthan 313001</p>
-<b>Phone:</b><p> 0294 243 3300</p>
-</div></li>
+<div id="myDIV6"  class="kink"  style="display:none">
+    <img src="udaivil.jpg" alt="Ambavgarh Retreat">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+ <h3>Address :</h3><p> Haridasji Ki Magri, Pichola, Udaipur, Rajasthan 313001</p></div>
+    <div id="divcont"><h3>Phone:</h3><p> 0294 243 3300</p>
+    </div></div></li>
 <li><h4 id="th" onclick="myFunctio(event)">Trident Hotel</h4>
-<div id="myDIV7" style="display:none">
-<b>Address:</b><p> Near Lake Pichola, Pichola, Udaipur, Rajasthan 313001</p>
-<b>Phone:</b><p> 0294 243 2200</p>
-</div></li>
+<div id="myDIV7"  class="kink"  style="display:none">
+    <img src="tride.jpg" alt="Krishna">
+    <div id="divcont"><h3>Website :</h3><a href="" style="color:blue;"> Visit Site</a></div>
+<div id="divcont">
+    <h3>Address :</h3><p> Near Lake Pichola, Pichola, Udaipur, Rajasthan 313001</p></div>
+    <div id="divcont"><h3>Phone :</h3><p> 0294 243 2200</p>
+    </div></div></li>
+
 </ul>
 </div>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- first -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6385494986725811"
-     data-ad-slot="8877030862"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<footer>
+ <script>
+         function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+     </script> 
+ <footer>
 <div class="container" >
-<p style="text-align:center; padding:20px;">Copyright &copy;Roam Udaipur.All Rights Reserved | Contact Us:+91 8290755844</p>
+    <p style="float: left;" id="copyv">&copy;Roam Udaipur</p>
+    <a style="float:right; padding-top:14px; text-decoration: underline;" id="copyv" href="disclaimer.html">Disclaimer</a>
+   
+    <p id="copyv" style="text-align: center;">Made with <i class="fa fa-heart" aria-hidden="true"></i></p>
 </div>
 </footer>
 </body>

@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="main1.css">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1, maximum-scale=1 ,user-scalable = no" />
+     <link rel="stylesheet" type="text/css" href="main1.css">
+         <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+       <link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Share Tech' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Sedgwick Ave Display' rel='stylesheet'>
+       <script src="https://use.fontawesome.com/5b626b8830.js"></script>
   </head>
 <body>
   
   <div class="header">
     <div class="inner-header">
     <div class="logo"><a href="index.html">RoamUdaipur.com</a></div>
+        <span id="openel" style="font-size:25px;cursor:pointer; position:absolute; right:3%; top:1%" onclick="openCont()">&#9776;</span>
     <!--<div class="header-link"><a id="login" href="logoutscript.php">Log Out</a></div>-->
        <div class="header-link"><Button id="login" onclick="openCont()">Contents</Button></div>
     <!--<div class="header-link"><Button id="login" onclick="openProfile()">Profile</Button></div>-->
@@ -78,182 +89,55 @@ echo $row['email'];?></h2></div>
 <a style="margin-top:95px; text-align:center; font-size:16px; color:black;" href="roamudaipur.php">&copy;RoamUdaipur.com</a>
 </div>
 <div id="jkk"><h2>Railways</h2></div>
-<div id="searched">
-<table id="myTable4">
-  <tr class="tr-header">
-    <th>Train No.</th>
-    <th>Train Name</th>
-	<th>Origin</th>
-	<th>Destination</th>
-	<th>Dep. Time</th>
-	<th>Arrival Time</th>
-	<th>Distance(KM)</th>
-	<th>Travel Time</th>
-	<th>Days of Runs</th>
-	<th>Remarks</th>
-
-  </tr>
-  <tr>
-    <td>12315</td>
-    <td>Annanya Express</td>
-	<td>Sealdah</td>
-	<td>Udaipur</td>
-	<td>13:10</td>
-<td>3:00</td>
-<td>2140</td>
-<td>3 Days</td>
-<td>Thursday</td>
-<td>Udaipur on Saturday</td>
-  </tr>
-  <tr>
-    <td>19665 </td>
-    <td>Khajuraho-Udaipur Express</td>
-	<td>Khajuraho</td>
-	<td>Udaipur</td>
-	<td>9:10</td>
-	<td>6:10</td>
-	<td>1092</td>
-	<td>2 Days</td>
-	<td>Everyday</td>
-<td>Via Jaipur</td>
-  </tr>
-  <tr>
-    <td>12963</td>
-    <td>Mewar Express</td>
-    <td>Delhi(HN)</td>
-	<td>Udaipur</td>
-	<td>19:05</td>
-	<td>7:20</td>
-	<td>743</td>
-	<td>2 Days</td>
-	<td>Everyday</td>
-<td>Via-Kota</td>
-  </tr>
-  <tr>
-    <td>12981</td>
-    <td>Chetak Express</td>
-	<td>Delhi(SR)</td>
-	<td>Udaipur</td>
-  <td>19:40</td>
-  <td>7:50</td>
-  <td>673</td>
-  <td>2 Days</td>
-  <td>Everyday</td>
-<td>Via-Ajmer</td>
-
-  </tr>
-   <tr>
-    <td>12995</td>
-    <td>Bandra-Udaipur Express</td>
-	<td>Bandra</td>
-	<td>Udaipur</td>
-	<td>15:45</td>
-	<td>8:55</td>
-	<td>945</td>
-	<td>2 Days</td>
-	<td>Wed,Fri,Sun</td>
-	<td>-</td>
-  </tr>
-   <tr>
-    <td>19659</td>
-    <td>Shalimar-Udaipur Express</td>
-	<td>Shalimar</td>
-	<td>Udaipur</td>
-	<td>20:25</td>
-	<td>8:55</td>
-	<td>1885</td>
-	<td>3 Days</td>
-	<td>Sunday</td>
-	<td>Reach Udaipur on Tues</td>
-  </tr>
-   <tr>
-    <td>9721</td>
-    <td>Jaipur-Udaipur Express Holiday Special</td>
-	<td>Jaipur</td>
-	<td>Udaipur</td>
-	<td>6:45</td>
-	<td>13:45</td>
-	<td>430</td>
-	<td>1 Day</td>
-	<td>Everyday</td>
-	<td>-</td>
-  </tr>
-   <tr>
-    <td>22901</td>
-    <td>Udaipur-Bandra Superfast</td>
-	<td>Bandra</td>
-	<td>Udaipur</td>
-	<td>23:45</td>
-	<td>16:30</td>
-	<td>945</td>
-	<td>2 Days</td>
-	<td>Tue,Thu,Sat</td>
-	<td>-</td>
-
-  </tr>
-   <tr>
-    <td>19329</td>
-    <td>Udaipur-Indore Express</td>
-	<td>Indore</td>
-	<td>Udaipur</td>
-	<td>8:05</td>
-	<td>19:00</td>
-	<td>479</td>
-	<td>1 Day</td>
-	<td>Everyday</td>
-	<td>-</td>
-
-  </tr>
-   <tr>
-    <td>12992</td>
-    <td>Jaipur-Udaipur Express</td>
-  <td>Jaipur</td>
-  <td>Udaipur</td>
-  <td>14:00</td>
-  <td>21:30</td>
-  <td>435</td>
-  <td>1 Day</td>
-  <td>Everyday</td>
-  <td>-</td>
-  </tr>
-   <tr>
-    <td>52928</td>
-    <td>Mewar Fast Passengers</td>
-<td>Ahmedabad</td>
-	<td>Udaipur</td>
-	<td>7:10</td>
-	<td>19:00</td>
-	<td>298</td>
-	<td>1 Day</td>
-	<td>Everyday</td>
-	<td>-</td>
-	</tr>
-   <tr>
-    <td>19944</td>
-    <td>Ahmedabad-Udaipur Express</td>
- <td>Ahmedabad</td>
-  <td>Udaipur</td>
-  <td>23:00</td>
-  <td>9:20</td>
-  <td>298</td>
-  <td>2 Days</td>
-  <td>Everyday</td>
-  <td>-</td>
- </tr>
-</table>
+<div id="searched2">
+<div id="ap_content">
+ <div id="ap_title"><i style="color:red; font-size:35px; padding:10px;" class="fa fa-info-circle" aria-hidden="true"></i></div>
+  <div id="ap_desc" >
+<h3 style="display:inline-block;">City Station</h3><p style="display:inline;"> or Udaipur Railway Station or Main Station Udaipur City railway station is a railway station located in Udaipur, Rajasthan, India. The railway station is under the administrative control of North Western Railway of Indian Railways. Udaipur City Railway Station has 4 platforms and a total of 6 tracks. It is situated on the Udaipur Road, around 3 km from the city center, and around 20 km from Udaipur Airport.</p>
+      <u><h4>Station Code : UDZ</h4></u>
 </div>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- first -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6385494986725811"
-     data-ad-slot="8877030862"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+    </div>
+<div id="map_content"  style=" margin-top:8%; padding:40px; margin-bottom:5%;">
+    <div id="map_title"><i style="color:red; font-size:35px; margin-left:20%; padding:10px;" class="fa fa-info-circle" aria-hidden="true"></i></div>
+    <div id="map_desc">
+   <h3 style="display:inline-block;">Rana Pratap Nagar</h3><p style="display:inline;"> railway station is the second railway station located in Udaipur, Rajasthan, India, besides the main Udaipur City railway station. The railway station is under the administrative control of North Western Railway of Indian Railways. Rana Pratap Nagar Railway Station has 2 platforms and has a Single Diesel BG track. It is situated in Khempura, near Thokar Chouraha, around 3 km from the city center, and around 18 km from Udaipur Airport. It main purpose of building this station was to decongest the main Udaipur City Railway Station.</p> 
+        <u><h4>Station Code : RPZ</h4></u>
+    </div>
+    </div>
+<div id="ap1_table">
+    <div id="table1_title"><i style="color:red; font-size:35px; padding:10px;" class="fa fa-map" aria-hidden="true"></i></div>
+    <div id="table1_desc">
+       <div id="map1"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat:24.5684,lng:73.6998};
+        var map = new google.maps.Map(document.getElementById('map1'), {
+          zoom: 16,
+          center: {lat: 24.5684, lng: 73.6998}
+        });
+        var marker = new google.maps.Marker({
+          position:{lat:24.5684, lng: 73.6998},
+          map: map
+        });
+        
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxiAHEz1tcr1OLaVLA1T50mvO2B27kHFM&callback=initMap">
+    </script>
+    </div>
+    </div>
+<div id="chart">
+    <button id="clicks" onclick="window.location.href='chart.html'">See Train Chart</button>
+    </div>
+</div>
 <footer>
 <div class="container" >
-<p style="text-align:center; padding:15px;">Copyright &copy;Roam Udaipur.All Rights Reserved | Contact Us:+91 8290755844</p>
+    <p style="float: left;" id="copyv">&copy;Roam Udaipur</p>
+    <a style="float:right; text-decoration: underline;" id="copyv" href="disclaimer.html">Disclaimer</a>
+   
+    <p id="copyv" style="text-align: center;">Made with <i class="fa fa-heart" aria-hidden="true"></i></p>
 </div>
 </footer>
+    </body>
+</html>

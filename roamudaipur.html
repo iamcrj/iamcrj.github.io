@@ -2,21 +2,13 @@
 <html>
 <head>
 <title>Roam Udaipur</title>
-    <meta name = "viewport" content = "width=device-width, initial-scale = 1, maximum-scale=1 ,user-scalable = no" />
-     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Aref Ruqaa' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Slackey' rel='stylesheet'>
-     <script src="https://use.fontawesome.com/5b626b8830.js"></script>
 <link href="main.css" rel="stylesheet" />
-
-    <script>
+<script>
 function showUser(str) {
     if (str == "") {
         document.getElementById("txtHint").innerHTML = "";
         return;
-    } else {
+    } else { 
         if (window.XMLHttpRequest) {
             xmlhttp = new XMLHttpRequest();
         } else {
@@ -33,23 +25,21 @@ function showUser(str) {
 }
 </script>
 </head>
-<body onscroll="Scroll()">
+<body >
 <div class="header">
 <div class="inner-header">
-<div class="logo"><a href="index.html">RoamUdaipur.com</a></div>
-<!--<div class="header-link"><Button id="login" onClick="signup()">Sign up</Button></div>
+<div class="logo"><a href="#">Roam Udaipur</a></div>
+<div class="header-link"><Button id="login" onClick="signup()">Sign up</Button></div>
 <div class="header-link"><Button id="login" onClick="login()">Login</Button></div>
--->
 </div>
 </div>
 <div class="content">
 <div class="banner-image">
 <div class="inner-banner-image">
 <div class="banner-content">
-<h1>Welcome to Udaipur</h1>
-<p>#1 Tourist Destination in Rajasthan</p>
-<a href="home.html" class="button">Continue</a>
-<!--<Button class="button" onClick="signup()">Join Now</Button>-->
+<h1 >Join the Udaipur Community</h1>
+<p>Search , Sell and Buy Products in Udaipur.</p>
+<Button class="button" onClick="signup()">Join Now</Button>
 </div>
 <div class="banner-content2" style="display:none">
 <Button id="butto" onClick="closelogin()">X</Button>
@@ -88,10 +78,10 @@ function showUser(str) {
 </div>
 </div>
 </div>
-<div class="container" >
+<div class="container">
 <div class="items">
 <a href="#">
-<img src="tourist.jpg" class="thumbnail">
+<img src="kkk.jpg" class="thumbnail">
 <div class="caption">
 <h2>Tourism</h2>
 <p>Beautiful City surrounded by Aravalli Range.</p>
@@ -100,7 +90,7 @@ function showUser(str) {
 </div>
 <div class="items">
 <a href="#">
-<img src="edu.jpg" class="thumbnail">
+<img src="ooo.jpg" class="thumbnail">
 <div class="caption">
 <h2>Education</h2>
 <p>Best for Primary and Secondary Education.</p>
@@ -117,33 +107,13 @@ function showUser(str) {
 </a>
 </div>
 </div>
-    </div>
+</div>
 <footer>
-<div class="container1" >
-    <p style="float:left;" id="copyv">&copy;Roam Udaipur</p>
-    <a style="float:right; text-decoration: underline; padding-top:13px;" id="copyv" href="disclaimer.html">Disclaimer</a>
-   
-    <p id="copyv" style="text-align: center;">Made with <i class="fa fa-heart" aria-hidden="true"></i></p>
+<div class="container">
+<p style="text-align:center">Copyright &copy;Roam Udaipur.All Rights Reserved | Contact Us:+91 8290755844</p>
 </div>
 </footer>
 <script>
-function Scroll()
-{
-  var top=document.getElementById('containu');
-  var ypos=window.pageYOffset;
-  if(ypos>150)
-  top.style.opacity="1";
-  else {
-    top.style.opacity="0";
-  }
-}
-window.addEventListener("scroll",Scroll);
-function showAnim()
-{
-  var contained=document.getElementsByClassName("items");
-for(var i=0;i<contained.length;i++)
-  contained.addClass("anim");
-  }
 function login()
 {
 var x=document.getElementsByClassName("banner-content");

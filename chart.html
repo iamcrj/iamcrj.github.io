@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1, maximum-scale=1 ,user-scalable = no" />
+     <link rel="stylesheet" type="text/css" href="main1.css">
+         <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+       <link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Share Tech' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Sedgwick Ave Display' rel='stylesheet'>
+       <script src="https://use.fontawesome.com/5b626b8830.js"></script>
+  </head>
+<body>
+  
+  <div class="header">
+    <div class="inner-header">
+    <div class="logo"><a href="index.html">RoamUdaipur.com</a></div>
+        <span id="openel" style="font-size:25px;cursor:pointer; position:absolute; right:3%; top:1%" onclick="openCont()">&#9776;</span>
+    <!--<div class="header-link"><a id="login" href="logoutscript.php">Log Out</a></div>-->
+       <div class="header-link"><Button id="login" onclick="openCont()">Contents</Button></div>
+    <!--<div class="header-link"><Button id="login" onclick="openProfile()">Profile</Button></div>-->
+    <div class="header-link"><a id="login" href="home.html">Home</a></div>
+    </div>
+    </div>
+    <div class="profile" id="contents_show">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeCont()">&times;</a>
+    <h2 style="text-align:center; font-family: 'Sedgwick Ave Display';">Contents</h2>
+    <br/>
+    <br/>
+    <i><a href="lakes.html">Lakes</a></i>
+  <i><a href="temples.html">Temples</a></i>
+    <i><a href="museums.html">Museums</a></i>
+         <i><a href="railways.html">Railways</a></i>
+      <i><a href="2&3star.html">2&3 Star Hotels</a></i>
+        <i><a href="restaurants.html">Restaurants</a></i>
+          <i><a href="airways.html">Airways</a></i>
+           <i><a href="4&5star.html">4&5 Star Hotels</a></i>
+           
+<a style="margin-top:95px; text-align:center; font-size:16px; color:black;" href="roamudaipur.php">&copy;RoamUdaipur.com</a>
+</div>
+ <table id="myTable4">
+  <tr class="tr-header">
+    <th>Train No.</th>
+    <th>Train Name</th>
+	<th>Origin</th>
+	<th>Destination</th>
+	<th class="hider">Dep. Time</th>
+	<th class="hider">Arrival Time</th>
+	<th class="hider">Distance(KM)</th>
+	<th class="hider">Travel Time</th>
+	<th class="hider">Days of Runs</th>
+	<th class="hider">Remarks</th>
+
+  </tr>
+  <tr>
+    <td>12315</td>
+    <td>Annanya Express</td>
+	<td>Sealdah</td>
+	<td>Udaipur</td>
+	<td class="hider">13:10</td>
+<td class="hider">3:00</td>
+<td class="hider">2140</td>
+<td class="hider">3 Days</td>
+<td class="hider">Thursday</td>
+<td class="hider">Udaipur on Saturday</td>
+  </tr>
+  <tr>
+    <td>19665 </td>
+    <td>Khajuraho-Udaipur Express</td>
+	<td>Khajuraho</td>
+	<td>Udaipur</td>
+	<td class="hider">9:10</td>
+	<td class="hider">6:10</td>
+	<td class="hider">1092</td>
+	<td class="hider">2 Days</td>
+	<td class="hider">Everyday</td>
+<td class="hider">Via Jaipur</td>
+  </tr>
+  <tr>
+    <td>12963</td>
+    <td>Mewar Express</td>
+    <td>Delhi(HN)</td>
+	<td>Udaipur</td>
+	<td class="hider">19:05</td>
+	<td class="hider">7:20</td>
+	<td class="hider">743</td>
+	<td class="hider">2 Days</td>
+	<td class="hider">Everyday</td>
+<td class="hider">Via-Kota</td>
+  </tr>
+  <tr>
+    <td>12981</td>
+    <td>Chetak Express</td>
+	<td>Delhi(SR)</td>
+	<td>Udaipur</td>
+  <td class="hider">19:40</td>
+  <td class="hider">7:50</td>
+  <td class="hider">673</td>
+  <td class="hider">2 Days</td>
+  <td class="hider">Everyday</td>
+<td class="hider">Via-Ajmer</td>
+
+  </tr>
+   <tr>
+    <td>12995</td>
+    <td>Bandra-Udaipur Express</td>
+	<td>Bandra</td>
+	<td>Udaipur</td>
+	<td class="hider">15:45</td>
+	<td class="hider">8:55</td>
+	<td class="hider">945</td>
+	<td class="hider">2 Days</td>
+	<td class="hider">Wed,Fri,Sun</td>
+	<td class="hider">-</td>
+  </tr>
+   <tr>
+    <td>19659</td>
+    <td>Shalimar-Udaipur Express</td>
+	<td>Shalimar</td>
+	<td>Udaipur</td>
+	<td class="hider">20:25</td>
+	<td class="hider">8:55</td>
+	<td class="hider">1885</td>
+	<td class="hider">3 Days</td>
+	<td class="hider">Sunday</td>
+	<td class="hider">Reach Udaipur on Tues</td>
+  </tr>
+   <tr>
+    <td>9721</td>
+    <td>Jaipur-Udaipur Express Holiday Special</td>
+	<td>Jaipur</td>
+	<td>Udaipur</td>
+	<td class="hider">6:45</td>
+	<td class="hider">13:45</td>
+	<td class="hider">430</td>
+	<td class="hider">1 Day</td>
+	<td class="hider">Everyday</td>
+	<td class="hider">-</td>
+  </tr>
+   <tr>
+    <td>22901</td>
+    <td>Udaipur-Bandra Superfast</td>
+	<td>Bandra</td>
+	<td>Udaipur</td>
+	<td class="hider">23:45</td>
+	<td class="hider">16:30</td>
+	<td class="hider">945</td>
+	<td class="hider">2 Days</td>
+	<td class="hider">Tue,Thu,Sat</td>
+	<td class="hider">-</td>
+
+  </tr>
+   <tr>
+    <td>19329</td>
+    <td>Udaipur-Indore Express</td>
+	<td>Indore</td>
+	<td>Udaipur</td>
+	<td class="hider">8:05</td>
+	<td class="hider">19:00</td>
+	<td class="hider">479</td>
+	<td class="hider">1 Day</td>
+	<td class="hider">Everyday</td>
+	<td class="hider">-</td>
+
+  </tr>
+   <tr>
+    <td>12992</td>
+    <td>Jaipur-Udaipur Express</td>
+  <td>Jaipur</td>
+  <td>Udaipur</td>
+  <td class="hider">14:00</td>
+  <td class="hider">21:30</td>
+  <td class="hider">435</td>
+  <td class="hider">1 Day</td>
+  <td class="hider">Everyday</td>
+  <td class="hider">-</td>
+  </tr>
+   <tr>
+    <td>52928</td>
+    <td>Mewar Fast Passengers</td>
+<td>Ahmedabad</td>
+	<td>Udaipur</td>
+	<td class="hider">7:10</td>
+	<td class="hider">19:00</td>
+	<td class="hider">298</td>
+	<td class="hider">1 Day</td>
+	<td class="hider">Everyday</td>
+	<td class="hider">-</td>
+	</tr>
+   <tr>
+    <td>19944</td>
+    <td>Ahmedabad-Udaipur Express</td>
+ <td>Ahmedabad</td>
+  <td>Udaipur</td>
+  <td class="hider">23:00</td>
+  <td class="hider">9:20</td>
+  <td class="hider">298</td>
+  <td class="hider">2 Days</td>
+  <td class="hider">Everyday</td>
+  <td class="hider">-</td>
+ </tr>
+</table>
+    <script>
+    function openProfile() {
+    document.getElementById("profile_show").style.width = "50%";
+}
+
+function closeProfile() {
+    document.getElementById("profile_show").style.width = "0";
+}
+function openCont() {
+    document.getElementById("contents_show").style.width = "50%";
+}
+
+function closeCont() {
+    document.getElementById("contents_show").style.width = "0";
+}</script>
+<footer>
+<div class="container" >
+    <p style="float: left;" id="copyv">&copy;Roam Udaipur</p>
+    <a style="float:right; text-decoration: underline;" id="copyv" href="disclaimer.html">Disclaimer</a>
+   
+    <p id="copyv" style="text-align: center;">Made with <i class="fa fa-heart" aria-hidden="true"></i></p>
+</div>
+</footer>
+    </body>
+</html>

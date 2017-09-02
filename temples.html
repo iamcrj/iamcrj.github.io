@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+       <meta name = "viewport" content = "width=device-width, initial-scale = 1, maximum-scale=1 ,user-scalable = no" />
   <link rel="stylesheet" type="text/css" href="main1.css">
+       <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+       <link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Share Tech' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Sedgwick Ave Display' rel='stylesheet'>
+       <script src="https://use.fontawesome.com/5b626b8830.js"></script>
 </head>
 
 <body>
   
 <div class="header">
   <div class="inner-header">
+      <span id="openel" style="font-size:25px;cursor:pointer; position:absolute; right:3%; top:1%" onclick="openCont()">&#9776;</span>
   <div class="logo"><a href="index.html">RoamUdaipur.com</a></div>
   <!--<div class="header-link"><a id="login" href="logoutscript.php">Log Out</a></div>-->
   <div class="header-link"><Button id="login" onclick="openCont()">Contents</Button></div>
@@ -63,7 +73,7 @@ echo $row['email'];?></h2></div>
 </div>
 <div class="profile" id="contents_show">
   <a href="javascript:void(0)" class="closebtn" onclick="closeCont()">&times;</a>
-    <h2 style="text-align:center;"><u>Contents</u></h2>
+    <h2 style="text-align:center;  font-family: 'Sedgwick Ave Display';">Contents</h2>
     <br/>
     <br/>
   <i><a href="lakes.html">Lakes</a></i>
@@ -86,7 +96,7 @@ echo $row['email'];?></h2></div>
 
 <div id="fs" class="tabcontent">
 <h3>Neemach Mata Temple</h3>
-<img src="neem.jpg" style="width:80%; height:50%;">
+<img src="neem.jpg" style="width:80%; height:40%;">
 <p>Neemach Mata Temple is located on a hill on the banks of the Fateh Sagar Lake in the city of Udaipur, Rajasthan. This temple is located on a green hill
 in the Dewali area of Udaipur. It has both stairs and uphill slope walk way to climb, which is around 900 metres long. It enshrines the stone idol of
 Neemach Mata Devi. There is also an idol of Lord Ganesh and three west-facing lions of stone.One can have very beautiful view of whole city and its lakes
@@ -95,13 +105,13 @@ from the temple as well as while climbing. The walk is pollution-free as no vehi
 
 <div id="pl" class="tabcontent">
 <h3>Karni Mata Temple</h3>
-<img src="karnim.jpg" style="width:80%; height:50%;">
+<img src="karnim.jpg" style="width:80%; height:40%;">
 <p>Another dedicated temple is Shri Manshapurna Karni Mata Temple or Karni Mata, Udaipur, located on the Machla Hills, near
  Pandit Deendayal Upadhyay Park in Udaipur, Rajasthan. One can reach to the temple either by stairs starting from Manikyalal Verma Park or by ropeway.</p>
 </div>
 <div id="us" class="tabcontent">
 <h3>Jagdish Temple</h3>
-<img src="jagd.jpg" style="width:80%; height:50%;">
+<img src="jagd.jpg" style="width:80%; height:40%;">
 <p>Jagdish Temple is a large Hindu temple in the middle of Udaipur in Rajasthan.
  A big tourist attraction, the temple was originally called the temple of Jagannath Rai but is now called Jagdish-ji. It is a major monument in Udaipur.
  Located in the City Palace complex of Udaipur, this temple is made in the Indo-Aryan style of architecture.</p>
@@ -123,18 +133,13 @@ function openCity(evt, cityName) {
 document.getElementById("defaultOpen").click();
 </script>
 </div>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- first -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6385494986725811"
-     data-ad-slot="8877030862"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<footer>
+ <footer>
 <div class="container" >
-<p style="text-align:center; padding:20px;">Copyright &copy;Roam Udaipur.All Rights Reserved | Contact Us:+91 8290755844</p>
+    <p style="float: left;" id="copyv">&copy;Roam Udaipur</p>
+    <a style="float:right; text-decoration: underline;" id="copyv" href="disclaimer.html">Disclaimer</a>
+   
+    <p id="copyv" style="text-align: center;">Made with <i class="fa fa-heart" aria-hidden="true"></i></p>
 </div>
 </footer>
+    </body>
+</html>
