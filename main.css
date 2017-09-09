@@ -134,22 +134,163 @@ a{
 	margin:auto;
         
 }
+    .inner-header
+{
+    display: flex;
+	width:80%;
+	margin:auto;
+}
     .logo{
+        flex: 2;
 	text-align: center;
 	height:30px;
-padding:15px;
+padding:20px;
+        padding-top: 25px;
+        padding-bottom:15px;
 	font-size:20px;
 	font-weight:bold;
 	animation-name: animationdem;
 	animation-duration: 2s;
          font-family: 'Josefin Sans';
 }
+    .header-link
+{
+    flex:1;
+    margin-top:20px;
+	float:right;
+	font-size:12px;
+	height:10px;
+	padding:0px 0px;
+	font-size:13px;
+	font-weight:bold;
+}
+    
+    #myBtn
+    {
+         
+	float:right;
+	font-size:12px;
+	height:10px;
+	padding:0px 0px;
+	font-size:13px;
+	font-weight:bold;
+
+    }
+      .locadisp {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 80px;
+          
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: #DCEDC8; 
+    background-color: rgba(0,0,0,0.4); 
+}
+    #bababa
+    {
+        font-size:12px;
+    }
+
+.con-disp {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+    #saracont
+    {
+        display:flex;
+        flex-direction: column;
+    }
+     #map
+        {
+            flex:2; order:1; margin-top:5%; margin-left: 40px;
+           
+            
+        }
+        #bababa
+        {
+        flex:1; order:2;
+        }
 
 }
 
 
 @media screen and (min-width:501px)
     {
+       
+    .locadisp {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 60px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: #DCEDC8; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.con-disp {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         .banner-content{
 	position:relative;
 	padding-top:3%;
@@ -185,6 +326,11 @@ padding:15px;
 		margin:auto;
 		overflow:hidden;
 	}
+         #saracont
+    {
+        display:flex;
+   
+    }
         .logo{
 	float:left;
 	height:50px;
@@ -194,6 +340,23 @@ padding:15px;
 	animation-name: animationdem;
 	animation-duration: 2s;
              font-family: 'Josefin Sans';
+}
+        #map
+        {
+            flex:2; order:2; margin-top:5%; margin-left: 20px;
+        }
+        #bababa
+        {
+        flex:1; order:1;
+        }
+        .header-link
+{
+	float:right;
+	font-size:14px;
+	height:50px;
+	padding:15px 15px;
+	font-size:16px;
+	font-weight:bold;
 }
         .banner-image{
 	padding-bottom:30px;
@@ -248,7 +411,8 @@ padding:15px;
         }
         
 }
-.animate {
+.animate 
+{
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
 }
@@ -257,7 +421,8 @@ padding:15px;
 	from {transform:scale(0)}
 		to{transform: scale(1)}
 }
-.banner-content2{
+.banner-content2
+{
 	position:relative;
 	padding-top:6%;
 	left:20%;
@@ -270,7 +435,8 @@ padding:15px;
 	animation-name:example;
 	animation-duration:1s;
 }
-.banner-content3{
+.banner-content3
+{
 	position:relative;
 	padding-top:6%;
 	left:20%;
@@ -284,19 +450,12 @@ padding:15px;
 	animation-name:example;
 	animation-duration:1s;
 }
-form{
+form
+{
 	margin-left:20px;
 }
 
-.header-link
-{
-	float:right;
-	font-size:14px;
-	height:50px;
-	padding:15px 15px;
-	font-size:16px;
-	font-weight:bold;
-}
+
 
  #baba
     {
@@ -310,7 +469,8 @@ form{
 {
   position:absolute; right:8%;
 }
-.header{
+.header
+{
 	background-color:#000;
 	color:#fff;
 	border-color:#080808;
@@ -318,18 +478,22 @@ form{
 	border:1px solid transparent;
 }
 
-#username,#dob,#email{
+#username,#dob,#email
+{
 	width:30%;
 	border:1px solid transparent;
 	border-radius:4px;
 }
-@keyframes example{
+@keyframes example
+{
 	from { font-size:0px;}
-	to{
+	to
+    {
 		font-size:20px;
 	}
 }
-#butto{
+#butto
+{
 	position:absolute;
 	top:0;
 	right:0;
@@ -337,7 +501,8 @@ form{
 	color:white;
 	border:1px solid transparent;
 }
-#login{
+#login
+{
 	background-color:black;
 	color:white;
 	border:0.5px solid transparent;
@@ -347,7 +512,8 @@ form{
 	animation-name:example;
 	animation-duration:1s;
 }
-#txtHint{
+#txtHint
+{
 	position:absolute;
 	left:300px;
 	top:65px;

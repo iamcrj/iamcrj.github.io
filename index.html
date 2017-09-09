@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Roam Udaipur</title>
+<title>Roam Udaipur-Travel &amp; Sell or Buy</title>
     <meta name = "viewport" content = "width=device-width, initial-scale = 1, maximum-scale=1 ,user-scalable = no" />
+    <meta name=”description” content=”Looking for ideas on what to see and do in Udaipur? The RoamUdaipur website has plenty of fun-filled suggestions to keep you busy during your visit.”>
      <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Aref Ruqaa' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Slackey' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Amarante' rel='stylesheet'>
      <script src="https://use.fontawesome.com/5b626b8830.js"></script>
 <link href="main.css" rel="stylesheet" />
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxiAHEz1tcr1OLaVLA1T50mvO2B27kHFM&libraries=geometry&language=en"></script>
     <script>
 function showUser(str) {
     if (str == "") {
@@ -33,15 +35,146 @@ function showUser(str) {
 }
 </script>
 </head>
-<body onscroll="Scroll()">
+<body>
 <div class="header">
 <div class="inner-header">
 <div class="logo"><a href="index.html">RoamUdaipur.com</a></div>
+    <div class="header-link"><i style="font-size: 25px; color: #E65100;" id="myBtn" class="fa fa-globe" aria-hidden="true"></i></div>
 <!--<div class="header-link"><Button id="login" onClick="signup()">Sign up</Button></div>
 <div class="header-link"><Button id="login" onClick="login()">Login</Button></div>
 -->
 </div>
 </div>
+ <div id="disploc" class="locadisp">
+<div class="con-disp">
+    <span class="close">&times;</span>
+   <h3 style="font-family:'Amarante'; text-align: center; color:#EF9A9A; ">Your Distance from Major Transportation in Udaipur</h3>
+     <div id="saracont" >
+         <div id="map"></div>
+    
+<h4 id="bababa"></h4>
+    </div>
+  </div>
+</div>   
+    
+    
+    
+<script>
+   
+    var locadisp = document.getElementById('disploc');
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+    var x=document.getElementById('bababa');
+    function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition,showError);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+  function showPosition(position) {
+    var lat1=position.coords.latitude; 
+    var long1=position.coords.longitude;
+    var latlon = new google.maps.LatLng(lat1, long1)
+    var mapholder = document.getElementById('map')
+    mapholder.style.height = '250px';
+    mapholder.style.width = '70%';
+
+    var myOptions = {
+    center:latlon,zoom:15,
+    mapTypeId:google.maps.MapTypeId.ROADMAP,
+    mapTypeControl:false,
+    navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+    }
+    
+    var map = new google.maps.Map(document.getElementById("map"), myOptions);
+    var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+    initialize(lat1,long1);
+}
+function getloc()
+    {
+        getLocation();
+        }
+ 
+    function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+function initialize(lat1,long1)
+    {
+var origin1 = new google.maps.LatLng(lat1,long1);
+var destinationA= new google.maps.LatLng(24.6190,73.8908);
+var destinationB= new google.maps.LatLng(24.5684,73.6998);
+var destinationC= new google.maps.LatLng(24.5827,73.7286);
+
+
+var service = new google.maps.DistanceMatrixService();
+service.getDistanceMatrix(
+  {
+    origins: [origin1],
+    destinations: [destinationA,destinationB,destinationC],
+    travelMode: 'DRIVING',
+    unitSystem: google.maps.UnitSystem.METRIC ,
+    avoidHighways:false,
+    avoidTolls:false,
+  }, callback);
+    }
+    var placed= ["Maharana Pratap Airport, Udaipur", "City Railway Station, Udaipur", "Rana Pratap Nagar, Udaipur"];
+function callback(response, status) {
+    
+  if (status == 'OK') {
+    var origins = response.originAddresses;
+    var destinations = response.destinationAddresses;
+
+    for (var i = 0; i < origins.length; i++) {
+      var results = response.rows[i].elements;
+      for (var j = 0; j < results.length; j++) {
+        var element = results[j];
+        var distance = element.distance.text;
+        var duration = element.duration.text;
+        var from = origins[i];
+        var to = placed[j];
+        var baba=document.getElementById('output');
+        x.innerHTML+='<h4 style="color:red;">'+to+'</h4> Distance -'+distance+' & Time to reach -'+duration+'.<br><br>';
+      
+      }
+    }
+        
+  }
+}
+
+btn.onclick = function() {
+   locadisp.style.display = "block";
+    if(x.innerHTML!='')
+        {
+           return 0; 
+        }
+    else
+        {
+            getloc();
+        }
+}
+span.onclick = function() {
+    locadisp.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == locadisp) {
+        locadisp.style.display = "none";
+    }
+}
+</script>
 <div class="content">
 <div class="banner-image">
 <div class="inner-banner-image">
@@ -130,23 +263,6 @@ function showUser(str) {
 </div>
 </footer>
 <script>
-function Scroll()
-{
-  var top=document.getElementById('containu');
-  var ypos=window.pageYOffset;
-  if(ypos>150)
-  top.style.opacity="1";
-  else {
-    top.style.opacity="0";
-  }
-}
-window.addEventListener("scroll",Scroll);
-function showAnim()
-{
-  var contained=document.getElementsByClassName("items");
-for(var i=0;i<contained.length;i++)
-  contained.addClass("anim");
-  }
 function login()
 {
 var x=document.getElementsByClassName("banner-content");
