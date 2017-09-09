@@ -77,8 +77,7 @@ var span = document.getElementsByClassName("close")[0];
     var long1=position.coords.longitude;
     var latlon = new google.maps.LatLng(lat1, long1)
     var mapholder = document.getElementById('map')
-    mapholder.style.height = '250px';
-    mapholder.style.width = '70%';
+   
 
     var myOptions = {
     center:latlon,zoom:15,
@@ -137,7 +136,7 @@ function callback(response, status) {
   if (status == 'OK') {
     var origins = response.originAddresses;
     var destinations = response.destinationAddresses;
-
+ 
     for (var i = 0; i < origins.length; i++) {
       var results = response.rows[i].elements;
       for (var j = 0; j < results.length; j++) {
@@ -146,9 +145,10 @@ function callback(response, status) {
         var duration = element.duration.text;
         var from = origins[i];
         var to = placed[j];
+       
         var baba=document.getElementById('output');
-        x.innerHTML+='<h4 style="color:red;">'+to+'</h4> Distance -'+distance+' & Time to reach -'+duration+'.<br><br>';
-      
+         x.innerHTML+='<h4 style="color:red;">'+to+'</h4> Distance -'+distance+' & Time to reach -'+duration+'.<br>';
+             
       }
     }
         
