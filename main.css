@@ -223,13 +223,13 @@ padding:20px;
     }
      #map
         {
-            flex:2; order:1; margin-top:5%; margin-left: 40px;
+            flex:2; order:2; margin-top:5%; margin-left: 40px;
            
             
         }
         #bababa
         {
-        flex:1; order:2;
+        flex:1; order:1;
         }
 
 }
