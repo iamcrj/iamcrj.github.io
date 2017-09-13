@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+       <link rel="icon" href="beb.png"type="image" sizes="32x32"/>
+      <title>Rail Chart | RoamUdaipur</title>
     <meta name = "viewport" content = "width=device-width, initial-scale = 1, maximum-scale=1 ,user-scalable = no" />
      <link rel="stylesheet" type="text/css" href="main1.css">
          <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
@@ -11,18 +13,22 @@
      <link href='https://fonts.googleapis.com/css?family=Share Tech' rel='stylesheet'>
       <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
       <link href='https://fonts.googleapis.com/css?family=Sedgwick Ave Display' rel='stylesheet'>
+       <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+       <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
        <script src="https://use.fontawesome.com/5b626b8830.js"></script>
   </head>
 <body>
   
   <div class="header">
     <div class="inner-header">
-    <div class="logo"><a href="index.html">RoamUdaipur.com</a></div>
-        <span id="openel" style="font-size:25px;cursor:pointer; position:absolute; right:3%; top:1%" onclick="openCont()">&#9776;</span>
-    <!--<div class="header-link"><a id="login" href="logoutscript.php">Log Out</a></div>-->
-       <div class="header-link"><Button id="login" onclick="openCont()">Contents</Button></div>
-    <!--<div class="header-link"><Button id="login" onclick="openProfile()">Profile</Button></div>-->
-    <div class="header-link"><a id="login" href="home.html">Home</a></div>
+     <div class="logo"><a href="index.html"><img src="tatag.png" ></a></div>
+
+                <!--       <div class="header-link"><a id="login" href="logoutscript.php">Log Out</a></div>-->
+                <div class="header-link"><Button class="login" ><i id="myBtn" class="fa fa-globe" aria-hidden="true"></i></Button></div>
+                <div class="header-link"><i style="font-size: 25px; color:red;" id="myBtn1" onclick="openCont()" class="fa fa-bars" aria-hidden="true"></i></div>
+                <div class="header-link"><Button class="login cancer" onclick="openCont()"><i class="fa fa-bars" aria-hidden="true"></i></Button></div>
+                <!--   <div class="header-link"><Button id="login" onclick="openProfile()">Profile</Button></div>-->
+                <div class="header-link"><a class="login cancer" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></div>
     </div>
     </div>
     <div class="profile" id="contents_show">
@@ -46,7 +52,7 @@
     <th>Train No.</th>
     <th>Train Name</th>
 	<th>Origin</th>
-	<th>Destination</th>
+	<th class="hider">Destination</th>
 	<th class="hider">Dep. Time</th>
 	<th class="hider">Arrival Time</th>
 	<th class="hider">Distance(KM)</th>
@@ -59,7 +65,7 @@
     <td>12315</td>
     <td>Annanya Express</td>
 	<td>Sealdah</td>
-	<td>Udaipur</td>
+	<td class="hider">Udaipur</td>
 	<td class="hider">13:10</td>
 <td class="hider">3:00</td>
 <td class="hider">2140</td>
@@ -71,7 +77,7 @@
     <td>19665 </td>
     <td>Khajuraho-Udaipur Express</td>
 	<td>Khajuraho</td>
-	<td>Udaipur</td>
+	<td class="hider">Udaipur</td>
 	<td class="hider">9:10</td>
 	<td class="hider">6:10</td>
 	<td class="hider">1092</td>
@@ -83,7 +89,7 @@
     <td>12963</td>
     <td>Mewar Express</td>
     <td>Delhi(HN)</td>
-	<td>Udaipur</td>
+	<td class="hider">Udaipur</td>
 	<td class="hider">19:05</td>
 	<td class="hider">7:20</td>
 	<td class="hider">743</td>
@@ -95,7 +101,7 @@
     <td>12981</td>
     <td>Chetak Express</td>
 	<td>Delhi(SR)</td>
-	<td>Udaipur</td>
+	<td class="hider">Udaipur</td>
   <td class="hider">19:40</td>
   <td class="hider">7:50</td>
   <td class="hider">673</td>
@@ -108,7 +114,7 @@
     <td>12995</td>
     <td>Bandra-Udaipur Express</td>
 	<td>Bandra</td>
-	<td>Udaipur</td>
+	<td class="hider">Udaipur</td>
 	<td class="hider">15:45</td>
 	<td class="hider">8:55</td>
 	<td class="hider">945</td>
@@ -120,7 +126,7 @@
     <td>19659</td>
     <td>Shalimar-Udaipur Express</td>
 	<td>Shalimar</td>
-	<td>Udaipur</td>
+	<td class="hider">Udaipur</td>
 	<td class="hider">20:25</td>
 	<td class="hider">8:55</td>
 	<td class="hider">1885</td>
@@ -132,7 +138,7 @@
     <td>9721</td>
     <td>Jaipur-Udaipur Express Holiday Special</td>
 	<td>Jaipur</td>
-	<td>Udaipur</td>
+	<td class="hider">Udaipur</td>
 	<td class="hider">6:45</td>
 	<td class="hider">13:45</td>
 	<td class="hider">430</td>
@@ -144,7 +150,7 @@
     <td>22901</td>
     <td>Udaipur-Bandra Superfast</td>
 	<td>Bandra</td>
-	<td>Udaipur</td>
+	<td class="hider">Udaipur</td>
 	<td class="hider">23:45</td>
 	<td class="hider">16:30</td>
 	<td class="hider">945</td>
@@ -157,7 +163,7 @@
     <td>19329</td>
     <td>Udaipur-Indore Express</td>
 	<td>Indore</td>
-	<td>Udaipur</td>
+	<td class="hider">Udaipur</td>
 	<td class="hider">8:05</td>
 	<td class="hider">19:00</td>
 	<td class="hider">479</td>
@@ -170,7 +176,7 @@
     <td>12992</td>
     <td>Jaipur-Udaipur Express</td>
   <td>Jaipur</td>
-  <td>Udaipur</td>
+  <td class="hider">Udaipur</td>
   <td class="hider">14:00</td>
   <td class="hider">21:30</td>
   <td class="hider">435</td>
@@ -182,7 +188,7 @@
     <td>52928</td>
     <td>Mewar Fast Passengers</td>
 <td>Ahmedabad</td>
-	<td>Udaipur</td>
+	<td class="hider">Udaipur</td>
 	<td class="hider">7:10</td>
 	<td class="hider">19:00</td>
 	<td class="hider">298</td>
@@ -194,7 +200,7 @@
     <td>19944</td>
     <td>Ahmedabad-Udaipur Express</td>
  <td>Ahmedabad</td>
-  <td>Udaipur</td>
+  <td class="hider">Udaipur</td>
   <td class="hider">23:00</td>
   <td class="hider">9:20</td>
   <td class="hider">298</td>

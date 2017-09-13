@@ -137,15 +137,14 @@ a{
     .inner-header
 {
     display: flex;
-	width:80%;
-	margin:auto;
+	width:100%;
+
 }
     .logo{
         flex: 2;
-	text-align: center;
+
 	height:30px;
-padding:20px;
-        padding-top: 25px;
+        padding-top: 15px;
         padding-bottom:15px;
 	font-size:20px;
 	font-weight:bold;
@@ -153,11 +152,13 @@ padding:20px;
 	animation-duration: 2s;
          font-family: 'Josefin Sans';
 }
+   
     .header-link
 {
     flex:1;
     margin-top:20px;
 	float:right;
+    margin-right:10px;
 	font-size:12px;
 	height:10px;
 	padding:0px 0px;
@@ -185,7 +186,7 @@ padding:20px;
     left: 0;
     top: 0;
     width: 100%; 
-    height: 80%; 
+    height: 100%; 
     overflow: auto; 
     background-color: #DCEDC8; 
     background-color: rgba(0,0,0,0.4); 
@@ -337,13 +338,17 @@ padding:20px;
         .logo{
 	float:left;
 	height:50px;
-padding:15px;
+/*padding:15px;*/
 	font-size:20px;
 	font-weight:bold;
 	animation-name: animationdem;
 	animation-duration: 2s;
              font-family: 'Josefin Sans';
 }
+        .logo img
+        {
+          height:50px;
+        }
         #map
         {
             flex:2; order:2; margin-top:3%; margin-left: 20px;

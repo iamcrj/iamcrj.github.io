@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+       <link rel="icon" href="beb.png"type="image" sizes="32x32"/>
+      <title>Temples-RoamUdaipur</title>
        <meta name = "viewport" content = "width=device-width, initial-scale = 1, maximum-scale=1 ,user-scalable = no" />
   <link rel="stylesheet" type="text/css" href="main1.css">
        <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
@@ -10,6 +12,9 @@
       <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
      <link href='https://fonts.googleapis.com/css?family=Share Tech' rel='stylesheet'>
       <link href='https://fonts.googleapis.com/css?family=Sedgwick Ave Display' rel='stylesheet'>
+       <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+       <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxiAHEz1tcr1OLaVLA1T50mvO2B27kHFM&libraries=geometry&language=en"></script>
        <script src="https://use.fontawesome.com/5b626b8830.js"></script>
 </head>
 
@@ -17,14 +22,28 @@
   
 <div class="header">
   <div class="inner-header">
-      <span id="openel" style="font-size:25px;cursor:pointer; position:absolute; right:3%; top:1%" onclick="openCont()">&#9776;</span>
-  <div class="logo"><a href="index.html">RoamUdaipur.com</a></div>
-  <!--<div class="header-link"><a id="login" href="logoutscript.php">Log Out</a></div>-->
-  <div class="header-link"><Button id="login" onclick="openCont()">Contents</Button></div>
-  <!--<div class="header-link"><Button id="login" onclick="openProfile()">Profile</Button></div>-->
-  <div class="header-link"><a id="login" href="home.html">Home</a></div>
+    <div class="logo"><a href="index.html"><img src="tatag.png" ></a></div>
+
+                <!--       <div class="header-link"><a id="login" href="logoutscript.php">Log Out</a></div>-->
+                <div class="header-link"><Button class="login" ><i id="myBtn" class="fa fa-globe" aria-hidden="true"></i></Button></div>
+                <div class="header-link"><i style="font-size: 25px; color:red;" id="myBtn1" onclick="openCont()" class="fa fa-bars" aria-hidden="true"></i></div>
+                <div class="header-link"><Button class="login cancer" onclick="openCont()"><i class="fa fa-bars" aria-hidden="true"></i></Button></div>
+                <!--   <div class="header-link"><Button id="login" onclick="openProfile()">Profile</Button></div>-->
+                <div class="header-link"><a class="login cancer" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></div>
   </div>
   </div>
+    <div id="disploc" class="locadisp">
+<div class="con-disp">
+    <span class="close">&times;</span>
+   <h3 style="font-family:'Amarante'; text-align: center; color:#EF9A9A; ">Your Distance from Major Transportation in Udaipur</h3>
+     <div id="saracont" >
+         <div id="map"></div>
+    
+<h4 id="bababa"></h4>
+    </div>
+  </div>
+</div>   
+    <script src="globe.js"></script>
 <div>
   <img src="jagd.jpg" alt="" class="slideshow">
   <img src="karnim.jpg" alt="" class="slideshow" >
@@ -97,8 +116,7 @@ echo $row['email'];?></h2></div>
 <div id="fs" class="tabcontent">
 <h3>Neemach Mata Temple</h3>
 <img src="neem.jpg" style="width:80%; height:40%;">
-<p>Neemach Mata Temple is located on a hill on the banks of the Fateh Sagar Lake in the city of Udaipur, Rajasthan. This temple is located on a green hill
-in the Dewali area of Udaipur. It has both stairs and uphill slope walk way to climb, which is around 900 metres long. It enshrines the stone idol of
+<p>Neemach Mata Temple is located on a hill on the banks of the Fateh Sagar Lake in the city of Udaipur, Rajasthan. It has both stairs and uphill slope walk way to climb, which is around 900 metres long. It enshrines the stone idol of
 Neemach Mata Devi. There is also an idol of Lord Ganesh and three west-facing lions of stone.One can have very beautiful view of whole city and its lakes
 from the temple as well as while climbing. The walk is pollution-free as no vehicles can enter in the hill boundary.</p>
 </div>
