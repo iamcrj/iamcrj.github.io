@@ -21,7 +21,7 @@
 function showWea() {
     console.log('2');
     var xmlhttp = new XMLHttpRequest();
-     xmlhttp.open("GET",'http://api.openweathermap.org/data/2.5/weather?lat=24.5854&lon=73.7125&APPID=7ebc60e321618ea996cb92307517393f&units=metric',true);
+     xmlhttp.open("GET",'https://api.openweathermap.org/data/2.5/weather?lat=24.5854&lon=73.7125&APPID=7ebc60e321618ea996cb92307517393f&units=metric',true);
           xmlhttp.onreadystatechange = function() 
           {
             if (this.readyState == 4 && this.status == 200) 
