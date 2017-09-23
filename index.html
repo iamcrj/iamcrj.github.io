@@ -11,41 +11,34 @@
     <link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Slackey' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Amarante' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+    <link href='http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=7ebc60e321618ea996cb92307517393f'>
      <script src="https://use.fontawesome.com/5b626b8830.js"></script>
 <link href="main.css" rel="stylesheet" />
+<link href="animate.css" rel="stylesheet"/>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxiAHEz1tcr1OLaVLA1T50mvO2B27kHFM&libraries=geometry&language=en"></script>
     <script>
-function showUser(str) {
-    if (str == "") {
-        document.getElementById("txtHint").innerHTML = "";
-        return;
-    } else {
-        if (window.XMLHttpRequest) {
-            xmlhttp = new XMLHttpRequest();
-        } else {
-            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-        }
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("txtHint").innerHTML = this.responseText;
+function showWea() {
+    console.log('2');
+    var xmlhttp = new XMLHttpRequest();
+     xmlhttp.open("GET",'http://api.openweathermap.org/data/2.5/weather?lat=24.5854&lon=73.7125&APPID=7ebc60e321618ea996cb92307517393f&units=metric',true);
+          xmlhttp.onreadystatechange = function() 
+          {
+            if (this.readyState == 4 && this.status == 200) 
+            {
+                var data=JSON.parse(xmlhttp.responseText);
+                var results=document.getElementById('temper');
+                var results1=document.getElementById('typee');
+                results.innerHTML = data.main.temp+' &#8451';
+                results1.innerHTML=data.main.humidity+'%';
             }
-        };
-        xmlhttp.open("GET","getuser.php?q="+str,true);
-        xmlhttp.send();
+          }
+        xmlhttp.send(null);
     }
-}
+showWea();
 </script>
 </head>
 <body>
-<div class="header">
-<div class="inner-header">
-<div class="logo"><a href="index.html"><img src="tatag.png" ></a></div>
-    <div class="header-link"><i style="font-size: 25px; color: #E65100;" id="myBtn" class="fa fa-globe" aria-hidden="true"></i></div>
-<!--<div class="header-link"><Button id="login" onClick="signup()">Sign up</Button></div>
-<div class="header-link"><Button id="login" onClick="login()">Login</Button></div>
--->
-</div>
-</div>
  <div id="disploc" class="locadisp">
 <div class="con-disp">
     <span class="close">&times;</span>
@@ -57,20 +50,120 @@ function showUser(str) {
     </div>
   </div>
 </div>   
+<!-- <h4>hvr-underline-from-left</h4> -->
     <script src="globe.js"></script>
 <div class="content">
 <div class="banner-image">
-<div class="inner-banner-image">
-<div class="banner-content">
-<h1>Welcome to Udaipur</h1>
-<p>#1 Tourist Destination in Rajasthan</p>
+    <div class="banner">
+        <div class="ban-1">
+   <a href="index.html"><img class="animate rubberBand" src="tatag.png" ></a>
+</div>
+<div class="cont animate slideInDown">
+    <ul>
+        <li class="dp">
+        <a href="#" class="dpb">Things to do</a>
+          <div class="ttd">
+            <div class="ttd2">
+            <div class="pts">
+                <h4>Places to See</h4>
+           <a href="lakes.html">Lakes</a>
+      <a href="museums.html">Museums</a>
+      <a href="temples.html">Temples</a>
+  </div>
+  <div class="hr">
+    <h4>Accomodation</h4>
+    <a href="2&3star.html">Budget Hotels</a>
+      <a href="4&5star.html">Hotels</a>
+      <a href="restaurants.html">Restaurants</a>
+  </div>
+</div>
+         </div>
+       </li>
 
-<a href="tourism.html" id="buttou" class="button">Tourism</a>
-<a href="#" onclick="alert('This section is under development');" id="butsell" class="button">Sell and Buy</a>
- 
+        <li class="dp"><a href="#">Get to Udaipur</a>
+ <div class="ttd">
+    <div class="ttt">
+    <h4>Transport</h4>
+           <a class="htr" href="airways.html">Airways</a>
+      <a href="railways.html" class="htr">Railways</a>
+         </div>
+     </div>
+
+
+        </li>
+        
+        <li class="dp"><a href="#">Excrusion</a>
+ <div class="ttd">
+    <div class="tth">
+    <h4>NearBy Places</h4>
+           <a href="#">Mount Abu</a>
+      <a href="#">Jaisamand Lake</a>
+      <a href="#">Mehsana</a>
+      <a href="#">Jaipur</a>
+         </div>
+</div>
+        </li>
+        
+        <li class="hvr-underline-from-left"><a href="#">About Us</a></li>
+        
+        <li class="hvr-underline-from-left"><a href="#">Contact Us</a> </li>
+
+    </ul>
+</div>
+<div class="call">
+<div class="dropdown">
+<h4 class="dropbtn"><i class="fa fa-phone" style="padding-right:10px; color:red; animation-iteration-count:infinite;" aria-hidden="true"></i>Call us Today</h4>
+ <div class="dropdown-content">
+   <h5>CHIRAG</h5>
+   <small>+91-8290755844</small>
+   <br/><br/>
+   <h5>OFFICE</h5>
+   <small>+91-7412818973</small>
+  </div>
+</div>
+    </div>
+</div>
+
+<div class="inner-banner-image">
+
+<div class="banner-content animate rollIn">
+ <h1 id="typing"></h1>
 <!--<Button class="button" onClick="signup()">Join Now</Button>-->
 </div>
-<div class="banner-content2" style="display:none">
+<script>
+    var i=1;
+  function type(){
+ 
+    var message="Welcome to Udaipur";
+    if(i<=message.length)
+     {
+        var text=message.substring(0,i);
+        document.getElementById('typing').innerHTML=text;
+        setTimeout("type()",100);
+        i++;
+    }
+};
+type();
+</script>
+<div class="banner-content2">
+    <div id="tablediv">
+  <table id="table1">
+    <tr>
+      <th id="tempid">Temperature</th>
+      <th>Humidity</th>
+</tr>
+<tr>
+    <td id="temper"></td>
+    <td id="typee"></td>
+    </tr>
+  </table>
+</div>
+
+<div class="banne">
+    <a href="#" class="hvr-float-shadow">Visit Gallery</a>
+    </div>
+</div>
+<!-- <div class="banner-content2" style="display:none">
 <Button id="butto" onClick="closelogin()">X</Button>
 <form action="loginscript.php" method="POST">
 <label for="username">Username:</label>
@@ -83,8 +176,8 @@ function showUser(str) {
 <br / >
 <input type="submit" name="submit" id="sub"/>
 </form>
-</div>
-<div class="banner-content3" style="display:none">
+</div> -->
+<!-- <div class="banner-content3" style="display:none">
 <Button id="butto" onClick="closelogin()">X</Button>
 
 <form action="signup.php" method="POST">
@@ -104,19 +197,93 @@ function showUser(str) {
 <br/>
 <div style="text-align:center;"><input type="submit" name="submit" id="sub" /></div>
 </form>
+</div> -->
 </div>
 </div>
+
+
+<div class="containerdiv">
+
+<div class="tourdiv" id="tourid" style="opacity: 0;">
+    <div id="h3h"><h3>Tourism</h3></div>
+    <div id="stats"><h5 id="h5h"></h5>
+    <small>tourists every year</small></div>
+    <div id="details">Udaipur city, also known as the 'City of Lakes', is a very popular tourist destination in Rajasthan.Udaipur is considered among the most romantic cities of India, Udaipur is a land around the azure water lakes, hemmed in by the lush hills of the Aravalis. The city is a blend of sights, sounds and experiences. With its kaleidoscope of fairy-tale palaces, lakes, temples, gardens and narrow lanes.Voted the Best City in the World in 2009 by Travel + Leisure magazine.Udaipur is now amongst the favourite wedding destinations for Indian as well as foreign nationals.
+   <br/><br/>
+   <a href="tourism.html" class="hvr-grow-shadow" style="color:red;">Explore More</a>
+    </div>
+
 </div>
-<div class="container" >
-<div class="items">
-<a href="#">
-<img src="tourist.jpg" class="thumbnail">
-<div class="caption">
-<h2>Tourism</h2>
-<p>Beautiful City surrounded by Aravalli Range.</p>
+<div class="edudiv" id="eduid" >
+     <div id="h3h"><h3>Education</h3></div>
+    <div id="details">Udaipur has a well-established education infrastructure. There are a number of universities, colleges and schools meeting the requirements of not only the city but the region and country as well. Udaipur is home to various government, deemed and private universities. Mohan Lal Sukhadia University, Maharana Pratap University of Agriculture and Technology and Rajiv Gandhi Tribal University are the major government universities in the city while J.R.N. Rajasthan Vidyapeeth is a deemed university. The IIM Udaipur,established in the city in 2011, was ranked as the fifth best management institute in the country by the Government of India,National Institutional Ranking Framework in 2016.
+<br/><br/>
+   <a  class="hvr-grow-shadow" href="tourism.html" style="color:red;">Explore More</a>
+    </div>
+</div>
+<div class="smartdiv">
+     <div id="h3h1"><h3>Smart City</h3></div>
+    <div id="details1">Udaipur City has been selected as one of the Smart Cities under the Minister of Urban Development (MoUD) 100 smart city mission in India. The Municipal Corporation of Udaipur is preparing the smart city proposal for participate in the IInd phase of the smart city challenge and our city has to compete with others to make it to the top 20 to be taken up for the Ist round of funding, for the year 2015-16. The Municipal Corporation is requesting to the citizens of Udaipur for share their ideas, suggestion and solutions for transforming the Udaipur into the Smart City. The Citizens suggestions are very important for Udaipur City to develop as a Smart City in Rajasthan State.</div>
+</div>
+<script type="text/javascript">
+    var j=0;
+    function counting()
+    {
+        if(j<=1000000)
+        {
+            document.getElementById('h5h').innerHTML=j;
+            setTimeout('counting()',20);
+            j=j+2000;
+        }
+
+    };
+    counting();
+
+</script>
+ <script>
+            function jabscroll()
+            {
+                var ap=document.getElementById("tourid");
+                var y=window.pageYOffset;
+                if(y>175)
+                {
+                    ap.style.opacity="1";
+                    ap.style.transition="all 1s";
+                }
+                else
+                    ap.style.opacity="0";
+
+            }
+            function tabscroll()
+            {
+                var ap1=document.getElementById('eduid');
+                var z=window.pageYOffset;
+                if(z>420)
+                {
+                    ap1.style.height="200px";
+                    ap1.style.transition="all 2s";
+                }
+                else
+                {
+                    ap1.style.height="0";
+                }
+            }
+            window.addEventListener("scroll",function(){
+                jabscroll();
+                tabscroll();
+            });
+        </script>
+
+   <!--  <div class="items">
+    <a href="#">
+    <img src="tourist.jpg" class="thumbnail">
+    <div class="caption">
+    <h2>Tourism</h2>
+    <p>Beautiful City surrounded by Aravalli Range.</p>
 </div>
 </a>
 </div>
+
 <div class="items">
 <a href="#">
 <img src="edu.jpg" class="thumbnail">
@@ -126,6 +293,7 @@ function showUser(str) {
 </div>
 </a>
 </div>
+
 <div class="items">
 <a href="#">
 <img src="sm.jpg" class="thumbnail">
@@ -135,12 +303,17 @@ function showUser(str) {
 </div>
 </a>
 </div>
+</div> -->
+
+
+
 </div>
-    </div>
+
+
 <footer>
 <div class="container1" >
-    <p style="float:left;" id="copyv">&copy;Roam Udaipur</p>
-    <a style="float:right; text-decoration: underline; padding-top:13px;" id="copyv" href="disclaimer.html">Disclaimer</a>
+    <p style="float:left;" id="copyv">&copy;RoamUdaipur.com</p>
+    <a style="float:right; text-decoration: underline;" id="copyv" href="disclaimer.html">Disclaimer</a>
    
     <p id="copyv" style="text-align: center;">Made with <i class="fa fa-heart" aria-hidden="true"></i></p>
 </div>

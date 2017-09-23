@@ -1,4 +1,8 @@
-body{
+*{
+    margin:0;
+    padding:0;
+	}
+	body{
 width:100%;
 height:100%;
 margin:0;
@@ -278,37 +282,278 @@ a{
     cursor: pointer;
 }
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        .banner-content{
-	position:relative;
-	padding-top:3%;
-	left:20%;
-	padding-bottom:6%;
-	overflow:hidden;
-	margin-bottom:12%;
-	background-color:rgba(0,0,0,0.7);
-	max-width:660px;
+.containerdiv
+{
+	display: flex;
+	flex-direction: column;
+} 
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
+
+.tourdiv
+{
+	margin-left: 60px;
+	width:90%;
+	margin-top: 50px;
+	flex:1;
+	display: flex;
+	flex-direction: row;
+	height: 200px;
+margin-bottom:50px;}
+.edudiv
+{   
+	height: 0;
+	flex:1;
+	display: flex;
+	flex-direction: row;
+margin-bottom: 50px;
+background: #F3E5F5;
+padding: 50px;
+}
+.smartdiv
+{
+	margin-left:60px;
+	width: 90%;
+	flex:1;
+	display: flex;
+	flex-direction: row;
+	height: 200px;
+margin-bottom: 50px;}
+#h3h
+{
+	 font-family: 'Alegreya Sans';
+	
+   flex:1;
+   order: 1;
+   color:red;
+   margin: auto;
+   font-size: 25px;
+}
+#stats
+{
+	 font-family: 'Alegreya Sans';
+flex:1;
+order: 3;
+margin:auto;
+box-sizing: border-box;
+margin-left: 100px;
+}
+#stats h5
+{
+	color:red;
+	font-size: 35px;
+}
+#details
+{
+	text-align: justify;
+	
+ font-family: 'Alegreya Sans';
+flex: 2;
+order: 2;
+margin: auto;
+line-height: 120%;
+}
+#h3h1
+{
+	 font-family: 'Alegreya Sans';
+	
+   flex:1;
+   order: 2;
+   padding-left:120px;
+   margin: auto;
+   color: red;
+   font-size: 25px;
+}
+#details1
+{
+	text-align: justify;
+	
+ font-family: 'Alegreya Sans';
+flex: 2;
+order: 1;
+margin: auto;
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+  .banner
+      {
+        display: flex;
+        box-sizing: border-box;
+        padding-top: 40px;
+       }
+   .ban-1
+   {
+   	flex:1;
+   } 
+   .cont
+   {
+   	flex:2;
+   }
+   .call
+   {
+   	flex: 1;
+   }
+   .call h4
+   {
+   	margin-top: 10px;
+   	cursor: pointer;
+   	  font-family: 'Alegreya Sans';
+   }
+  ul{
+	margin-top:10px;
+    list-style-type: none;
+   }
+ li
+ {
+ 	font-size:17px;
+    display: inline;
+    padding-right:8px;
+    padding-left:5px;
+    cursor: pointer;
+    font-family: 'Alegreya Sans';
+    position: relative;
+  }
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background:red;
+  height: 2px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+.dropdown-content {
+    display: none;
+    position:absolute;
+    right:60px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top:10px;
+    padding-bottom: 10px;
+}
+.dropdown-content1 {
+    display: none;
+    position:absolute;
+    right:60px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top:10px;
+    padding-bottom: 10px;
+}
+.dropdown-content:after
+{position: absolute;
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  bottom:100%;
+  content: '';
+  left:80%;
+  border-bottom: 10px solid white;
+
+}
+.dropdown-content1:after
+{position: absolute;
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  bottom:100%;
+  content: '';
+  left:80%;
+  border-bottom: 10px solid white;
+
+}
+
+.dropdown-content  h5{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+      font-family: 'Alegreya Sans';
+}
+.dropdown-content small
+{
+	color:red;
+	  font-family: 'Alegreya Sans';
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content1 a:hover {background-color: #f1f1f1}
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+  .banner-content{
+  flex: 2;	
+  order:1;
+  width: 100%;
 }
         .banner-content h1
         {
              font-family: 'Architects Daughter';
+           color:#FFD180;
+             font-size: 42px;
         }
         .banner-content p
     {
@@ -316,15 +561,70 @@ a{
          font-family: 'Aref Ruqaa';
     }
         .inner-banner-image{
+        	display: flex;
+        	flex-direction: column;
 	padding-top:12%;
 	width:80%;
 	margin:auto;
 }
-          footer{
-		background-color:#1A237E;
-		color:#fff;
-		font-size:16px;
-	}
+  .hvr-hollow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: background;
+  transition-property: background;
+  box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px transparent;
+  /* Hack to improve aliasing on mobile/tablet devices */
+}
+.hvr-hollow:hover, .hvr-hollow:focus, .hvr-hollow:active {
+  background: none;
+}
+	.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+	
     .container1{
 		width:90%;
 		margin:auto;
@@ -344,6 +644,17 @@ a{
 	animation-name: animationdem;
 	animation-duration: 2s;
              font-family: 'Josefin Sans';
+}
+footer{
+		background-color:#1A237E;
+		color:#fff;
+		 font-family: 'Alegreya Sans';
+		
+	}
+#copyv
+{
+	padding:20px;
+	font-size: 18px;
 }
         .logo img
         {
@@ -373,15 +684,24 @@ a{
 	margin-bottom:10px;
 	text-align:center;
 	color:#f8f8f8;
-	height:70%;
-	background:url("lll.jpg") no-repeat center;
+	height:600px;
+ background-image: 
+    linear-gradient(
+      rgba(0, 0, 30, 0.5),
+      rgba(0, 0, 30, 0.5)
+    ),
+    url('itshea.jpg');
 	background-size:cover;
-}
+	
+	}
+	
+
         .container{
 	width:90%;
 	margin:auto;
 	overflow:hidden;
 	transition: all 1s;
+	margin-top:100px;
 }
         .button,#sub{
 	color:#fff;
@@ -420,7 +740,74 @@ a{
              font-family: 'Finger Paint';
         }
         
+.ttd
+{
+	display: none;
+	position: absolute;
+	left:10px;
+	margin-top: 10px;
+	background: white;
+	padding-top:20px;
+	z-index:1;
 }
+.ttd h4
+{
+	color:black;
+	text-decoration: underline;
+}
+.ttd a{
+		color:red;
+	display: block;
+	margin: 10px;
+}
+.dp:hover .ttd{
+	display:block;
+}
+.ttd2
+{
+	display: flex;
+	width:250px;
+	height:150px;
+	}
+	.tth
+	{
+		width:200px;
+	}
+.pts
+{
+	flex:1;
+	margin-right:20px;
+	border-right: 1px solid black;
+}
+.ttt
+{
+	width:100px;
+}
+.pts a{
+	margin-top:10px;
+}
+.hr
+{    
+
+	flex:1;
+}
+.hr a
+{
+	margin-top: 10px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
 .animate 
 {
     -webkit-animation: animatezoom 0.6s;
@@ -433,17 +820,55 @@ a{
 }
 .banner-content2
 {
-	position:relative;
-	padding-top:6%;
-	left:20%;
-	padding-bottom:6%;
-	overflow:hidden;
-	margin-bottom:12%;
-	background-color:rgba(0,0,0,0.7);
-	max-width:660px;
-	text-align:center;
-	animation-name:example;
-	animation-duration:1s;
+flex:1;
+display: flex;
+order:2;
+margin-top:15%;
+flex-direction: row;
+}
+#table1
+{
+	border:2px solid red;
+	width:20%;
+	height:20%;
+	padding:10px;
+	  font-family: 'Alegreya Sans';
+}
+#table1 th
+{
+	font-size: 18px;
+	border-bottom: 1px solid red;
+	padding:5px;
+}
+#table1 tr
+{
+	padding:5px;
+	font-size:18px;
+}
+#tempid
+{
+	border-right: 1px solid red;
+}
+#temper
+{
+	border-right:1px solid red;
+}
+#tablediv
+{
+	flex:1;
+}
+.banne
+{
+	flex:2;
+	margin-left: 50%;
+	margin-top: 2%;
+
+}
+.banne a
+{     font-family: 'Alegreya Sans';
+font-size: 18px;
+	border: 2px solid red;
+	padding: 20px;
 }
 .banner-content3
 {
