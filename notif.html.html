@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Authentication</title>
+</head>
+<body>
+<button onclick="signIn()" id="sign-in">Sign in</button>
+
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCQzF1i1QwarAIaInY2B5-wBRYvB-L4uqM",
+    authDomain: "mybudgetmonitor.firebaseapp.com",
+    databaseURL: "https://mybudgetmonitor.firebaseio.com",
+    projectId: "mybudgetmonitor",
+    storageBucket: "mybudgetmonitor.appspot.com",
+    messagingSenderId: "331472114533"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="myjs.js"></script>
+</body>
+</html>
