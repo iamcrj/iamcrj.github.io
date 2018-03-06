@@ -1,35 +1,47 @@
 *{
 padding:0;
 margin:0;
- box-sizing:border-box;
-}
-body{
-  background-color:red;
+box-sizing:border-box;
 }
 .main-container{
  display:flex;
 }
 .header{
-  position:relative;
+  background-image:url('');
   flex:1.6;
+  flex-direction:column;
   height:600px;
+  display:flex;
   border-right:none;
-  background-color:grey;
-   z-index:1;
+  background-color:blue;
 }
 .content{
   background-color:red;
   flex:3;
- z-index:1;
   height:600px;
   border-left:none;
 }
-.title{
-  color:red;
+#hello{
+  margin-top:calc(50% - 88px);
+}
+.titled{
+  flex:1;
+  text-align:center;
+  color:white;
   font-size:35px;
-  position:absolute;
-  left:calc(50% - 125.13px);
-  top:calc(50% - 20px);
+  background-color:red;
+}
+.extra-box{
+  flex:1;
+}
+.extra-box button{
+  margin-top:20%;
+  padding:10px;
+  background-color:red;
+  border:none;
+  color:white;
+  display:block;
+  margin-left:calc(50% - 37.42px);
 }
 .nav{
   display:flex;
@@ -74,7 +86,7 @@ body{
   margin-top:45px;
 }
 .search-box{
-  margin-left:calc(50% - 110px);
+  margin-left:calc(50% - 55px);
   margin-top:50px;
 }
 table, th, td {
@@ -99,10 +111,10 @@ table, th, td {
   flex:1;
 }
 table{
-  margin-left:calc(50% - 30px);
+  margin-left:calc(50% - 15px);
 }
 .gallery a{
-  margin-left:calc(50% - 15px);
+  margin-left:calc(50% - 7.5px);
 }
 .footer{
   display:flex;
@@ -118,3 +130,4 @@ table{
 .contact{
   flex:1;
 }
+
