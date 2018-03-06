@@ -3,43 +3,47 @@ padding:0;
 margin:0;
 box-sizing:border-box;
 }
+body{
+  font-family: 'Alef';
+}
 .main-container{
  display:flex;
 }
 .header{
-  background-image:url('');
+  background:linear-gradient(rgba(255,0,0,0), rgba(255,0,0,1));
   flex:1.6;
   flex-direction:column;
-  height:600px;
+  height:100vh;
+  background-color: #424242;
   display:flex;
   border-right:none;
-  background-color:blue;
 }
 .content{
-  background-color:red;
   flex:3;
-  height:600px;
+  height:100vh;
   border-left:none;
 }
 #hello{
   margin-top:calc(50% - 88px);
+  font-family: 'Actor';
 }
 .titled{
-  flex:1;
+  flex:0.6;
   text-align:center;
   color:white;
   font-size:35px;
-  background-color:red;
 }
 .extra-box{
   flex:1;
 }
 .extra-box button{
   margin-top:20%;
-  padding:10px;
-  background-color:red;
+  padding:15px;
+  background-color:#FF8A65;
   border:none;
   color:white;
+  border-radius:5px 5px 5px 5px;
+  cursor:pointer;
   display:block;
   margin-left:calc(50% - 37.42px);
 }
@@ -71,7 +75,6 @@ box-sizing:border-box;
 .facts_2{
   text-align:center;
   flex:1;
-
 }
 .facts_3{
   text-align:center;
@@ -80,54 +83,209 @@ box-sizing:border-box;
 .fact_text{
   margin-top:65px;
 }
-.fas{
+.facts .fas{
   color:red;
-  font-size:20px;
+  font-size:25px;
   margin-top:45px;
 }
 .search-box{
-  margin-left:calc(50% - 55px);
-  margin-top:50px;
+  text-align: center;
+  margin-top:70px;
 }
-table, th, td {
-   border: 1px solid black;
+.header2{
+  background-color: blue;
+  background:linear-gradient(rgba(255,0,0,0), rgba(255,0,0,1));
+  height:70px;
+  color:white;
+  position:fixed;
+  top:0;
+  width:100%;
+  display: none;
 }
-.extras{
-  text-align:center;
-  display:flex;
-  margin-top:60px;
-  width:80%;
-  margin-left:20px;
-  vertical-align:middle;
-}
-.temp{
-  background-color:brown;
-  text-align:center;
+.titles{
   flex:1;
 }
-.gallery{
-  background-color:brown;
-  text-align:center;
-  flex:1;
+.extr{
+  flex:2;
+}
+.extr a{
+  color:white;
+  display:inline-block;
+  padding-right:35px;
+  text-decoration: none;
+}
+.move{
+  margin-left:50%;
+  margin-top:25px;
+}
+#home{
+  margin-left:40px;
+  margin-top:20px;
 }
 table{
-  margin-left:calc(50% - 15px);
+   border: solid thin red;
+}
+th,td{
+  padding:10px;
+  border-right:solid thin red;
+  border-bottom:solid thin red;
+}
+#xx{
+  border-right: none;
+}
+#type_w{
+  border-right: none;
+  border-bottom:none;
+}
+#temp_show{
+  border-bottom:none;
+}
+.extras{
+  margin-top:80px;
+  display:flex;
+}
+.temp{
+  flex:1;
+}
+.table_show{
+  margin-left:calc(50% - 80.5px);
+}
+.gallery{
+  flex:1;
+  text-align: center;
+  padding:30px;
 }
 .gallery a{
-  margin-left:calc(50% - 7.5px);
+  padding:10px;
+  background-color: red;
+  color:white;
+  text-decoration: none;
+
 }
 .footer{
   display:flex;
-  height:200px;
-  background-color:aqua;
+  height:150px;
+  background-color:blue;
 }
 .recommend{
   flex:1;
+  text-align: center;
+  color:white;
+}
+.ula{
+  margin-top:20px;
+}
+.ula li{
+  padding:2px;
+}
+.ula li a{
+  color:white;
+  text-decoration: none;
+}
+.ula li a:hover{
+  color:red;
+  border-bottom:solid thin red;
+}
+.ula2{
+  margin-top:45px;
+}
+.ula2 li{
+  padding:5px;
+}
+.ula2 li a{
+  text-decoration: none;
+  color:white;
 }
 .policies{
+  text-align: center;
+  color:white;
   flex:1;
 }
 .contact{
+  padding:45px;
+  text-align: center;
+  color:white;
   flex:1;
 }
+input[type=text]
+{
+  padding:10px;
+  width:60%;
+  border-radius:5px;
+  border:solid thin black;
+}
+.why{
+  height:300px;
+  margin-top:110px;
+  display: flex;
+}
+.image{
+  flex:1;
+  text-align: center;
+}
+.text{
+  flex:2;
+  text-align: justify;
+}
+.submit{
+  padding:10px;
+  cursor: pointer;
+}
+.fab{
+  padding-left:15px;
+  color:white;
+}
 
+.text{
+  padding-left:10%;
+}
+.text h4{
+  color:red;
+  margin-bottom:10px;
+}
+.text p{
+  text-align: justify;
+  margin-bottom:10px;
+}
+.text a{
+  color:red;
+}
+.nearby{
+  height:300px;
+  margin-top:90px;
+  display: flex;
+}
+.image1{
+  flex:1;
+  text-align: center;
+}
+.text1{
+  flex:2;
+  padding-right: 10%;
+}
+img{
+  width:50%;
+  border-radius:50%;
+}
+.text1 h4{
+  color:red;
+  margin-bottom:10px;
+}
+.text1 p{
+  text-align: justify;
+  margin-bottom: 10px;
+}
+.text1 a{
+  color:red;
+}
+.explore{
+  height:100px;
+  text-align: center;
+}
+.explore button{
+  background-color: red;
+  padding:10px;
+  border:none;
+  color:white;
+  cursor:pointer;
+}

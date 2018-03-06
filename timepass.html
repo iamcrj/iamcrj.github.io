@@ -1,8 +1,14 @@
-<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+<head><link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="animate.css">
+    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>
+<link href="change.css" rel="stylesheet">
+</head>
+<body>
 <div class="main-container">
-  <div class="header">
+<div class="header">
    <div class="titled">
-     <h4 id="hello">RoamUdaipur.com</h4>
+     <h4 class="animated fadeInUp" id="hello">RoamUdaipur.com</h4>
     </div>
     <div class="extra-box">
       <Button>About Us</Button>
@@ -10,19 +16,19 @@
     </div>
   </div>
   <div class="content">
-    <div class="nav">
+    <div class="animated fadeIn nav">
         <div class="nav-item"><a href="home.html">Home</a></div>
         <div class="nav-item"><a href="home.html">Categories</a></div>
-        <div class="nav-item"><a href="home.html">Download Guide</a></div>
-        <div class="nav-item"><a href="home.html">How to Reach</a></div>
-        <div class="nav-item"><a href="home.html">Contact Us</a></div>
         <div class="nav-item"><a href="home.html">NPTS</a></div>
+        <div class="nav-item"><a href="home.html">Contact</a></div>
+        <div class="nav-item"><a href="home.html">Map</a></div>
+        <div class="nav-item"><a href="home.html">Download Guide</a></div>
       </ul>
     </div>
-    <div class="facts">
+    <div class="animated slideInRight facts">
       <div class="facts_1">
         <i class="fas fa-paper-plane"></i>
-        <p class="fact_text">1000000+ tourists every year</p>
+        <p class="fact_text"><span id="count"></span>+ tourists every year</p>
       </div>
       <div class="facts_2">
         <i class="fas fa-tint"></i>
@@ -33,16 +39,16 @@
         <p class="fact_text">No. 1 Tourist Destination in India</p>
       </div>
     </div>
-    <div class="search-box">
+    <div class="animated pulse search-box">
        <input type="text" placeholder="Type a category to explore" name="search"/>
-      <button>Submit</button>
+      <button class="submit"><i class="fas fa-search"></i></button>
     </div>
     <div class="extras">
-      <div class="temp">
-        <table>
+      <div class="animated pulse temp">
+        <table class="table_show">
           <tr>
           <th>Temp</th>
-          <th>Humidity</th>
+          <th id="xx">Humidity</th>
           </tr>
           <tr>
             <td id="temp_show"></td>
@@ -50,15 +56,58 @@
            </tr>
           </table>
       </div>
-      <div class="gallery">
-        <a href="gallery.html">Gallery</a>     
+      <div class="animated pulse gallery">
+        <a href="gallery.html">View Gallery</a>
          </div>
     </div>
  </div>
   </div>
+  <div class="animated zoomIn header2" id="headera">
+  <div class="titles"><h2 id="home">RoamUdaipur.com</h4></div>
+    <div class="extr">
+      <div class="move">
+      <a href="#">About Us</a>
+      <a href="#">Feedback</a>
+    </div></div>
+      </div>
+<div class="why">
+  <div class="text">
+    <h4>Why Udaipur?</h4>
+    <p>Udaipur is a beautiful city in the Indian State of Rajasthan. The master piece of the
+       city is the floating lake palace in Lake Pichola. Udaipur is also well connected to the
+       major cities of India by land, rail or air. Because of its picturesque and scenic locations,
+       Udaipur has been the shooting location for many Hollywood and Bolllywood movies. Udaipur is a popular
+       tourist destination in India. It is also known as the City of Lakes. The Pichola lake, Fateh Sagar Lake,
+       Udai Sagar and Swaroop Sagar in this city are considered some of the most beautiful lakes in the state.
+     </p>
+     <a href="#">Read More</a>
+  </div>
+  <div class="image">
+    <img src="main2.jpg" alt="image"/>
+  </div>
+</div>
+<div class="nearby">
+  <div class="image1">
+    <img src="main3.jpg" alt="image"/>
+  </div>
+  <div class="animated fadeIn text1">
+    <h4>Nearby Places</h4>
+    <p>Coming to Udaipur is an ultimate package as one can explore many beautiful places around Udaipur.
+      Apart from the local attractions within the city, there are several charming
+       places to see around Udaipur. Each place has a charm which can mesmerize you to the core.
+       Such places include Nathdwara,Ranakpur,Chittorgarh,Haldighati,Kumbhalgarh,Mount Abu,Eklingji,Kumbhalgarh
+       Wildlife Sanctuary.
+     </p>
+     <a href="#">Read More</a>
+  </div>
+</div>
+<div class="explore">
+  <button>Explore Now</button>
+</div>
 <div class="footer">
   <div class="recommend">
-    <ul type="none">
+    <ul type="none" class="ula">
+      <li><u>Recommendations</u></li>
       <li><a href="#">Lakes</a></li>
       <li><a href="#">Museums</a></li>
       <li><a href="#">Forts</a></li>
@@ -66,13 +115,61 @@
     </ul>
   </div>
   <div class="contact">
-    <h4>Developed and Designed By Chirag Jain</h4>
+    <h4>Made with love</h4>
     <p>&copy;RoamUdaipur.com 2018</p>
   </div>
   <div class="policies">
-    <ul type="none">
+    <ul type="none" class="ula2">
       <li><a href="#">Terms and Conditions</a></li>
       <li><a href="#">Disclaimer</li>
+      <li><i class="fab fa-facebook-square"></i><i class="fab fa-twitter"></i><i class="fab fa-google-plus-g"></i></li>
     </ul>
-  </div> 
+  </div>
 </div>
+<script>
+var url="https://api.openweathermap.org/data/2.5/weather?lat=24.5854&lon=73.7125&APPID=7ebc60e321618ea996cb92307517393f";
+
+function loadDoc() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var data=JSON.parse(this.responseText);
+            var temp=document.getElementById('temp_show');
+            temp.innerHTML=Math.floor(data.main.temp-273)+"&deg;C";
+            var type_w=document.getElementById('type_w');
+            type_w.innerHTML=data.main.humidity;
+       }
+    };
+    xhttp.open("GET", url, true);
+    xhttp.send();
+}
+loadDoc();
+var i=0;
+function countnum(){
+  console.log(i);
+  if(i==1000000)
+  {
+    document.getElementById('count').innerHTML=i;
+    window.clearInterval(x);
+  }
+  else{
+  document.getElementById('count').innerHTML=i;
+  i+=200;
+}
+}
+var x=setInterval(countnum ,0.00001)
+function Scroll()
+{
+  var ypos=window.pageYOffset;
+  console.log(ypos);
+  if(ypos>605)
+  {
+  document.getElementById('headera').style.display="flex";
+}
+else {
+  document.getElementById('headera').style.display="none";
+}
+}
+window.addEventListener("scroll",Scroll);
+</script>
+</body>
