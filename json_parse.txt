@@ -1,0 +1,35 @@
+<div class="animated slideInRight facts">
+  <div class="facts_1">
+    <i class="fas fa-paper-plane"></i>
+    <p class="fact_text"><span id="count"></span>+ tourists every year</p>
+  </div>
+  <div class="facts_2">
+    <i class="fas fa-tint"></i>
+    <p class="fact_text">Known as City of Lakes</p>
+  </div>
+  <div class="facts_3">
+    <i class="fas fa-trophy"></i>
+    <p class="fact_text">No. 1 Tourist Destination in India</p>
+  </div>
+</div>
+<div class="animated pulse search-box">
+   <input type="text" placeholder="Type a category to explore" name="search"/>
+  <button class="submit"><i class="fas fa-search"></i></button>
+</div>
+<div class="extras">
+  <div class="animated pulse temp">
+    <table class="table_show">
+      <tr>
+      <th>Temp</th>
+      <th id="xx">Humidity</th>
+      </tr>
+      <tr>
+        <td id="temp_show"></td>
+        <td id="type_w"></td>
+       </tr>
+      </table>
+  </div>
+  <div class="animated pulse gallery">
+    <a href="gallery.html">View Gallery</a>
+     </div>
+</div>

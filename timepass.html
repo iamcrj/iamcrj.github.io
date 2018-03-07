@@ -21,41 +21,7 @@
         <div class="nav-item"><a href="home.html">Download Guide</a></div>
       </ul>
     </div>
-    <div class="animated slideInRight facts">
-      <div class="facts_1">
-        <i class="fas fa-paper-plane"></i>
-        <p class="fact_text"><span id="count"></span>+ tourists every year</p>
-      </div>
-      <div class="facts_2">
-        <i class="fas fa-tint"></i>
-        <p class="fact_text">Known as City of Lakes</p>
-      </div>
-      <div class="facts_3">
-        <i class="fas fa-trophy"></i>
-        <p class="fact_text">No. 1 Tourist Destination in India</p>
-      </div>
-    </div>
-    <div class="animated pulse search-box">
-       <input type="text" placeholder="Type a category to explore" name="search"/>
-      <button class="submit"><i class="fas fa-search"></i></button>
-    </div>
-    <div class="extras">
-      <div class="animated pulse temp">
-        <table class="table_show">
-          <tr>
-          <th>Temp</th>
-          <th id="xx">Humidity</th>
-          </tr>
-          <tr>
-            <td id="temp_show"></td>
-            <td id="type_w"></td>
-           </tr>
-          </table>
-      </div>
-      <div class="animated pulse gallery">
-        <a href="gallery.html">View Gallery</a>
-         </div>
-    </div>
+<div id="baba"></div>
  </div>
   </div>
   <div class="animated zoomIn header2" id="headera">
@@ -140,20 +106,34 @@ function loadDoc() {
     xhttp.send();
 }
 loadDoc();
-var i=0;
-function countnum(){
-  console.log(i);
-  if(i==1000000)
-  {
-    document.getElementById('count').innerHTML=i;
-    window.clearInterval(x);
-  }
-  else{
-  document.getElementById('count').innerHTML=i;
-  i+=200;
+function loadContent() {
+    var xhttp2 = new XMLHttpRequest();
+    xhttp2.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var data=this.responseText;
+            console.log(data);
+            document.getElementById('baba').innerHTML=data;
+       }
+    };
+    xhttp2.open("GET","json_parse.txt", true);
+    document.getElementById('baba').innerHTML="Getting Data";
+    xhttp2.send();
 }
-}
-var x=setInterval(countnum ,0.00001)
+loadContent();
+// var i=0;
+// function countnum(){
+//   console.log(i);
+//   if(i==1000000)
+//   {
+//     document.getElementById('count').innerHTML=i;
+//     window.clearInterval(x);
+//   }
+//   else{
+//   document.getElementById('count').innerHTML=i;
+//   i+=200;
+// }
+// }
+// var x=setInterval(countnum ,0.00001)
 function Scroll()
 {
   var ypos=window.pageYOffset;

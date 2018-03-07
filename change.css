@@ -17,8 +17,8 @@ body{
   background-color: #424242;
   display:flex;
   border-right:none;
-  border-bottom-right-radius:100px;
-  border-top-right-radius: 100px;
+  border-bottom-right-radius:50%;
+  border-top-right-radius:50%;
 }
 .content{
   flex:3;
