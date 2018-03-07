@@ -112,7 +112,7 @@ function loadContent() {
         if (this.readyState == 4 && this.status == 200) {
             var data=this.responseText;
             console.log(data);
-            setInterval(function(){document.getElementById('baba').innerHTML=data;},1000);
+            document.getElementById('baba.txt').innerHTML=data;
 
        }
     };
