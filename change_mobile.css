@@ -1,0 +1,162 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Alef';
+}
+#desktop{
+  display:none;
+}
+.head_mobile{
+  height:70px;
+  display: flex;
+}
+.titled{
+  flex:3;
+}
+#hello{
+    font-family: 'Actor';
+    color:red;
+    margin-top:15px;
+  }
+.spann{
+  flex:1;
+}
+#spanner{
+  margin-top:18px;
+  margin-left:8%;
+  background-color: transparent;
+  font-size: 23px;
+  border:none;
+  color:black;
+}
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color:#FF9E80;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    border-bottom:solid thin red;
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.imager{
+  width:100%;
+}
+img{
+  width:100%;
+}
+#imge{
+  border:50%;
+}
+.extras{
+  display:flex;
+  margin-top:70px;
+  margin-left:30px;
+}
+.temp{
+  flex:1;
+}
+.gallery{
+  flex:1;
+  padding:30px;
+}
+table{
+   border: solid thin red;
+}
+th,td{
+  padding:8px;
+  border-right:solid thin red;
+  border-bottom:solid thin red;
+}
+#xx{
+  border-right: none;
+}
+#type_w{
+  border-right: none;
+  border-bottom:none;
+}
+#temp_show{
+  border-bottom:none;
+}
+.gallery a{
+  padding:10px;
+  background-color: red;
+  color:white;
+  text-decoration: none;
+}
+.why{
+  text-align: center;
+  height:550px;
+  margin-top:110px;
+  display: flex;
+  flex-direction: column;
+}
+.image{
+  flex:1;
+  width:50%;
+  margin-top:30px;
+  margin-left:calc(50% - 95.75px);
+  text-align: center;
+}
+.image img{
+  border-radius: 50%;
+}
+.text{
+  flex:2;
+  text-align: justify;
+  padding:25px;
+}
+.text a{
+  color:red;
+  margin-left:calc(50% - 39.305px);
+}
+.nearby{
+  height:400px;
+  margin-top:50px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.image1{
+  width:50%;
+  margin-top:30px;
+  margin-left:calc(50% - 90.95px);
+  flex:1;
+  text-align: center;
+}
+.image1 img{
+  border-radius: 50%;
+}
+.text1{
+  flex:2;
+  padding:25px;
+  text-align: justify;
+}
+.text1 a{
+  color:red;
+  margin-left:calc(50% - 39.305px);
+}
