@@ -111,7 +111,7 @@ th,td{
 .why{
   text-align: center;
   height:550px;
-  margin-top:110px;
+  margin-top:80px;
   display: flex;
   flex-direction: column;
 }
@@ -130,13 +130,16 @@ th,td{
   text-align: justify;
   padding:25px;
 }
-.text a{
+.link{
+  margin-top:10px;
+  text-align: center;
+}
+.link a{
   color:red;
-  margin-left:calc(50% - 39.305px);
 }
 .nearby{
   height:400px;
-  margin-top:50px;
+  margin-top:70px;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -156,7 +159,55 @@ th,td{
   padding:25px;
   text-align: justify;
 }
-.text1 a{
-  color:red;
-  margin-left:calc(50% - 39.305px);
+.link1{
+  text-align: center;
+}
+.link1 a{
+  margin-top:10px;
+color:red;
+}
+.explore{
+  margin-top:80px;
+  height:70px;
+  text-align: center;
+}
+.explore button{
+  background-color: red;
+  padding:10px;
+  border:none;
+  color:white;
+  cursor:pointer;
+}
+.footer{
+  font-size:15px;
+  display:flex;
+  background-color:blue;
+}
+.ula2{
+  margin-top:10px;
+}
+.ula2 li{
+  padding:5px;
+}
+.fab{
+  padding-left:8px;
+  color:white;
+}
+.ula2 li a{
+  text-decoration: none;
+  color:white;
+}
+.policies{
+  text-align: center;
+  color:white;
+  flex:1;
+}
+.contact{
+  padding:15px;
+  text-align: center;
+  color:white;
+  flex:1;
+}
+.contact h4{
+  margin-bottom:5px;
 }
